@@ -11,11 +11,11 @@ Fundos de pensão, seguradoras e fundos soberanos mantêm parcelas relevantes da
 
 ## Como isso aparece nos números de mercado
 
-O investidor pode acompanhar publicamente os referenciais de retorno do setor:
+O investidor pode acompanhar publicamente os referenciais de retorno do setor — todos atualizados com frequência pelas próprias fontes:
 
-- **NTN-B (Tesouro IPCA+)** — a taxa livre de risco real de referência. [DADO: taxa atual da NTN-B de prazo semelhante — Tesouro Nacional]
-- **WACC regulatório da ANEEL** — o custo de capital que o regulador considera justo para distribuição e transmissão. [DADO: último valor publicado — ANEEL]
-- **Taxas de debêntures incentivadas de energia** — o spread sobre a NTN-B mostra quanto o mercado cobra pelo risco de crédito do setor. [DADO: ANBIMA / Debêntures.com.br]
+- **NTN-B (Tesouro IPCA+)** — a taxa livre de risco real de referência. Taxas diárias no site do Tesouro Direto.
+- **WACC regulatório da ANEEL** — o custo de capital que o regulador considera justo para distribuição e transmissão. Revisado periodicamente e publicado pela ANEEL.
+- **Taxas de debêntures incentivadas de energia** — o spread sobre a NTN-B mostra quanto o mercado cobra pelo risco de crédito do setor. Taxas indicativas divulgadas diariamente pela ANBIMA.
 
 A diferença entre a NTN-B e o retorno de um projeto é o **prêmio pelo risco** que o investidor assume: construção, geração, crédito do comprador, regulação e liquidez.
 

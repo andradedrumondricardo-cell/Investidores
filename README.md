@@ -20,4 +20,15 @@ Participação em SCP oferecida a terceiros com promessa de retorno é, para a C
 | `docs/04-checklist-juridico.md` | Checklist para validação com advogado antes de ir ao ar |
 | `docs/05-linha-editorial.md` | Posicionamento, pode/não pode, transparência e pauta |
 | `artigos/` | 6 artigos (01–03 setoriais, 04–06 ótica do investidor) |
-| `landing/index.html` | Página de inscrição da newsletter Energia & Capital com consentimento LGPD |
+| `landing/privacidade.md` | Política de privacidade (preencher razão social, CNPJ e e-mail em `scripts/build.py`) |
+| `scripts/build.py` | Gera o site em `site/` a partir dos artigos |
+| `netlify.toml` | Configuração de deploy no Netlify |
+
+## Publicar no Netlify
+
+1. Netlify → **Add new site → Import an existing project → GitHub** → repositório `Investidores`.
+2. Branch: a que contém este código. Build e pasta de publicação já vêm do `netlify.toml`.
+3. Em **Forms**, ative a detecção de formulários. Inscrições ficam em *Forms → newsletter* (exportáveis em CSV).
+4. Configure notificação de e-mail do formulário e, se quiser, domínio próprio.
+
+Para testar localmente: `pip install -r requirements.txt && python3 scripts/build.py`, depois abra `site/index.html`.
