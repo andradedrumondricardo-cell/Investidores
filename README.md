@@ -8,7 +8,7 @@ Material para gerar interesse no setor de energia sem que a comunicação se tor
 
 Participação em SCP oferecida a terceiros com promessa de retorno é, para a CVM, **contrato de investimento coletivo** (Lei 6.385/76, art. 2º, IX) — portanto valor mobiliário. Qualquer esforço de venda ao público em geral (site, redes sociais, anúncios, mailing) sem registro/dispensa caracteriza oferta pública irregular (Res. CVM 160), sujeita a *stop order*, multa e, em tese, crime (Lei 7.492/86, art. 7º).
 
-**Consequência prática:** a publicação fala de **energia como classe de ativo**, com dados públicos de mercado, nunca da **oportunidade da ZeroInvest**. Não publique "IPCA + 15%", "baixo risco", "seguro", "rentabilidade" nem nada que ligue o artigo a um produto da ZeroInvest.
+**Consequência prática:** a publicação fala de **energia como classe de ativo**, com dados públicos de mercado, nunca da **oportunidade da ZeroInvest**. Não publique "IPCA + 15%" como expectativa, "baixo risco", "seguro" nem nada que ligue o artigo a um produto da ZeroInvest.
 
 ## Estrutura
 
