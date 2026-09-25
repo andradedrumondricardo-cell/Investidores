@@ -44,6 +44,5 @@ Energia costuma ser vista como setor "estável". Parte disso é verdade: a deman
 - ANEEL, ONS, EPE
 
 ---
-*Conteúdo exclusivamente educacional. Não constitui oferta, recomendação ou solicitação de investimento em valores mobiliários. Dados passados do setor não garantem resultados futuros.*
+*Energia & Capital é uma publicação mantida pela ZeroInvest, empresa que desenvolve projetos de energia. O conteúdo é educacional e informativo, não constitui oferta, recomendação ou solicitação de investimento em valores mobiliários. Retornos passados ou de terceiros não garantem resultados futuros.*
 
-**Quer receber conteúdos como este? Assine a newsletter.**

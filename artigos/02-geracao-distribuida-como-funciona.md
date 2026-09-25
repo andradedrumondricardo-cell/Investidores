@@ -37,6 +37,5 @@ A Lei 14.300/2022 criou uma transição: projetos que pediram acesso a partir de
 - ABSOLAR — dados de mercado de energia solar
 
 ---
-*Conteúdo exclusivamente educacional. Não constitui oferta, recomendação ou solicitação de investimento em valores mobiliários. Dados passados do setor não garantem resultados futuros.*
+*Energia & Capital é uma publicação mantida pela ZeroInvest, empresa que desenvolve projetos de energia. O conteúdo é educacional e informativo, não constitui oferta, recomendação ou solicitação de investimento em valores mobiliários. Retornos passados ou de terceiros não garantem resultados futuros.*
 
-**Receba nossas próximas análises do setor elétrico: assine a newsletter.**

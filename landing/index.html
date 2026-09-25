@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Energia em Pauta</title>
-<meta name="description" content="Newsletter educacional sobre o setor elétrico brasileiro.">
+<title>Energia & Capital</title>
+<meta name="description" content="Análises sobre infraestrutura de energia sob a ótica do investidor.">
 <style>
   :root { --bg:#f7f8f6; --fg:#1c2421; --muted:#5b6661; --accent:#1f7a55; --card:#fff; --line:#dde2df; }
   @media (prefers-color-scheme: dark) {
@@ -29,14 +29,15 @@
 </head>
 <body>
 <main>
-  <h1>Entenda o setor elétrico brasileiro</h1>
-  <p class="lead">Uma newsletter quinzenal, em linguagem direta, sobre como a energia é gerada, contratada e regulada no Brasil.</p>
+  <p style="font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 8px">Energia &amp; Capital</p>
+  <h1>Energia como classe de ativo</h1>
+  <p class="lead">Análises quinzenais sobre como ativos de energia geram caixa, como o retorno se forma e quais riscos pesam — para quem pensa como investidor.</p>
 
   <ul class="topics">
-    <li>Mercado livre e regulado: como a energia é comprada e vendida</li>
-    <li>Geração distribuída e o Marco Legal (Lei 14.300)</li>
-    <li>Riscos do setor: hidrologia, curtailment, regulação</li>
-    <li>Transição energética e novas fontes</li>
+    <li>Por que investidores institucionais alocam em infraestrutura</li>
+    <li>Como se forma a TIR de um projeto de energia</li>
+    <li>Instrumentos regulados: debêntures incentivadas, FI-Infra, ações</li>
+    <li>Riscos: curtailment, regulação, juros, liquidez</li>
   </ul>
 
   <form id="f" novalidate>
@@ -49,7 +50,7 @@
     <!-- Consentimento 1: obrigatório, finalidade newsletter -->
     <label class="check">
       <input type="checkbox" name="consent_newsletter" required>
-      <span>Quero receber a newsletter educacional e concordo com a <a href="/privacidade" target="_blank">Política de Privacidade</a>.</span>
+      <span>Quero receber a newsletter Energia &amp; Capital e concordo com a <a href="/privacidade" target="_blank">Política de Privacidade</a>.</span>
     </label>
 
     <!-- Consentimento 2: opcional, separado, desmarcado por padrão (LGPD art. 8º §4º) -->
@@ -63,7 +64,7 @@
   </form>
 
   <footer>
-    Conteúdo exclusivamente educacional. Esta página e a newsletter não constituem oferta, recomendação ou solicitação de investimento em valores mobiliários.
+    Energia &amp; Capital é uma publicação mantida pela ZeroInvest, empresa que desenvolve projetos de energia. O conteúdo é educacional e informativo e não constitui oferta, recomendação ou solicitação de investimento em valores mobiliários.
     Você pode cancelar a inscrição a qualquer momento pelo link presente em cada e-mail.
   </footer>
 </main>
@@ -81,7 +82,7 @@
       consent_newsletter: f.consent_newsletter.checked,
       consent_contato: f.consent_contato.checked,
       policy_version: POLICY_VERSION,
-      consent_text_version: 'landing-v1',
+      consent_text_version: 'landing-v2',
       submitted_at: new Date().toISOString()
     };
     if (ENDPOINT) {
