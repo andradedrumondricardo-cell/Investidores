@@ -29,7 +29,14 @@ Linguagem de investidor (TIR, retorno, prêmio de risco, NTN-B) é permitida qua
 ## Canais
 - Blog, LinkedIn, Instagram, YouTube: ok com as regras acima.
 - Anúncios pagos: permitido segmentar por interesse em investimentos/mercado financeiro, **desde que o anúncio promova o artigo ou a newsletter**, nunca oportunidade ou retorno.
-- WhatsApp/Telegram em grupo: **não** (canal de massa com contato direto aumenta o risco de caracterizar oferta).
+- WhatsApp: **Canal** (somente leitura) sim; **grupo** não. Ver regras do canal abaixo.
+
+## Canal do WhatsApp
+- Formato: Canal (broadcast), nunca grupo. Membros não conversam entre si nem com a equipe por ali.
+- Conteúdo: resumo do artigo + link, dados públicos do setor, notícias regulatórias. Mesmas regras do guia (termos proibidos, riscos, sem taxa da ZeroInvest).
+- Proibido: "dicas de investimento", "onde investir", indicação de ativo/produto, convite para conversa privada sobre investimento.
+- Descrição do canal: rodapé padrão da Energia & Capital.
+- Mensagens privadas vindas do canal perguntando "como invisto": resposta padrão — *"A Energia & Capital é uma publicação informativa e não faz oferta de investimentos por este canal."* Não converter em conversa comercial.
 - Influenciadores: só se remunerados por conteúdo, nunca por lead/captação; roteiro revisado.
 
 ## Revisão

@@ -16,6 +16,9 @@ OUT = ROOT / "site"
 CONTROLADOR = "ZeroInvest [RAZÃO SOCIAL], CNPJ [00.000.000/0000-00]"
 EMAIL_PRIVACIDADE = "[email-de-privacidade@dominio]"
 
+# Link do CANAL do WhatsApp (somente leitura), não de grupo. Vazio = bloco não aparece no site.
+WHATSAPP_CANAL_URL = ""
+
 # Ordem de publicação (ver docs/05-linha-editorial.md)
 ORDEM = ["04", "05", "06", "01", "02", "03"]
 
@@ -55,6 +58,10 @@ input[type=text],input[type=email]{width:100%;padding:10px 12px;border:1px solid
 .check input{margin-top:5px}
 button{width:100%;padding:12px;border:0;border-radius:8px;background:var(--accent);color:#fff;font:inherit;font-weight:600;cursor:pointer}
 .hidden{display:none}
+.wa{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-top:16px}
+.wa p{margin:0;font-size:.92rem;color:var(--muted)}
+.wa p strong{color:var(--fg)}
+.wa a{background:#1f9d55;color:#fff;text-decoration:none;font-weight:600;padding:10px 16px;border-radius:8px;white-space:nowrap}
 footer{max-width:720px;margin:0 auto;padding:24px 16px 48px;font-size:.8rem;color:var(--muted);border-top:1px solid var(--line)}
 """
 
@@ -76,6 +83,17 @@ FORM = """
     <span>(Opcional) Aceito ser informado(a) pela ZeroInvest, por e-mail, sobre eventuais iniciativas futuras relacionadas ao setor de energia, que seguirão a regulamentação aplicável.</span></label>
   <button type="submit">Assinar gratuitamente</button>
 </form>
+"""
+
+
+def whatsapp():
+    if not WHATSAPP_CANAL_URL:
+        return ""
+    return f"""
+<div class="wa">
+  <p><strong>Canal Energia &amp; Capital no WhatsApp</strong><br>Resumos das análises e novidades do setor elétrico. Canal somente leitura.</p>
+  <a href="{html.escape(WHATSAPP_CANAL_URL)}" target="_blank" rel="noopener">Seguir o canal</a>
+</div>
 """
 
 
@@ -127,7 +145,7 @@ def main():
     md = markdown.Markdown(extensions=["tables"])
 
     for a in arts:
-        body = md.reset().convert(a["md"]) + FORM.format(origem=a["slug"])
+        body = md.reset().convert(a["md"]) + FORM.format(origem=a["slug"]) + whatsapp()
         (OUT / "artigos" / f"{a['slug']}.html").write_text(
             page(f"{a['title']} | Energia & Capital", body, a["summary"][:160]), encoding="utf-8")
 
@@ -140,7 +158,8 @@ def main():
 <ul class="cards">
 {cards}
 </ul>
-{FORM.format(origem="home")}"""
+{FORM.format(origem="home")}
+{whatsapp()}"""
     (OUT / "index.html").write_text(
         page("Energia & Capital", home, "Análises sobre infraestrutura de energia sob a ótica do investidor."), encoding="utf-8")
 
