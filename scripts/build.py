@@ -33,17 +33,18 @@ ARTIGOS = {
     "10": {"secao": "Tecnologia", "ilustracao": "bateria"},
     "11": {"secao": "Mercado livre", "ilustracao": "mercado"},
     "12": {"secao": "Glossário", "ilustracao": "glossario"},
+    "13": {"secao": "IA e energia", "ilustracao": "datacenter"},
 }
 
 # Composição da home. Seções sem artigos não aparecem.
-DESTAQUE = "07"
-ULTIMAS = ["11", "08", "10", "02"]
+DESTAQUE = "13"
+ULTIMAS = ["07", "08", "11", "10"]
 SECOES = [
     {"id": "na-pratica", "titulo": "Na prática", "artigos": ["11", "02", "03", "01"]},
     {"id": "investidor", "titulo": "Investidor", "artigos": ["04", "05", "06", "08"]},
     {"id": "variedades", "titulo": "Variedades", "artigos": ["09", "12", "10"]},
 ]
-EM_PAUTA = [("Bandeiras tarifárias", "07"), ("Lei 14.300", "02"), ("Curtailment", "08"),
+EM_PAUTA = [("IA e data centers", "13"), ("Bandeiras tarifárias", "07"), ("Lei 14.300", "02"), ("Curtailment", "08"),
             ("Mercado livre", "11"), ("Baterias", "10")]
 
 DISCLAIMER = (
@@ -115,6 +116,15 @@ ILUSTRACOES = {
         '<rect width="400" height="300" fill="#DDEBE4"/><g fill="none" stroke="#0E1B17" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">'
         '<path d="M90 120 H290 M250 80 L290 120 L250 160"/><path d="M310 190 H110 M150 150 L110 190 L150 230"/></g>'
         '<circle cx="200" cy="155" r="18" fill="#F5C400" stroke="#0E1B17" stroke-width="4"/>'),
+    "datacenter": _SVG.format(
+        '<rect width="400" height="300" fill="#0E1B17"/>'
+        '<g fill="#1F332C" stroke="#3E6B5C" stroke-width="2"><rect x="70" y="60" width="70" height="180" rx="6"/>'
+        '<rect x="165" y="60" width="70" height="180" rx="6"/><rect x="260" y="60" width="70" height="180" rx="6"/></g>'
+        '<g fill="#F5C400"><rect x="82" y="80" width="46" height="6" rx="3"/><rect x="82" y="100" width="46" height="6" rx="3"/>'
+        '<rect x="82" y="120" width="30" height="6" rx="3"/><rect x="177" y="80" width="46" height="6" rx="3"/>'
+        '<rect x="177" y="100" width="30" height="6" rx="3"/><rect x="272" y="80" width="46" height="6" rx="3"/>'
+        '<rect x="272" y="100" width="46" height="6" rx="3"/><rect x="272" y="120" width="46" height="6" rx="3"/></g>'
+        '<circle cx="200" cy="190" r="34" fill="#F5C400"/><path d="M204 162 L186 194 H198 L194 218 L214 184 H202 Z" fill="#0E1B17"/>'),
     "glossario": _SVG.format(
         '<rect width="400" height="300" fill="#F5C400"/><text x="200" y="175" text-anchor="middle" '
         'font-family="Archivo, sans-serif" font-weight="900" font-size="58" fill="#0E1B17">kWh → MW</text>'),
