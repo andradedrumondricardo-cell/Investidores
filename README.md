@@ -19,7 +19,7 @@ Participação em SCP oferecida a terceiros com promessa de retorno é, para a C
 | `docs/03-fluxo-pos-lead.md` | O que fazer (e não fazer) com o lead depois da captura |
 | `docs/04-checklist-juridico.md` | Checklist para validação com advogado antes de ir ao ar |
 | `docs/05-linha-editorial.md` | Posicionamento, pode/não pode, transparência e pauta |
-| `artigos/` | 6 artigos (01–03 setoriais, 04–06 ótica do investidor) |
+| `artigos/` | 12 artigos (01–03 e 07–12 setoriais/consumidor, 04–06 ótica do investidor) |
 | `landing/privacidade.md` | Política de privacidade (preencher razão social, CNPJ e e-mail em `scripts/build.py`) |
 | `scripts/build.py` | Gera o site em `site/` a partir dos artigos |
 | `netlify.toml` | Configuração de deploy no Netlify |

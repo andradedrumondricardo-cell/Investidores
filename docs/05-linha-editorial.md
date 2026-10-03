@@ -38,6 +38,12 @@ Esconder a ligação com a ZeroInvest seria pior: se descoberta depois, reforça
 | 4 | Contratos longos e correção pela inflação | `artigos/01` |
 | 5 | Geração distribuída depois da Lei 14.300 | `artigos/02` |
 | 6 | Checklist de risco de projetos de energia | `artigos/03` |
+| 7 | Bandeiras tarifárias | `artigos/07` |
+| 8 | Curtailment | `artigos/08` |
+| 9 | Usina solar flutuante | `artigos/09` |
+| 10 | Baterias na rede | `artigos/10` |
+| 11 | Mercado livre: quem pode migrar | `artigos/11` |
+| 12 | Glossário da energia | `artigos/12` |
 
 ## Decisão futura sobre os leads
 A base de assinantes é um ativo da publicação. A decisão de usá-la comercialmente fica para depois — mas só pode ser feita por uma **rota regular** (ver `01-riscos-regulatorios.md`, seção 3) e apenas para quem marcou o consentimento opcional de contato.

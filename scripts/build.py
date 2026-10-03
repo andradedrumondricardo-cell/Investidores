@@ -27,18 +27,24 @@ ARTIGOS = {
     "04": {"secao": "Investidor", "ilustracao": "eolica"},
     "05": {"secao": "Investidor", "ilustracao": "grafico"},
     "06": {"secao": "Investidor", "ilustracao": "torre"},
+    "07": {"secao": "Conta de luz", "ilustracao": "bandeiras"},
+    "08": {"secao": "Rede", "ilustracao": "curtailment"},
+    "09": {"secao": "Curiosidade", "ilustracao": "flutuante"},
+    "10": {"secao": "Tecnologia", "ilustracao": "bateria"},
+    "11": {"secao": "Mercado livre", "ilustracao": "mercado"},
+    "12": {"secao": "Glossário", "ilustracao": "glossario"},
 }
 
 # Composição da home. Seções sem artigos não aparecem.
-DESTAQUE = "01"
-ULTIMAS = ["02", "05", "06", "03"]
+DESTAQUE = "07"
+ULTIMAS = ["11", "08", "10", "02"]
 SECOES = [
-    {"id": "na-pratica", "titulo": "Na prática", "artigos": ["02", "03", "01"]},
-    {"id": "investidor", "titulo": "Investidor", "artigos": ["04", "05", "06", "03"]},
-    {"id": "variedades", "titulo": "Variedades", "artigos": []},
+    {"id": "na-pratica", "titulo": "Na prática", "artigos": ["11", "02", "03", "01"]},
+    {"id": "investidor", "titulo": "Investidor", "artigos": ["04", "05", "06", "08"]},
+    {"id": "variedades", "titulo": "Variedades", "artigos": ["09", "12", "10"]},
 ]
-EM_PAUTA = [("Lei 14.300", "02"), ("Contratos de longo prazo", "01"),
-            ("Retorno de projetos", "05"), ("Riscos do setor", "03")]
+EM_PAUTA = [("Bandeiras tarifárias", "07"), ("Lei 14.300", "02"), ("Curtailment", "08"),
+            ("Mercado livre", "11"), ("Baterias", "10")]
 
 DISCLAIMER = (
     "Energia &amp; Capital é uma publicação mantida pela ZeroInvest, empresa que desenvolve projetos de energia. "
@@ -89,6 +95,29 @@ ILUSTRACOES = {
         '<rect width="400" height="300" fill="#0E1B17"/><g stroke="#F5C400" stroke-width="5" fill="none" stroke-linecap="round">'
         '<path d="M200 40 L150 260 M200 40 L250 260 M162 205 H238 M172 160 H228 M120 100 H280 M155 245 L235 165 M245 245 L165 165"/>'
         '<path d="M120 100 L100 120 M280 100 L300 120"/></g>'),
+    "bandeiras": _SVG.format(
+        '<rect width="400" height="300" fill="#F3F4EF"/><rect x="80" y="80" width="70" height="140" rx="10" fill="#0B6B45"/>'
+        '<rect x="165" y="80" width="70" height="140" rx="10" fill="#F5C400"/><rect x="250" y="80" width="70" height="140" rx="10" fill="#C2410C"/>'
+        '<path d="M80 240 H320" stroke="#0E1B17" stroke-width="5" stroke-linecap="round"/>'),
+    "curtailment": _SVG.format(
+        '<rect width="400" height="300" fill="#FBE7A1"/><circle cx="90" cy="70" r="34" fill="#F5C400" stroke="#0E1B17" stroke-width="4"/>'
+        '<g fill="#0E1B17"><path d="M40 250 L170 250 L190 215 L60 215 Z"/><path d="M40 200 L170 200 L190 165 L60 165 Z"/></g>'
+        '<g stroke="#0E1B17" stroke-width="10" stroke-linecap="round" fill="none"><path d="M300 70 V210"/><path d="M255 170 L300 215 L345 170"/></g>'),
+    "flutuante": _SVG.format(
+        '<rect width="400" height="300" fill="#BFD9E8"/><circle cx="330" cy="70" r="34" fill="#F5C400"/>'
+        '<path d="M0 150 Q50 140 100 150 T200 150 T300 150 T400 150" stroke="#FFFFFF" stroke-width="4" fill="none"/>'
+        '<g fill="#0E1B17"><path d="M40 200 L150 200 L170 180 L60 180 Z"/><path d="M175 200 L285 200 L305 180 L195 180 Z"/>'
+        '<path d="M30 250 L150 250 L172 226 L52 226 Z"/><path d="M180 250 L300 250 L322 226 L202 226 Z"/></g>'),
+    "bateria": _SVG.format(
+        '<rect width="400" height="300" fill="#0B6B45"/><rect x="120" y="95" width="150" height="110" rx="14" fill="none" stroke="#FFFFFF" stroke-width="7"/>'
+        '<rect x="270" y="128" width="16" height="44" rx="4" fill="#FFFFFF"/><rect x="134" y="109" width="84" height="82" rx="5" fill="#F5C400"/>'),
+    "mercado": _SVG.format(
+        '<rect width="400" height="300" fill="#DDEBE4"/><g fill="none" stroke="#0E1B17" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">'
+        '<path d="M90 120 H290 M250 80 L290 120 L250 160"/><path d="M310 190 H110 M150 150 L110 190 L150 230"/></g>'
+        '<circle cx="200" cy="155" r="18" fill="#F5C400" stroke="#0E1B17" stroke-width="4"/>'),
+    "glossario": _SVG.format(
+        '<rect width="400" height="300" fill="#F5C400"/><text x="200" y="175" text-anchor="middle" '
+        'font-family="Archivo, sans-serif" font-weight="900" font-size="58" fill="#0E1B17">kWh → MW</text>'),
 }
 
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
