@@ -3,6 +3,7 @@
 Uso: pip install -r requirements.txt && python3 scripts/build.py
 """
 import html
+import json
 import pathlib
 import re
 import shutil
@@ -21,19 +22,19 @@ WHATSAPP_CANAL_URL = ""
 
 # Metadados de cada artigo: seção (chapéu) e ilustração (ver ILUSTRACOES).
 ARTIGOS = {
-    "01": {"secao": "Entenda", "ilustracao": "solar", "foto": "campo-solar", "alt": "Campo de painéis solares ao entardecer"},
-    "02": {"secao": "Solar", "ilustracao": "casa", "foto": "telhado-solar", "alt": "Painéis solares sobre telhado residencial"},
+    "01": {"secao": "Entenda", "ilustracao": "solar", "foto": "campo-solar", "alt": "Usina solar instalada em antigo aeródromo em Neuhardenberg, Alemanha"},
+    "02": {"secao": "Solar", "ilustracao": "casa", "foto": "telhado-solar", "alt": "Casa com painéis solares no telhado"},
     "03": {"secao": "Checklist", "ilustracao": "lampada"},
-    "04": {"secao": "Investidor", "ilustracao": "eolica", "foto": "parque-eolico", "alt": "Parque eólico ao pôr do sol"},
+    "04": {"secao": "Investidor", "ilustracao": "eolica", "foto": "parque-eolico", "alt": "Parque eólico da Copel"},
     "05": {"secao": "Investidor", "ilustracao": "grafico"},
     "06": {"secao": "Investidor", "ilustracao": "torre"},
     "07": {"secao": "Conta de luz", "ilustracao": "bandeiras"},
-    "08": {"secao": "Rede", "ilustracao": "curtailment", "foto": "linhas-transmissao", "alt": "Torres e linhas de transmissão ao anoitecer"},
-    "09": {"secao": "Curiosidade", "ilustracao": "flutuante", "foto": "solar-flutuante", "alt": "Usina solar flutuante sobre reservatório"},
-    "10": {"secao": "Tecnologia", "ilustracao": "bateria"},
+    "08": {"secao": "Rede", "ilustracao": "curtailment", "foto": "linhas-transmissao", "alt": "Torres e linhas de transmissão de energia"},
+    "09": {"secao": "Curiosidade", "ilustracao": "flutuante", "foto": "solar-flutuante", "alt": "Usina fotovoltaica flutuante Araucária, em São Paulo"},
+    "10": {"secao": "Tecnologia", "ilustracao": "bateria", "foto": "baterias", "alt": "Sistema de armazenamento em baterias ao lado de usina solar na Califórnia, EUA"},
     "11": {"secao": "Mercado livre", "ilustracao": "mercado"},
     "12": {"secao": "Glossário", "ilustracao": "glossario"},
-    "13": {"secao": "IA e energia", "ilustracao": "datacenter", "foto": "data-center", "alt": "Corredor de data center com racks de servidores"},
+    "13": {"secao": "IA e energia", "ilustracao": "datacenter", "foto": "data-center", "alt": "Racks de servidores iluminados em um data center"},
 }
 
 # Composição da home. Seções sem artigos não aparecem.
@@ -46,6 +47,17 @@ SECOES = [
 ]
 EM_PAUTA = [("IA e data centers", "13"), ("Bandeiras tarifárias", "07"), ("Lei 14.300", "02"), ("Curtailment", "08"),
             ("Mercado livre", "11"), ("Baterias", "10")]
+
+CREDITOS = json.loads((ROOT / "imagens" / "creditos.json").read_text(encoding="utf-8"))
+
+
+def credito(foto):
+    c = CREDITOS.get(foto)
+    if not c:
+        return ""
+    return (f'Foto: <a href="{html.escape(c["pagina"])}" rel="noopener">{html.escape(c["autor"])}</a> / Wikimedia Commons · '
+            f'<a href="{html.escape(c["licenca_url"] or c["pagina"])}" rel="noopener">{html.escape(c["licenca"])}</a> · recortada')
+
 
 DISCLAIMER = (
     "Energia &amp; Capital é uma publicação mantida pela ZeroInvest, empresa que desenvolve projetos de energia. "
@@ -150,6 +162,7 @@ svg{display:block}
 .thumb svg{width:100%;height:100%}
 .thumb img{width:100%;height:100%;object-fit:cover;display:block}
 .credito{margin:-20px 0 28px;font-size:12px;color:var(--muted)}
+.credito a{color:var(--muted);text-decoration:underline}
 
 /* topo */
 .topbar{background:var(--ink);color:#fff;font-size:13px}
@@ -342,7 +355,7 @@ def rodape():
     return f"""
 <footer class="rodape"><div class="wrap">
   <span class="assinatura cond">{simbolo(32, invertido=True)} ENERGIA &amp; CAPITAL</span>
-  <p>{DISCLAIMER} <a href="/privacidade.html">Política de Privacidade</a></p>
+  <p>{DISCLAIMER} <a href="/privacidade.html">Política de Privacidade</a> · <a href="/creditos.html">Créditos das imagens</a></p>
 </div></footer>"""
 
 
@@ -455,7 +468,7 @@ def artigo(a, arts, md):
     <p class="linha-fina serif">{md.reset().convert(a["summary"])[3:-4]}</p>
     <div class="byline"><b>Redação Energia &amp; Capital</b><span>{a["leitura"]} min de leitura</span></div>
     {thumb(a, "thumb capa", grande=True)}
-    {'<p class="credito">Imagem: ilustração digital / Energia &amp; Capital</p>' if a.get("foto") else ""}
+    {f'<p class="credito">{credito(a["foto"])}</p>' if a.get("foto") else ""}
     <div class="corpo">{md.reset().convert(a["corpo"])}</div>
     <div class="aviso">{DISCLAIMER}</div>
   </article>
@@ -502,6 +515,16 @@ def main():
         "Política de Privacidade | Energia & Capital",
         f'<main class="wrap pagina-simples corpo">{md.reset().convert(privacidade)}</main>',
         "Política de Privacidade da Energia & Capital.", secoes, origem="privacidade"), encoding="utf-8")
+
+    linhas = "".join(
+        f'<li><b>{html.escape(a["title"])}</b><br>{credito(a["foto"])}</li>'
+        for a in arts.values() if a.get("foto"))
+    (OUT / "creditos.html").write_text(page(
+        "Créditos das imagens | Energia & Capital",
+        '<main class="wrap pagina-simples corpo"><h1 class="cond">Créditos das imagens</h1>'
+        '<p>As fotos são do Wikimedia Commons, usadas conforme as licenças indicadas e recortadas para o formato do site. '
+        f'As demais imagens são ilustrações da Energia &amp; Capital.</p><ul>{linhas}</ul></main>',
+        "Créditos das imagens da Energia & Capital.", secoes, origem="creditos"), encoding="utf-8")
 
     for p in OUT.rglob("*.html"):
         if re.search(r"\[(RAZÃO|00\.|email-|DADO)", p.read_text(encoding="utf-8")):

@@ -35,6 +35,7 @@ Para testar localmente: `pip install -r requirements.txt && python3 scripts/buil
 
 ## Imagens
 
-- `imagens/` (1600×900) e `imagens/thumb/` (640×360): usadas pelos artigos com `"foto"` em `ARTIGOS` (`scripts/build.py`); os demais usam as ilustrações vetoriais.
-- As atuais são ilustrações digitais geradas por `scripts/imagens/render.html` (`node scripts/imagens/render.js`).
-- Para usar foto real (banco de imagens ou própria): salve o JPG nas duas pastas com o mesmo nome, aponte `"foto"` e `"alt"` no artigo e ajuste o crédito exibido na página.
+- `imagens/` (1600×900) e `imagens/thumb/` (640×360): fotos usadas pelos artigos com `"foto"` em `ARTIGOS` (`scripts/build.py`); os demais usam as ilustrações vetoriais, alternando na home.
+- Fotos atuais: Wikimedia Commons, com autor e licença em `imagens/creditos.json`. O crédito aparece na página do artigo e em `/creditos.html` (link no rodapé). Licenças CC BY/BY-SA exigem esse crédito — não remova.
+- Para trocar ou adicionar: salve o JPG recortado em 16:9 nas duas pastas, registre autor/licença em `creditos.json` e aponte `"foto"`/`"alt"` no artigo.
+- `scripts/imagens/render.html` gera ilustrações em estilo fotográfico como alternativa (`node scripts/imagens/render.js`).

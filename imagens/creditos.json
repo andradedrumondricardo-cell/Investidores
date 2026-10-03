@@ -1,0 +1,51 @@
+{
+ "campo-solar": {
+  "autor": "Carsten Steger",
+  "licenca": "CC BY-SA 4.0",
+  "licenca_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_the_Neuhardenberg_airfield.jpg",
+  "titulo": "File:Aerial image of the Neuhardenberg airfield.jpg"
+ },
+ "telhado-solar": {
+  "autor": "Gray Watson",
+  "licenca": "CC BY-SA 3.0",
+  "licenca_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Solar_panels_on_house_roof.jpg",
+  "titulo": "File:Solar panels on house roof.jpg"
+ },
+ "parque-eolico": {
+  "autor": "Copel",
+  "licenca": "CC0",
+  "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Parque_Cutia_Freire_Neto_DJI_0048.jpg",
+  "titulo": "File:Parque Cutia Freire Neto DJI 0048.jpg"
+ },
+ "linhas-transmissao": {
+  "autor": "WOtP",
+  "licenca": "CC BY-SA 3.0",
+  "licenca_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Linhas_de_transmiss%C3%A3o_de_energia.JPG",
+  "titulo": "File:Linhas de transmissão de energia.JPG"
+ },
+ "solar-flutuante": {
+  "autor": "Governo do Estado de São Paulo",
+  "licenca": "CC BY 2.0",
+  "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Inaugura%C3%A7%C3%A3o_da_Usina_Fotovoltaica_Flutuante_Arauc%C3%A1ria_-_53470055329.jpg",
+  "titulo": "File:Inauguração da Usina Fotovoltaica Flutuante Araucária - 53470055329.jpg"
+ },
+ "baterias": {
+  "autor": "Bureau of Land Management California",
+  "licenca": "Public domain",
+  "licenca_url": "",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Desert_Sunlight_Battery_Energy_Storage_System_(52945816430).jpg",
+  "titulo": "File:Desert Sunlight Battery Energy Storage System (52945816430).jpg"
+ },
+ "data-center": {
+  "autor": "BalticServers.com",
+  "licenca": "CC BY-SA 3.0",
+  "licenca_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg",
+  "titulo": "File:BalticServers data center.jpg"
+ }
+}
