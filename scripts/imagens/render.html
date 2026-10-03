@@ -1,0 +1,234 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>render</title></head>
+<body style="margin:0;background:#000">
+<canvas id="c" width="1600" height="900"></canvas>
+<script>
+// Gera as imagens em estilo fotográfico da Energia & Capital (renderizações digitais).
+// Uso: node scripts/imagens/render.js
+const W = 1600, H = 900;
+const c = document.getElementById('c');
+const ctx = c.getContext('2d');
+
+let seed = 7;
+function rnd() { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
+
+function vgrad(y0, y1, stops) {
+  const g = ctx.createLinearGradient(0, y0, 0, y1);
+  stops.forEach(([o, col]) => g.addColorStop(o, col));
+  return g;
+}
+function sky(stops, h = H) { ctx.fillStyle = vgrad(0, h, stops); ctx.fillRect(0, 0, W, h); }
+function glow(x, y, r, col, a = 1) {
+  const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+  g.addColorStop(0, col); g.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.globalAlpha = a; ctx.fillStyle = g; ctx.fillRect(x - r, y - r, 2 * r, 2 * r); ctx.globalAlpha = 1;
+}
+function hills(base, amp, col, s, freq = 1) {
+  seed = s; const p = [rnd() * 6, rnd() * 6, rnd() * 6];
+  ctx.beginPath(); ctx.moveTo(0, H);
+  for (let x = 0; x <= W; x += 8) {
+    const y = base - amp * (0.5 * Math.sin(x / 260 * freq + p[0]) + 0.3 * Math.sin(x / 110 * freq + p[1]) + 0.2 * Math.sin(x / 47 * freq + p[2]));
+    ctx.lineTo(x, y);
+  }
+  ctx.lineTo(W, H); ctx.closePath(); ctx.fillStyle = col; ctx.fill();
+}
+function grain(a = 0.05) {
+  const img = ctx.getImageData(0, 0, W, H), d = img.data;
+  seed = 99;
+  for (let i = 0; i < d.length; i += 4) {
+    const n = (rnd() - 0.5) * 255 * a;
+    d[i] += n; d[i + 1] += n; d[i + 2] += n;
+  }
+  ctx.putImageData(img, 0, 0);
+}
+function vignette(a = 0.45) {
+  const g = ctx.createRadialGradient(W / 2, H / 2, H * 0.35, W / 2, H / 2, H * 1.05);
+  g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, `rgba(0,0,0,${a})`);
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+}
+function quad(p, fill) { ctx.beginPath(); ctx.moveTo(...p[0]); p.slice(1).forEach(q => ctx.lineTo(...q)); ctx.closePath(); ctx.fillStyle = fill; ctx.fill(); }
+
+// Fileiras de painéis em perspectiva (campo solar ou flutuante), divididas em mesas com vãos
+function panelRows({ hz, vpx, K, zs, depth, skyTop, skyBot, frame, floats }) {
+  const Y = z => hz + K / z, X = (xw, z) => vpx + xw * 900 / z;
+  const mesas = [];
+  for (let x0 = -20; x0 < 20; x0 += 3.4) mesas.push([x0, x0 + 3.0]);
+  zs.slice().reverse().forEach(z => {
+    const zb = z + depth, yf = Y(z), yb = Y(zb), lift = 26 / z;
+    mesas.forEach(([x0, x1]) => {
+      if (floats) quad([[X(x0 - 0.1, z), yf + 2], [X(x1 + 0.1, z), yf + 2], [X(x1 + 0.1, z), yf + lift * 0.5], [X(x0 - 0.1, z), yf + lift * 0.5]], 'rgba(236,240,238,.92)');
+      else {
+        ctx.fillStyle = 'rgba(25,25,20,.6)';
+        [x0 + 0.2, (x0 + x1) / 2, x1 - 0.2].forEach(xw => ctx.fillRect(X(xw, z) - 1.2 / z * 3, yf, 2.4 / z * 3, lift));
+        quad([[X(x0, z), yf + lift], [X(x1, z), yf + lift], [X(x1, zb), yb + lift * 0.6], [X(x0, zb), yb + lift * 0.6]], 'rgba(0,0,0,.28)');
+      }
+      const g = ctx.createLinearGradient(0, yb, 0, yf);
+      g.addColorStop(0, skyTop); g.addColorStop(0.3, '#22355a'); g.addColorStop(1, skyBot);
+      quad([[X(x0, zb), yb], [X(x1, zb), yb], [X(x1, z), yf], [X(x0, z), yf]], g);
+      ctx.strokeStyle = frame; ctx.lineWidth = Math.max(0.5, 1.8 / z);
+      for (let xw = x0 + 0.5; xw < x1; xw += 0.5) { ctx.beginPath(); ctx.moveTo(X(xw, zb), yb); ctx.lineTo(X(xw, z), yf); ctx.stroke(); }
+      const zm = z + depth / 2; ctx.beginPath(); ctx.moveTo(X(x0, zm), Y(zm)); ctx.lineTo(X(x1, zm), Y(zm)); ctx.stroke();
+      ctx.strokeStyle = 'rgba(215,220,225,.75)'; ctx.lineWidth = Math.max(0.8, 2.6 / z);
+      ctx.beginPath(); ctx.moveTo(X(x0, z), yf); ctx.lineTo(X(x1, z), yf); ctx.stroke();
+    });
+  });
+}
+const zSerie = (z0, r, n) => Array.from({ length: n }, (_, k) => z0 * Math.pow(r, k));
+
+function turbine(x, base, h, ang, col, light) {
+  ctx.strokeStyle = col; ctx.fillStyle = col;
+  ctx.lineWidth = h * 0.035; ctx.lineCap = 'round';
+  ctx.beginPath(); ctx.moveTo(x - h * 0.012, base); ctx.lineTo(x, base - h); ctx.lineTo(x + h * 0.012, base); ctx.fill();
+  ctx.beginPath(); ctx.moveTo(x, base); ctx.lineTo(x, base - h); ctx.stroke();
+  ctx.fillRect(x - h * 0.03, base - h - h * 0.02, h * 0.07, h * 0.04);
+  for (let k = 0; k < 3; k++) {
+    const a = ang + k * 2 * Math.PI / 3, L = h * 0.55;
+    ctx.lineWidth = h * 0.022;
+    ctx.beginPath(); ctx.moveTo(x, base - h); ctx.lineTo(x + Math.cos(a) * L, base - h + Math.sin(a) * L); ctx.stroke();
+  }
+  if (light) glow(x, base - h - h * 0.02, h * 0.06, 'rgba(255,60,40,.9)');
+}
+
+function tower(x, base, h, col) {
+  ctx.strokeStyle = col; ctx.lineWidth = Math.max(1, h / 110);
+  const w = h * 0.22, top = base - h;
+  const L = [[x - w, base], [x - w * 0.18, top]], R = [[x + w, base], [x + w * 0.18, top]];
+  ctx.beginPath(); ctx.moveTo(...L[0]); ctx.lineTo(...L[1]); ctx.moveTo(...R[0]); ctx.lineTo(...R[1]); ctx.stroke();
+  for (let k = 0; k < 7; k++) {
+    const t0 = k / 7, t1 = (k + 1) / 7;
+    const lx = t => x - w + (w - w * 0.18) * t, rx = t => x + w - (w - w * 0.18) * t, yy = t => base - h * t;
+    ctx.beginPath(); ctx.moveTo(lx(t0), yy(t0)); ctx.lineTo(rx(t1), yy(t1)); ctx.moveTo(rx(t0), yy(t0)); ctx.lineTo(lx(t1), yy(t1));
+    ctx.moveTo(lx(t1), yy(t1)); ctx.lineTo(rx(t1), yy(t1)); ctx.stroke();
+  }
+  [0.78, 0.9].forEach(t => { const y = base - h * t, a = h * (t > 0.85 ? 0.32 : 0.42); ctx.beginPath(); ctx.moveTo(x - a, y); ctx.lineTo(x + a, y); ctx.stroke(); });
+  return [[x - h * 0.42, base - h * 0.78], [x + h * 0.42, base - h * 0.78], [x - h * 0.32, base - h * 0.9], [x + h * 0.32, base - h * 0.9]];
+}
+
+const scenes = {
+  'campo-solar'() {
+    sky([[0, '#22305a'], [0.45, '#c56b4a'], [0.62, '#f3a35b'], [0.7, '#ffd58a']], 700);
+    glow(1150, 545, 420, 'rgba(255,214,140,.85)'); glow(1150, 545, 70, 'rgba(255,250,225,1)');
+    ctx.filter = 'blur(2px)';
+    hills(560, 40, '#7c5a5a', 3, 0.8); hills(575, 26, '#4f3d45', 5);
+    ctx.filter = 'none';
+    ctx.fillStyle = vgrad(570, H, [[0, '#3b3a2a'], [1, '#1f2416']]); ctx.fillRect(0, 570, W, H);
+    panelRows({ hz: 568, vpx: 760, K: 420, zs: zSerie(1.45, 1.32, 13), depth: 0.24,
+      skyTop: '#f6b26b', skyBot: '#0c1426', frame: 'rgba(160,170,190,.45)' });
+    glow(1150, 545, 900, 'rgba(255,190,120,.18)');
+    vignette(0.5); grain(0.06);
+  },
+  'parque-eolico'() {
+    sky([[0, '#2a2350'], [0.5, '#8a4f6e'], [0.72, '#f08a5d'], [0.82, '#ffc57d']], 760);
+    glow(420, 610, 360, 'rgba(255,190,120,.8)'); glow(420, 610, 50, 'rgba(255,245,220,1)');
+    ctx.filter = 'blur(1.5px)'; hills(640, 50, '#8a5a6a', 11, 0.7);
+    [[1100, 600, 110], [1260, 610, 95], [1400, 605, 120], [960, 615, 80]].forEach(([x, b, h], i) => turbine(x, b, h, 0.4 + i, '#6d4a5c', false));
+    ctx.filter = 'none';
+    hills(690, 60, '#4a3346', 13, 0.9);
+    [[300, 700, 260, 0.2], [620, 690, 210, 1.1], [820, 700, 170, 2.0]].forEach(([x, b, h, a]) => turbine(x, b, h, a, '#2b1e2c', true));
+    hills(780, 70, '#1c1520', 17, 1.1);
+    turbine(1240, 820, 520, 0.9, '#120d14', true);
+    vignette(0.45); grain(0.05);
+  },
+  'linhas-transmissao'() {
+    sky([[0, '#0b1631'], [0.45, '#2f4675'], [0.7, '#c98a73'], [0.8, '#f2b27c']], 720);
+    glow(1250, 640, 380, 'rgba(255,180,120,.55)');
+    ctx.filter = 'blur(1.5px)'; hills(650, 30, '#3a3f5c', 21); ctx.filter = 'none';
+    seed = 5; for (let i = 0; i < 70; i++) glow(rnd() * W, 650 + rnd() * 20, 4 + rnd() * 6, 'rgba(255,210,140,.9)');
+    hills(700, 40, '#1e2236', 23);
+    const towers = [[180, 860, 640], [700, 770, 330], [1010, 720, 180], [1180, 695, 100], [1280, 683, 58]];
+    const arms = towers.map(([x, b, h]) => tower(x, b, h, '#0a0d18'));
+    ctx.strokeStyle = 'rgba(10,13,24,.9)';
+    for (let i = 0; i < arms.length - 1; i++) arms[i].forEach((p, k) => {
+      const q = arms[i + 1][k]; ctx.lineWidth = Math.max(0.7, 3 - i * 0.6);
+      ctx.beginPath(); ctx.moveTo(...p); ctx.quadraticCurveTo((p[0] + q[0]) / 2, Math.max(p[1], q[1]) + 60 - i * 10, ...q); ctx.stroke();
+    });
+    ctx.fillStyle = vgrad(780, H, [[0, 'rgba(10,12,20,0)'], [1, '#07080f']]); ctx.fillRect(0, 780, W, H - 780);
+    vignette(0.55); grain(0.06);
+  },
+  'solar-flutuante'() {
+    sky([[0, '#3d7fc4'], [0.6, '#9cc7ea'], [1, '#e3f0f7']], 420);
+    glow(1300, 120, 260, 'rgba(255,255,240,.9)');
+    ctx.filter = 'blur(1.5px)'; hills(420, 22, '#3e6b4a', 31, 1.4); hills(428, 12, '#2c5238', 33, 2); ctx.filter = 'none';
+    ctx.fillStyle = vgrad(420, H, [[0, '#7fa9c6'], [0.4, '#4f7e9e'], [1, '#2a4c66']]); ctx.fillRect(0, 420, W, H - 420);
+    seed = 3; ctx.strokeStyle = 'rgba(255,255,255,.18)';
+    for (let i = 0; i < 260; i++) { const y = 430 + Math.pow(rnd(), 1.6) * 470, x = rnd() * W, l = 20 + (y - 420) / 4; ctx.lineWidth = 1 + (y - 420) / 300; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + l, y); ctx.stroke(); }
+    panelRows({ hz: 424, vpx: 640, K: 520, zs: zSerie(1.5, 1.34, 13), depth: 0.22,
+      skyTop: '#bfe0f5', skyBot: '#14243c', frame: 'rgba(220,230,240,.55)', floats: true });
+    glow(1300, 120, 700, 'rgba(255,255,255,.12)');
+    vignette(0.35); grain(0.045);
+  },
+  'data-center'() {
+    ctx.fillStyle = '#05080d'; ctx.fillRect(0, 0, W, H);
+    const vp = [800, 430];
+    const P = (x, y, t) => [vp[0] + (x - vp[0]) * t, vp[1] + (y - vp[1]) * t];
+    ctx.fillStyle = vgrad(430, H, [[0, '#0a1018'], [1, '#1a2430']]); ctx.fillRect(0, 430, W, H - 430);
+    for (let k = 0; k < 14; k++) {
+      const t = 1 / (1 + k * 0.45), y = P(0, -40, t)[1];
+      const a = P(560, -40, t), b = P(1040, -40, t);
+      ctx.fillStyle = `rgba(190,230,255,${0.9 * t})`; ctx.fillRect(a[0], y, b[0] - a[0], Math.max(1.5, 14 * t));
+    }
+    [-1, 1].forEach(side => {
+      for (let k = 18; k >= 0; k--) {
+        const t0 = 1 / (1 + k * 0.32), t1 = 1 / (1 + (k + 0.92) * 0.32);
+        const xo = side < 0 ? -220 : 1820, xi = side < 0 ? 470 : 1130;
+        const f0 = P(xi, 0, t0), f1 = P(xi, 860, t0), g0 = P(xi, 0, t1), g1 = P(xi, 860, t1);
+        quad([f0, g0, g1, f1], '#0d141d');
+        const s0 = P(xo, 0, t0), s1 = P(xo, 860, t0);
+        if (k === 0) quad([s0, f0, f1, s1], '#0b1118');
+        seed = 1000 + k * 7 + (side + 1);
+        const rows = 26;
+        for (let r = 0; r < rows; r++) {
+          const yy0 = f0[1] + (f1[1] - f0[1]) * (r + 0.5) / rows, yy1 = g0[1] + (g1[1] - g0[1]) * (r + 0.5) / rows;
+          for (let q = 0; q < 3; q++) {
+            if (rnd() < 0.45) continue;
+            const u = 0.2 + q * 0.25, x = f0[0] + (g0[0] - f0[0]) * u, y = yy0 + (yy1 - yy0) * u;
+            const col = rnd() < 0.7 ? 'rgba(80,170,255,1)' : (rnd() < 0.6 ? 'rgba(90,240,170,1)' : 'rgba(255,205,60,1)');
+            glow(x, y, 7 * t0 + 1.5, col, 0.9);
+          }
+        }
+      }
+    });
+    glow(800, 430, 520, 'rgba(70,140,220,.22)');
+    ctx.globalAlpha = 0.35; ctx.save(); ctx.scale(1, -1); ctx.translate(0, -2 * 860);
+    ctx.restore(); ctx.globalAlpha = 1;
+    ctx.fillStyle = vgrad(600, H, [[0, 'rgba(60,120,200,0)'], [1, 'rgba(60,120,200,.12)']]); ctx.fillRect(0, 600, W, 300);
+    vignette(0.6); grain(0.05);
+  },
+  'telhado-solar'() {
+    sky([[0, '#2f74c0'], [1, '#bfdcf3']], H);
+    glow(1380, 110, 330, 'rgba(255,255,235,.95)'); glow(1380, 110, 60, 'rgba(255,255,255,1)');
+    seed = 8; ctx.fillStyle = 'rgba(255,255,255,.5)'; ctx.filter = 'blur(14px)';
+    for (let i = 0; i < 6; i++) { const x = rnd() * 900, y = 80 + rnd() * 160; for (let j = 0; j < 6; j++) { ctx.beginPath(); ctx.ellipse(x + j * 42, y + Math.sin(j) * 8, 60 + rnd() * 30, 26 + rnd() * 12, 0, 0, 7); ctx.fill(); } }
+    ctx.filter = 'none';
+    // telhado inclinado
+    const roof = [[-100, 900], [520, 300], [1750, 360], [1750, 900]];
+    quad(roof, vgrad(300, 900, [[0, '#a5543a'], [1, '#6b2f20']]));
+    ctx.strokeStyle = 'rgba(60,20,12,.5)'; ctx.lineWidth = 3;
+    for (let k = 0; k < 26; k++) { const t = k / 26; ctx.beginPath(); ctx.moveTo(-100 + 620 * t, 900 - 600 * t); ctx.lineTo(1750, 900 - 540 * t); ctx.stroke(); }
+    // painéis
+    const A = [180, 760], B = [560, 410], C = [1560, 450], D = [1560, 820];
+    const L = (p, q, t) => [p[0] + (q[0] - p[0]) * t, p[1] + (q[1] - p[1]) * t];
+    for (let i = 0; i < 2; i++) for (let j = 0; j < 4; j++) {
+      const u0 = j / 4 + 0.008, u1 = (j + 1) / 4 - 0.008, v0 = i / 2 + 0.01, v1 = (i + 1) / 2 - 0.01;
+      const p = (u, v) => L(L(A, D, u), L(B, C, u), 1 - v);
+      const q = [p(u0, v1), p(u1, v1), p(u1, v0), p(u0, v0)];
+      quad(q, vgrad(q[0][1], q[3][1], [[0, '#6c8fc0'], [0.3, '#1b2c52'], [1, '#0d1730']]));
+      ctx.strokeStyle = 'rgba(170,190,220,.35)'; ctx.lineWidth = 1.2;
+      for (let a = 1; a < 6; a++) { const s = u0 + (u1 - u0) * a / 6; ctx.beginPath(); ctx.moveTo(...p(s, v0)); ctx.lineTo(...p(s, v1)); ctx.stroke(); }
+      for (let b = 1; b < 10; b++) { const s = v0 + (v1 - v0) * b / 10; ctx.beginPath(); ctx.moveTo(...p(u0, s)); ctx.lineTo(...p(u1, s)); ctx.stroke(); }
+      ctx.strokeStyle = 'rgba(225,230,235,.9)'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(...q[0]); q.forEach(z => ctx.lineTo(...z)); ctx.closePath(); ctx.stroke();
+    }
+    glow(1380, 110, 900, 'rgba(255,250,230,.12)');
+    vignette(0.35); grain(0.04);
+  },
+};
+
+window.renderScene = (name) => {
+  ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.filter = 'none'; ctx.globalAlpha = 1;
+  ctx.clearRect(0, 0, W, H); seed = 7;
+  scenes[name]();
+  return c.toDataURL('image/jpeg', 0.86);
+};
+window.sceneNames = Object.keys(scenes);
+</script>
+</body></html>

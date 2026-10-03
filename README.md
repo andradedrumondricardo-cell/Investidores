@@ -32,3 +32,9 @@ Participação em SCP oferecida a terceiros com promessa de retorno é, para a C
 4. Configure notificação de e-mail do formulário e, se quiser, domínio próprio.
 
 Para testar localmente: `pip install -r requirements.txt && python3 scripts/build.py`, depois abra `site/index.html`.
+
+## Imagens
+
+- `imagens/` (1600×900) e `imagens/thumb/` (640×360): usadas pelos artigos com `"foto"` em `ARTIGOS` (`scripts/build.py`); os demais usam as ilustrações vetoriais.
+- As atuais são ilustrações digitais geradas por `scripts/imagens/render.html` (`node scripts/imagens/render.js`).
+- Para usar foto real (banco de imagens ou própria): salve o JPG nas duas pastas com o mesmo nome, aponte `"foto"` e `"alt"` no artigo e ajuste o crédito exibido na página.

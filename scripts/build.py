@@ -21,19 +21,19 @@ WHATSAPP_CANAL_URL = ""
 
 # Metadados de cada artigo: seção (chapéu) e ilustração (ver ILUSTRACOES).
 ARTIGOS = {
-    "01": {"secao": "Entenda", "ilustracao": "solar"},
-    "02": {"secao": "Solar", "ilustracao": "casa"},
+    "01": {"secao": "Entenda", "ilustracao": "solar", "foto": "campo-solar", "alt": "Campo de painéis solares ao entardecer"},
+    "02": {"secao": "Solar", "ilustracao": "casa", "foto": "telhado-solar", "alt": "Painéis solares sobre telhado residencial"},
     "03": {"secao": "Checklist", "ilustracao": "lampada"},
-    "04": {"secao": "Investidor", "ilustracao": "eolica"},
+    "04": {"secao": "Investidor", "ilustracao": "eolica", "foto": "parque-eolico", "alt": "Parque eólico ao pôr do sol"},
     "05": {"secao": "Investidor", "ilustracao": "grafico"},
     "06": {"secao": "Investidor", "ilustracao": "torre"},
     "07": {"secao": "Conta de luz", "ilustracao": "bandeiras"},
-    "08": {"secao": "Rede", "ilustracao": "curtailment"},
-    "09": {"secao": "Curiosidade", "ilustracao": "flutuante"},
+    "08": {"secao": "Rede", "ilustracao": "curtailment", "foto": "linhas-transmissao", "alt": "Torres e linhas de transmissão ao anoitecer"},
+    "09": {"secao": "Curiosidade", "ilustracao": "flutuante", "foto": "solar-flutuante", "alt": "Usina solar flutuante sobre reservatório"},
     "10": {"secao": "Tecnologia", "ilustracao": "bateria"},
     "11": {"secao": "Mercado livre", "ilustracao": "mercado"},
     "12": {"secao": "Glossário", "ilustracao": "glossario"},
-    "13": {"secao": "IA e energia", "ilustracao": "datacenter"},
+    "13": {"secao": "IA e energia", "ilustracao": "datacenter", "foto": "data-center", "alt": "Corredor de data center com racks de servidores"},
 }
 
 # Composição da home. Seções sem artigos não aparecem.
@@ -148,6 +148,8 @@ a:hover{color:var(--verde)}
 svg{display:block}
 .thumb{border-radius:8px;overflow:hidden;background:var(--papel)}
 .thumb svg{width:100%;height:100%}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.credito{margin:-20px 0 28px;font-size:12px;color:var(--muted)}
 
 /* topo */
 .topbar{background:var(--ink);color:#fff;font-size:13px}
@@ -395,7 +397,11 @@ def url(a):
     return f"/artigos/{a['slug']}.html"
 
 
-def thumb(a, classe="thumb"):
+def thumb(a, classe="thumb", grande=False):
+    if a.get("foto"):
+        pasta = "img" if grande else "img/thumb"
+        return (f'<div class="{classe}"><img src="/{pasta}/{a["foto"]}.jpg" alt="{html.escape(a["alt"])}" '
+                f'loading="lazy" width="1600" height="900"></div>')
     return f'<div class="{classe}">{ILUSTRACOES[a["ilustracao"]]}</div>'
 
 
@@ -410,7 +416,7 @@ def home(arts, secoes):
            '<main class="wrap">',
            f"""<section class="destaque">
   <article class="principal"><a href="{url(d)}">
-    {thumb(d)}
+    {thumb(d, grande=True)}
     <span class="kicker">{d["secao"]}</span>
     <h1 class="cond">{html.escape(d["title"])}</h1>
     <p class="linha-fina serif">{html.escape(resumo(d["summary"], 260))}</p>
@@ -448,7 +454,8 @@ def artigo(a, arts, md):
     <h1 class="cond">{html.escape(a["title"])}</h1>
     <p class="linha-fina serif">{md.reset().convert(a["summary"])[3:-4]}</p>
     <div class="byline"><b>Redação Energia &amp; Capital</b><span>{a["leitura"]} min de leitura</span></div>
-    {thumb(a, "thumb capa")}
+    {thumb(a, "thumb capa", grande=True)}
+    {'<p class="credito">Imagem: ilustração digital / Energia &amp; Capital</p>' if a.get("foto") else ""}
     <div class="corpo">{md.reset().convert(a["corpo"])}</div>
     <div class="aviso">{DISCLAIMER}</div>
   </article>
@@ -466,6 +473,7 @@ def main():
     (OUT / "artigos").mkdir(parents=True)
     (OUT / "style.css").write_text(CSS, encoding="utf-8")
     (OUT / "favicon.svg").write_text(simbolo(64), encoding="utf-8")
+    shutil.copytree(ROOT / "imagens", OUT / "img")
 
     arts = load_articles()
     secoes = [s for s in SECOES if s["artigos"]]
