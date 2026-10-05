@@ -456,8 +456,10 @@ def page(title, body, description, secoes_home, completo=False, origem="pagina",
 <meta property="og:description" content="{html.escape(description)}">
 {extras}
 <meta name="theme-color" content="#0E1B17">
+<link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/img/logo.png">
+<link rel="icon" href="/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="Energia &amp; Capital" href="/feed.xml">
 {FONTS}
 <style>{CSS}</style>
@@ -671,7 +673,9 @@ def main():
         shutil.rmtree(OUT)
     OUT.mkdir()
     (OUT / "style.css").write_text(CSS, encoding="utf-8")
-    (OUT / "favicon.svg").write_text(simbolo(64), encoding="utf-8")
+    (OUT / "favicon.svg").write_text(simbolo(64).replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ', 1)
+                                     .replace(' aria-hidden="true"', ''), encoding="utf-8")
+    shutil.copy(ROOT / "imagens" / "favicon.ico", OUT / "favicon.ico")
     shutil.copytree(ROOT / "imagens", OUT / "img", ignore=shutil.ignore_patterns("*.json"))
 
     arts = load_articles()

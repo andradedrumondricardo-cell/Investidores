@@ -15,6 +15,6 @@
     Cache-Control = "public, max-age=2592000"
 
 [[headers]]
-  for = "/favicon.svg"
+  for = "/favicon.*"
   [headers.values]
     Cache-Control = "public, max-age=2592000"
