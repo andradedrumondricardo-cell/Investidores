@@ -6,6 +6,8 @@ Regras: seguir `docs/02-guia-editorial.md` e `docs/05-linha-editorial.md` (sem p
 
 ## Temas
 
+- [ ] Debêntures incentivadas de infraestrutura: o que são e como funcionam
+- [ ] SCP: o que é a sociedade em conta de participação e quais cuidados ela exige — **já escrito** em `artigos/14-scp-sociedade-em-conta-de-participacao.md`: não reescrever; revisar, registrar em `ARTIGOS` (seção Investidor) e publicar. Tom genérico, sem citar a ZeroInvest no texto (só o rodapé padrão). Se o artigo de debêntures já estiver no ar, incluir um link para ele no texto.
 - [ ] Tarifa branca: para quem compensa mudar o horário de consumo
 - [ ] Leilões de transmissão: como funcionam e por que importam para as renováveis
 - [ ] Hidrogênio verde no Brasil: o que é, onde estão os projetos e os desafios
@@ -16,8 +18,6 @@ Regras: seguir `docs/02-guia-editorial.md` e `docs/05-linha-editorial.md` (sem p
 - [ ] Carro elétrico e a rede: o impacto da recarga no sistema elétrico
 - [ ] Eólicas offshore: o que falta para o Brasil sair do papel
 - [ ] Como ler a sua conta de luz: TE, TUSD, impostos e encargos
-- [ ] Debêntures incentivadas de infraestrutura: o que são e como funcionam
-- [ ] SCP: o que é a sociedade em conta de participação e quais cuidados ela exige — **já escrito** em `artigos/14-scp-sociedade-em-conta-de-participacao.md`: não reescrever; revisar, registrar em `ARTIGOS` (seção Investidor) e publicar. Tom genérico, sem citar a ZeroInvest no texto (só o rodapé padrão). Se o artigo de debêntures já estiver no ar, incluir um link para ele no texto.
 - [ ] Biogás e biometano: energia a partir de resíduos do agro
 - [ ] Furto de energia e perdas: quanto custa para quem paga a conta
 - [ ] PPA corporativo: por que grandes empresas compram energia renovável direto do gerador
