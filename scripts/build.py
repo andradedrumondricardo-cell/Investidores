@@ -676,7 +676,7 @@ def main():
     (OUT / "favicon.svg").write_text(simbolo(64).replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ', 1)
                                      .replace(' aria-hidden="true"', ''), encoding="utf-8")
     shutil.copy(ROOT / "imagens" / "favicon.ico", OUT / "favicon.ico")
-    shutil.copytree(ROOT / "imagens", OUT / "img", ignore=shutil.ignore_patterns("*.json"))
+    shutil.copytree(ROOT / "imagens", OUT / "img", ignore=shutil.ignore_patterns("*.json", "redes"))
 
     arts = load_articles()
     secoes = [s for s in SECOES if s["artigos"]]
