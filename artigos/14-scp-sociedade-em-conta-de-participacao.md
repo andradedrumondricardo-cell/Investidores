@@ -1,6 +1,6 @@
-# SCP: o que é a sociedade em conta de participação e quais cuidados ela exige
+# SCP: o modelo da construção civil que chegou aos projetos de energia solar
 
-A sociedade em conta de participação (SCP) é uma das formas mais antigas de reunir sócios em torno de um negócio — e uma das mais usadas para estruturar empreendimentos como hotéis, imóveis e usinas de energia. Entender como ela funciona, e quando passa a ser regulada pela CVM, é essencial antes de qualquer decisão.
+A sociedade em conta de participação (SCP) é há décadas um dos formatos mais usados na construção civil para reunir recursos de vários sócios em um empreendimento. Agora ela começa a aparecer com frequência em projetos de energia solar. Entender como funciona — e quando passa a ser regulada pela CVM — é essencial antes de qualquer decisão.
 
 ## O que diz a lei
 
@@ -14,9 +14,17 @@ A SCP está prevista no Código Civil (arts. 991 a 996). Suas características p
 
 Para fins tributários, a Receita Federal exige inscrição da SCP no CNPJ, e os resultados seguem regras próprias de apuração. O enquadramento tributário de cada estrutura deve ser analisado por um contador.
 
-## Por que ela é usada em projetos de energia
+## Da construção civil à energia solar
 
-A SCP é flexível: o contrato define livremente aportes, divisão de resultados e regras de saída, sem a burocracia de constituir uma nova empresa. Por isso aparece com frequência em empreendimentos de geração de energia, especialmente geração distribuída, em que um desenvolvedor (sócio ostensivo) constrói e opera a usina e outros sócios participam do resultado.
+Na construção civil, a SCP se popularizou porque resolve um problema comum: a incorporadora ou construtora conduz a obra e o negócio, enquanto outros sócios entram com parte do capital e dividem o resultado do empreendimento. O mesmo desenho foi usado em hotéis, com o operador hoteleiro como sócio ostensivo e os proprietários das unidades como participantes — mercado que, por envolver captação junto ao público, acabou ganhando regras específicas da CVM.
+
+Em energia solar, a lógica é parecida. Um desenvolvedor (sócio ostensivo) constrói e opera a usina, especialmente em geração distribuída, e os sócios participantes dividem o resultado da venda ou compensação da energia. As vantagens que atraem o setor são as mesmas da construção civil:
+
+- **Flexibilidade:** o contrato define livremente aportes, divisão de resultados e regras de saída.
+- **Menos burocracia:** não é preciso constituir uma nova empresa para cada projeto.
+- **Gestão concentrada:** quem entende de obra e operação conduz o negócio; os demais participam do resultado.
+
+A diferença é que uma usina tem riscos próprios — geração abaixo do previsto, cortes determinados pelo operador do sistema, mudanças nas regras de compensação — que se somam aos riscos do formato societário.
 
 ## Quando a SCP vira assunto da CVM
 

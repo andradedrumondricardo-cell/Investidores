@@ -7,7 +7,7 @@ Regras: seguir `docs/02-guia-editorial.md` e `docs/05-linha-editorial.md` (sem p
 ## Temas
 
 - [ ] Debêntures incentivadas de infraestrutura: o que são e como funcionam
-- [ ] SCP: o que é a sociedade em conta de participação e quais cuidados ela exige — **já escrito** em `artigos/14-scp-sociedade-em-conta-de-participacao.md`: não reescrever; revisar, registrar em `ARTIGOS` (seção Investidor) e publicar. Tom genérico, sem citar a ZeroInvest no texto (só o rodapé padrão). Se o artigo de debêntures já estiver no ar, incluir um link para ele no texto.
+- [ ] SCP: o modelo da construção civil que chegou aos projetos de energia solar — **já escrito** em `artigos/14-scp-sociedade-em-conta-de-participacao.md`: não reescrever; revisar, registrar em `ARTIGOS` (seção Investidor, "seo": "SCP em energia solar: o que é e quais cuidados exige") e publicar. Tom genérico, sem citar a ZeroInvest no texto (só o rodapé padrão). Se o artigo de debêntures já estiver no ar, incluir um link para ele no texto.
 - [ ] Tarifa branca: para quem compensa mudar o horário de consumo
 - [ ] Leilões de transmissão: como funcionam e por que importam para as renováveis
 - [ ] Hidrogênio verde no Brasil: o que é, onde estão os projetos e os desafios
