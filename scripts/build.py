@@ -21,7 +21,7 @@ CONTROLADOR = "ZeroInvest [RAZÃO SOCIAL], CNPJ [00.000.000/0000-00]"
 EMAIL_PRIVACIDADE = "[email-de-privacidade@dominio]"
 
 # Endereço público do site: o Netlify define URL no build (domínio principal). Localmente, defina SITE_URL.
-SITE = (os.environ.get("SITE_URL") or os.environ.get("URL") or "").rstrip("/")
+SITE = (os.environ.get("SITE_URL") or os.environ.get("URL") or "https://energiaecapital.com.br").rstrip("/")
 # Código de verificação do Google Search Console (opcional; método "Tag HTML"). Definir como variável no Netlify.
 GOOGLE_VERIFICATION = os.environ.get("GOOGLE_SITE_VERIFICATION", "")
 
