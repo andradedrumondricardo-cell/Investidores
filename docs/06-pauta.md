@@ -17,14 +17,10 @@ Regras: seguir `docs/02-guia-editorial.md` e `docs/05-linha-editorial.md` (sem p
 - [ ] Eólicas offshore: o que falta para o Brasil sair do papel
 - [ ] Como ler a sua conta de luz: TE, TUSD, impostos e encargos
 - [ ] Debêntures incentivadas de infraestrutura: o que são e como funcionam
+- [ ] SCP: o que é a sociedade em conta de participação e quais cuidados ela exige — **já escrito** em `artigos/14-scp-sociedade-em-conta-de-participacao.md`: não reescrever; revisar, registrar em `ARTIGOS` (seção Investidor) e publicar. Tom genérico, sem citar a ZeroInvest no texto (só o rodapé padrão). Se o artigo de debêntures já estiver no ar, incluir um link para ele no texto.
 - [ ] Biogás e biometano: energia a partir de resíduos do agro
 - [ ] Furto de energia e perdas: quanto custa para quem paga a conta
 - [ ] PPA corporativo: por que grandes empresas compram energia renovável direto do gerador
 - [ ] Armazenamento por usinas reversíveis: a "bateria" hidráulica
 - [ ] Abertura do mercado livre para residências: o que muda para o consumidor
 
-## Aguardando revisão jurídica (não publicar automaticamente)
-
-A rotina **não** deve publicar estes artigos. Só entram no site depois de aprovação explícita (incluir em `ARTIGOS` no `scripts/build.py`).
-
-- SCP: o que é a sociedade em conta de participação e quais cuidados ela exige — `artigos/14-scp-sociedade-em-conta-de-participacao.md` (pronto; tema próximo da atuação da ZeroInvest, revisar com advogado antes de publicar)
