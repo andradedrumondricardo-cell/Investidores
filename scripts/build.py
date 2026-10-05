@@ -2,11 +2,14 @@
 
 Uso: pip install -r requirements.txt && python3 scripts/build.py
 """
+import datetime
 import html
 import json
+import os
 import pathlib
 import re
 import shutil
+import subprocess
 
 import markdown
 
@@ -17,24 +20,30 @@ OUT = ROOT / "site"
 CONTROLADOR = "ZeroInvest [RAZÃO SOCIAL], CNPJ [00.000.000/0000-00]"
 EMAIL_PRIVACIDADE = "[email-de-privacidade@dominio]"
 
+# Endereço público do site: o Netlify define URL no build (domínio principal). Localmente, defina SITE_URL.
+SITE = (os.environ.get("SITE_URL") or os.environ.get("URL") or "").rstrip("/")
+# Código de verificação do Google Search Console (opcional; método "Tag HTML"). Definir como variável no Netlify.
+GOOGLE_VERIFICATION = os.environ.get("GOOGLE_SITE_VERIFICATION", "")
+
 # Link do CANAL do WhatsApp (somente leitura), não de grupo. Vazio = links não aparecem no site.
 WHATSAPP_CANAL_URL = ""
 
-# Metadados de cada artigo: seção (chapéu) e ilustração (ver ILUSTRACOES).
+# Metadados de cada artigo: data de publicação, seção (chapéu), ilustração (ver ILUSTRACOES) e foto opcional.
+# Novo artigo: acrescente uma linha com "publicado" na data de hoje (AAAA-MM-DD).
 ARTIGOS = {
-    "01": {"secao": "Entenda", "ilustracao": "solar", "foto": "campo-solar", "alt": "Usina solar instalada em antigo aeródromo em Neuhardenberg, Alemanha"},
-    "02": {"secao": "Solar", "ilustracao": "casa", "foto": "telhado-solar", "alt": "Casa com painéis solares no telhado"},
-    "03": {"secao": "Checklist", "ilustracao": "lampada"},
-    "04": {"secao": "Investidor", "ilustracao": "eolica", "foto": "parque-eolico", "alt": "Parque eólico da Copel"},
-    "05": {"secao": "Investidor", "ilustracao": "grafico"},
-    "06": {"secao": "Investidor", "ilustracao": "torre"},
-    "07": {"secao": "Conta de luz", "ilustracao": "bandeiras"},
-    "08": {"secao": "Rede", "ilustracao": "curtailment", "foto": "linhas-transmissao", "alt": "Torres e linhas de transmissão de energia"},
-    "09": {"secao": "Curiosidade", "ilustracao": "flutuante", "foto": "solar-flutuante", "alt": "Usina fotovoltaica flutuante Araucária, em São Paulo"},
-    "10": {"secao": "Tecnologia", "ilustracao": "bateria", "foto": "baterias", "alt": "Sistema de armazenamento em baterias ao lado de usina solar na Califórnia, EUA"},
-    "11": {"secao": "Mercado livre", "ilustracao": "mercado"},
-    "12": {"secao": "Glossário", "ilustracao": "glossario"},
-    "13": {"secao": "IA e energia", "ilustracao": "datacenter", "foto": "data-center", "alt": "Racks de servidores iluminados em um data center"},
+    "01": {"publicado": "2026-09-25", "secao": "Entenda", "ilustracao": "solar", "foto": "campo-solar", "alt": "Usina solar instalada em antigo aeródromo em Neuhardenberg, Alemanha"},
+    "02": {"publicado": "2026-09-25", "secao": "Solar", "ilustracao": "casa", "foto": "telhado-solar", "alt": "Casa com painéis solares no telhado"},
+    "03": {"publicado": "2026-09-25", "secao": "Checklist", "ilustracao": "lampada"},
+    "04": {"publicado": "2026-09-25", "secao": "Investidor", "ilustracao": "eolica", "foto": "parque-eolico", "alt": "Parque eólico da Copel"},
+    "05": {"publicado": "2026-09-25", "secao": "Investidor", "ilustracao": "grafico"},
+    "06": {"publicado": "2026-09-25", "secao": "Investidor", "ilustracao": "torre"},
+    "07": {"publicado": "2026-10-03", "secao": "Conta de luz", "ilustracao": "bandeiras"},
+    "08": {"publicado": "2026-10-03", "secao": "Rede", "ilustracao": "curtailment", "foto": "linhas-transmissao", "alt": "Torres e linhas de transmissão de energia"},
+    "09": {"publicado": "2026-10-03", "secao": "Curiosidade", "ilustracao": "flutuante", "foto": "solar-flutuante", "alt": "Usina fotovoltaica flutuante Araucária, em São Paulo"},
+    "10": {"publicado": "2026-10-03", "secao": "Tecnologia", "ilustracao": "bateria", "foto": "baterias", "alt": "Sistema de armazenamento em baterias ao lado de usina solar na Califórnia, EUA"},
+    "11": {"publicado": "2026-10-03", "secao": "Mercado livre", "ilustracao": "mercado"},
+    "12": {"publicado": "2026-10-03", "secao": "Glossário", "ilustracao": "glossario"},
+    "13": {"publicado": "2026-10-03", "secao": "IA e energia", "ilustracao": "datacenter", "foto": "data-center", "alt": "Racks de servidores iluminados em um data center"},
 }
 
 # Composição da home. Seções sem artigos não aparecem.
@@ -359,7 +368,46 @@ def rodape():
 </div></footer>"""
 
 
-def page(title, body, description, secoes_home, completo=False, origem="pagina"):
+MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto",
+         "setembro", "outubro", "novembro", "dezembro"]
+
+
+def git_datas(path):
+    """(primeira, última) data de commit do arquivo, em ISO 8601; None se não houver histórico."""
+    try:
+        out = subprocess.run(["git", "log", "--follow", "--format=%aI", "--", str(path)], cwd=ROOT,
+                             capture_output=True, text=True, check=True).stdout.split()
+        return (out[-1], out[0]) if out else (None, None)
+    except (OSError, subprocess.CalledProcessError):
+        return (None, None)
+
+
+def data_br(iso):
+    d = datetime.date.fromisoformat(iso[:10])
+    return f"{d.day} de {MESES[d.month - 1]} de {d.year}"
+
+
+def absoluto(caminho):
+    return f"{SITE}{caminho}"
+
+
+def page(title, body, description, secoes_home, completo=False, origem="pagina",
+         caminho="/", imagem=None, tipo="website", jsonld=None, indexar=True):
+    extras = [f'<link rel="canonical" href="{absoluto(caminho)}">',
+              f'<meta property="og:url" content="{absoluto(caminho)}">',
+              f'<meta property="og:type" content="{tipo}">',
+              '<meta property="og:site_name" content="Energia &amp; Capital">',
+              '<meta property="og:locale" content="pt_BR">',
+              f'<meta name="twitter:card" content="{"summary_large_image" if imagem else "summary"}">']
+    if imagem:
+        extras.append(f'<meta property="og:image" content="{absoluto(imagem)}">')
+    if not indexar:
+        extras.append('<meta name="robots" content="noindex">')
+    if GOOGLE_VERIFICATION and caminho == "/":
+        extras.append(f'<meta name="google-site-verification" content="{html.escape(GOOGLE_VERIFICATION)}">')
+    if jsonld:
+        extras.append('<script type="application/ld+json">' + json.dumps(jsonld, ensure_ascii=False).replace("</", "<\\/") + "</script>")
+    extras = "\n".join(extras)
     return f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -369,6 +417,7 @@ def page(title, body, description, secoes_home, completo=False, origem="pagina")
 <meta name="description" content="{html.escape(description)}">
 <meta property="og:title" content="{html.escape(title)}">
 <meta property="og:description" content="{html.escape(description)}">
+{extras}
 <meta name="theme-color" content="#0E1B17">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 {FONTS}
@@ -399,9 +448,11 @@ def load_articles():
         i = next(i for i, b in enumerate(blocos) if not b.startswith("#"))
         corpo = "\n\n".join(blocos[i + 1:])
         palavras = len(re.findall(r"\w+", src))
+        atualizado = git_datas(path)[1] or meta["publicado"]
         arts[num] = {
             "num": num, "slug": path.stem, "title": title, "summary": blocos[i].strip(),
-            "corpo": corpo, "leitura": max(1, round(palavras / 200)), **meta,
+            "corpo": corpo, "leitura": max(1, round(palavras / 200)),
+            "atualizado": max(atualizado[:10], meta["publicado"]), **meta,
         }
     return arts
 
@@ -456,6 +507,22 @@ def home(arts, secoes):
     return "\n".join(out)
 
 
+def artigo_jsonld(a):
+    dados = {
+        "@context": "https://schema.org", "@type": "Article",
+        "headline": a["title"][:110], "description": resumo(a["summary"], 200), "inLanguage": "pt-BR",
+        "mainEntityOfPage": absoluto(url(a)),
+        "author": {"@type": "Organization", "name": "Redação Energia & Capital", "url": absoluto("/")},
+        "publisher": {"@type": "Organization", "name": "Energia & Capital",
+                      "logo": {"@type": "ImageObject", "url": absoluto("/img/logo.png")}},
+        "image": [absoluto(f"/img/{a['foto']}.jpg" if a.get("foto") else "/img/og-padrao.png")],
+    }
+    if a["publicado"]:
+        dados["datePublished"] = a["publicado"]
+        dados["dateModified"] = a["atualizado"]
+    return dados
+
+
 def artigo(a, arts, md):
     outros = [x for n, x in arts.items() if n != a["num"]][:3]
     mais = "".join(f'<a href="{url(x)}"><span class="n">{i}</span><strong>{html.escape(x["title"])}</strong></a>'
@@ -466,7 +533,7 @@ def artigo(a, arts, md):
     <span class="kicker">{a["secao"]}</span>
     <h1 class="cond">{html.escape(a["title"])}</h1>
     <p class="linha-fina serif">{md.reset().convert(a["summary"])[3:-4]}</p>
-    <div class="byline"><b>Redação Energia &amp; Capital</b><span>{a["leitura"]} min de leitura</span></div>
+    <div class="byline"><b>Redação Energia &amp; Capital</b>{f'<time datetime="{a["publicado"][:10]}">{data_br(a["publicado"])}</time>' if a["publicado"] else ""}<span>{a["leitura"]} min de leitura</span></div>
     {thumb(a, "thumb capa", grande=True)}
     {f'<p class="credito">{credito(a["foto"])}</p>' if a.get("foto") else ""}
     <div class="corpo">{md.reset().convert(a["corpo"])}</div>
@@ -495,11 +562,15 @@ def main():
     for a in arts.values():
         (OUT / "artigos" / f"{a['slug']}.html").write_text(
             page(f"{a['title']} | Energia & Capital", artigo(a, arts, md), resumo(a["summary"], 160),
-                 secoes, origem=a["slug"]), encoding="utf-8")
+                 secoes, origem=a["slug"], caminho=url(a), tipo="article",
+                 imagem=f"/img/{a['foto']}.jpg" if a.get("foto") else "/img/og-padrao.png",
+                 jsonld=artigo_jsonld(a)), encoding="utf-8")
 
     (OUT / "index.html").write_text(
         page("Energia & Capital — notícias, guias e análises sobre energia", home(arts, secoes),
-             "Notícias, guias práticos e análises sobre energia no Brasil.", secoes, completo=True, origem="home"),
+             "Notícias, guias práticos e análises sobre energia no Brasil.", secoes, completo=True, origem="home",
+             imagem="/img/og-padrao.png", jsonld={"@context": "https://schema.org", "@type": "WebSite",
+                                                  "name": "Energia & Capital", "url": absoluto("/"), "inLanguage": "pt-BR"}),
         encoding="utf-8")
 
     (OUT / "obrigado.html").write_text(page(
@@ -507,14 +578,14 @@ def main():
         '<main class="wrap pagina-simples"><h1 class="cond">Inscrição recebida</h1>'
         '<p class="serif" style="font-size:20px">Obrigado. Você receberá a próxima edição da Energia &amp; Capital no seu e-mail.</p>'
         '<p><a class="btn-sol" href="/">Voltar à página inicial</a></p></main>',
-        "Inscrição confirmada.", secoes, origem="obrigado"), encoding="utf-8")
+        "Inscrição confirmada.", secoes, origem="obrigado", caminho="/obrigado.html", indexar=False), encoding="utf-8")
 
     privacidade = (ROOT / "landing" / "privacidade.md").read_text(encoding="utf-8")
     privacidade = privacidade.replace("{CONTROLADOR}", CONTROLADOR).replace("{EMAIL}", EMAIL_PRIVACIDADE)
     (OUT / "privacidade.html").write_text(page(
         "Política de Privacidade | Energia & Capital",
         f'<main class="wrap pagina-simples corpo">{md.reset().convert(privacidade)}</main>',
-        "Política de Privacidade da Energia & Capital.", secoes, origem="privacidade"), encoding="utf-8")
+        "Política de Privacidade da Energia & Capital.", secoes, origem="privacidade", caminho="/privacidade.html"), encoding="utf-8")
 
     linhas = "".join(
         f'<li><b>{html.escape(a["title"])}</b><br>{credito(a["foto"])}</li>'
@@ -524,7 +595,18 @@ def main():
         '<main class="wrap pagina-simples corpo"><h1 class="cond">Créditos das imagens</h1>'
         '<p>As fotos são do Wikimedia Commons, usadas conforme as licenças indicadas e recortadas para o formato do site. '
         f'As demais imagens são ilustrações da Energia &amp; Capital.</p><ul>{linhas}</ul></main>',
-        "Créditos das imagens da Energia & Capital.", secoes, origem="creditos"), encoding="utf-8")
+        "Créditos das imagens da Energia & Capital.", secoes, origem="creditos", caminho="/creditos.html"), encoding="utf-8")
+
+    hoje = datetime.date.today().isoformat()
+    urls = [("/", hoje), ("/privacidade.html", None), ("/creditos.html", None)]
+    urls += [(url(a), (a["atualizado"] or "")[:10] or None) for a in arts.values()]
+    itens = "".join(f"<url><loc>{absoluto(c)}</loc>" + (f"<lastmod>{d}</lastmod>" if d else "") + "</url>" for c, d in urls)
+    (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n'
+                                     f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{itens}</urlset>\n', encoding="utf-8")
+    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /obrigado.html\n\nSitemap: {absoluto('/sitemap.xml')}\n",
+                                    encoding="utf-8")
+    if not SITE:
+        print("ATENÇÃO: URL do site não definida (SITE_URL/URL); canonical e sitemap ficaram com caminhos relativos.")
 
     for p in OUT.rglob("*.html"):
         if re.search(r"\[(RAZÃO|00\.|email-|DADO)", p.read_text(encoding="utf-8")):

@@ -39,3 +39,9 @@ Para testar localmente: `pip install -r requirements.txt && python3 scripts/buil
 - Fotos atuais: Wikimedia Commons, com autor e licença em `imagens/creditos.json`. O crédito aparece na página do artigo e em `/creditos.html` (link no rodapé). Licenças CC BY/BY-SA exigem esse crédito — não remova.
 - Para trocar ou adicionar: salve o JPG recortado em 16:9 nas duas pastas, registre autor/licença em `creditos.json` e aponte `"foto"`/`"alt"` no artigo.
 - `scripts/imagens/render.html` gera ilustrações em estilo fotográfico como alternativa (`node scripts/imagens/render.js`).
+
+## Google (SEO)
+
+- O build gera `sitemap.xml`, `robots.txt`, link canônico, Open Graph (imagem ao compartilhar) e dados estruturados `Article` em cada artigo. O domínio vem da variável `URL` que o Netlify define no build (localmente: `SITE_URL=https://... python3 scripts/build.py`).
+- Verificação no Search Console pelo método "Tag HTML": crie no Netlify a variável `GOOGLE_SITE_VERIFICATION` com o código e publique de novo.
+- `scripts/imagens/marca.js` gera `imagens/og-padrao.png` e `imagens/logo.png`.
