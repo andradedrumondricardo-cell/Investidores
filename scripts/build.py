@@ -29,30 +29,37 @@ GOOGLE_VERIFICATION = os.environ.get("GOOGLE_SITE_VERIFICATION", "")
 WHATSAPP_CANAL_URL = ""
 
 # Metadados de cada artigo: data de publicação, seção (chapéu), ilustração (ver ILUSTRACOES) e foto opcional.
-# Novo artigo: acrescente uma linha com "publicado" na data de hoje (AAAA-MM-DD).
+# Novo artigo: acrescente uma linha com "publicado" na data de hoje (AAAA-MM-DD) e "seo" (título para o Google,
+# até ~60 caracteres, com a palavra-chave principal no início).
 ARTIGOS = {
-    "01": {"publicado": "2026-09-25", "secao": "Entenda", "ilustracao": "solar", "foto": "campo-solar", "alt": "Usina solar instalada em antigo aeródromo em Neuhardenberg, Alemanha"},
-    "02": {"publicado": "2026-09-25", "secao": "Solar", "ilustracao": "casa", "foto": "telhado-solar", "alt": "Casa com painéis solares no telhado"},
-    "03": {"publicado": "2026-09-25", "secao": "Checklist", "ilustracao": "lampada"},
-    "04": {"publicado": "2026-09-25", "secao": "Investidor", "ilustracao": "eolica", "foto": "parque-eolico", "alt": "Parque eólico da Copel"},
-    "05": {"publicado": "2026-09-25", "secao": "Investidor", "ilustracao": "grafico"},
-    "06": {"publicado": "2026-09-25", "secao": "Investidor", "ilustracao": "torre"},
-    "07": {"publicado": "2026-10-03", "secao": "Conta de luz", "ilustracao": "bandeiras"},
-    "08": {"publicado": "2026-10-03", "secao": "Rede", "ilustracao": "curtailment", "foto": "linhas-transmissao", "alt": "Torres e linhas de transmissão de energia"},
-    "09": {"publicado": "2026-10-03", "secao": "Curiosidade", "ilustracao": "flutuante", "foto": "solar-flutuante", "alt": "Usina fotovoltaica flutuante Araucária, em São Paulo"},
-    "10": {"publicado": "2026-10-03", "secao": "Tecnologia", "ilustracao": "bateria", "foto": "baterias", "alt": "Sistema de armazenamento em baterias ao lado de usina solar na Califórnia, EUA"},
-    "11": {"publicado": "2026-10-03", "secao": "Mercado livre", "ilustracao": "mercado"},
-    "12": {"publicado": "2026-10-03", "secao": "Glossário", "ilustracao": "glossario"},
-    "13": {"publicado": "2026-10-03", "secao": "IA e energia", "ilustracao": "datacenter", "foto": "data-center", "alt": "Racks de servidores iluminados em um data center"},
+    "01": {"seo": "Por que contratos de energia duram 10, 15 ou 20 anos", "publicado": "2026-09-25", "secao": "Entenda", "ilustracao": "solar", "foto": "campo-solar", "alt": "Usina solar instalada em antigo aeródromo em Neuhardenberg, Alemanha"},
+    "02": {"seo": "Geração distribuída: como a energia solar vira desconto na conta", "publicado": "2026-09-25", "secao": "Solar", "ilustracao": "casa", "foto": "telhado-solar", "alt": "Casa com painéis solares no telhado"},
+    "03": {"seo": "Checklist: como avaliar os riscos de um projeto de energia", "publicado": "2026-09-25", "secao": "Checklist", "ilustracao": "lampada"},
+    "04": {"seo": "Energia como classe de ativo: por que investidores gostam", "publicado": "2026-09-25", "secao": "Investidor", "ilustracao": "eolica", "foto": "parque-eolico", "alt": "Parque eólico da Copel"},
+    "05": {"seo": "Como se forma o retorno (TIR) de um projeto de energia", "publicado": "2026-09-25", "secao": "Investidor", "ilustracao": "grafico"},
+    "06": {"seo": "Investimento em infraestrutura de energia: caminhos regulados", "publicado": "2026-09-25", "secao": "Investidor", "ilustracao": "torre"},
+    "07": {"seo": "Bandeiras tarifárias: o que significa cada cor da conta de luz", "publicado": "2026-10-03", "secao": "Conta de luz", "ilustracao": "bandeiras"},
+    "08": {"seo": "Curtailment: por que usinas solares e eólicas geram menos", "publicado": "2026-10-03", "secao": "Rede", "ilustracao": "curtailment", "foto": "linhas-transmissao", "alt": "Torres e linhas de transmissão de energia"},
+    "09": {"seo": "Usina solar flutuante: como funciona e vantagens", "publicado": "2026-10-03", "secao": "Curiosidade", "ilustracao": "flutuante", "foto": "solar-flutuante", "alt": "Usina fotovoltaica flutuante Araucária, em São Paulo"},
+    "10": {"seo": "Baterias na rede elétrica: o que muda com o armazenamento", "publicado": "2026-10-03", "secao": "Tecnologia", "ilustracao": "bateria", "foto": "baterias", "alt": "Sistema de armazenamento em baterias ao lado de usina solar na Califórnia, EUA"},
+    "11": {"seo": "Mercado livre de energia: quem pode migrar e como funciona", "publicado": "2026-10-03", "secao": "Mercado livre", "ilustracao": "mercado"},
+    "12": {"seo": "Glossário do setor elétrico: 20 termos para entender energia", "publicado": "2026-10-03", "secao": "Glossário", "ilustracao": "glossario"},
+    "13": {"seo": "IA e data centers: o desafio de energia no Brasil", "publicado": "2026-10-03", "secao": "IA e energia", "ilustracao": "datacenter", "foto": "data-center", "alt": "Racks de servidores iluminados em um data center"},
 }
 
 # Composição da home. Seções sem artigos não aparecem.
 DESTAQUE = "13"
 ULTIMAS = ["07", "08", "11", "10"]
 SECOES = [
-    {"id": "na-pratica", "titulo": "Na prática", "artigos": ["11", "02", "03", "01"]},
-    {"id": "investidor", "titulo": "Investidor", "artigos": ["04", "05", "06", "08"]},
-    {"id": "variedades", "titulo": "Variedades", "artigos": ["09", "12", "10"]},
+    {"id": "na-pratica", "titulo": "Na prática", "artigos": ["11", "02", "03", "01"],
+     "seo": "Guias práticos de energia: conta de luz, solar e mercado livre",
+     "descricao": "Guias práticos para entender a conta de luz, a energia solar no telhado, o mercado livre e os contratos do setor elétrico."},
+    {"id": "investidor", "titulo": "Investidor", "artigos": ["04", "05", "06", "08", "13"],
+     "seo": "Energia para investidores: análises do setor elétrico",
+     "descricao": "Análises sobre energia como classe de ativo: como os projetos geram caixa, como o retorno se forma e quais riscos pesam."},
+    {"id": "variedades", "titulo": "Variedades", "artigos": ["09", "12", "10", "07"],
+     "seo": "Curiosidades e tecnologia em energia: solar flutuante, baterias",
+     "descricao": "Curiosidades, tecnologia e glossário do setor de energia: usinas solares flutuantes, baterias, bandeiras tarifárias e mais."},
 ]
 EM_PAUTA = [("IA e data centers", "13"), ("Bandeiras tarifárias", "07"), ("Lei 14.300", "02"), ("Curtailment", "08"),
             ("Mercado livre", "11"), ("Baterias", "10")]
@@ -151,9 +158,12 @@ ILUSTRACOES = {
         'font-family="Archivo, sans-serif" font-weight="900" font-size="58" fill="#0E1B17">kWh → MW</text>'),
 }
 
+_FONTS_URL = ("https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900"
+              "&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400&amp;display=swap")
+# Fontes carregadas sem bloquear a renderização (media=print + onload); fallback para quem não roda JS.
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-         '<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900'
-         '&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400&amp;display=swap" rel="stylesheet">')
+         f'<link rel="stylesheet" href="{_FONTS_URL}" media="print" onload="this.media=\'all\'">'
+         f'<noscript><link rel="stylesheet" href="{_FONTS_URL}"></noscript>')
 
 CSS = """
 :root{--ink:#0E1B17;--sol:#F5C400;--verde:#0B6B45;--papel:#F3F4EF;--linha:#DDE2DF;--muted:#4A5752;--texto:#1C2421}
@@ -219,7 +229,7 @@ svg{display:block}
 .item-lista strong{font-size:18px;line-height:1.15;font-stretch:85%;font-weight:800}
 .secao{padding:40px 0;border-bottom:1px solid var(--linha)}
 .secao:last-of-type{border-bottom:0}
-.secao-topo{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:20px;border-top:4px solid var(--ink);padding-top:10px}
+.secao-topo{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:20px;border-top:4px solid var(--ink);padding-top:10px}
 .secao-topo h2{margin:0;font-size:28px;text-transform:uppercase}
 .grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
 .card{display:flex;flex-direction:column;gap:10px}
@@ -283,6 +293,15 @@ svg{display:block}
 .news button{min-height:48px;border:0;border-radius:8px;background:var(--sol);color:var(--ink);font:inherit;font-size:16px;font-weight:800;cursor:pointer}
 .news .wa{display:inline-flex;gap:8px;align-items:center;color:#fff;font-size:14px;font-weight:700;margin-top:4px}
 .hidden{display:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.secao-topo a{font-size:14px;font-weight:700}
+.secao-topo a:hover{text-decoration:underline}
+.hub-topo{padding:32px 0 8px}
+.hub-topo h1{margin:8px 0 0;font-size:48px;line-height:1.02}
+.hub-topo p{margin:12px 0 0;font-size:20px;line-height:1.45;color:#2D3934;max-width:760px}
+.hub-topo .trilha{margin:0;font-size:13px;color:var(--muted)}
+.card .serif{font-size:16px;line-height:1.45;color:#2D3934}
+.card time,.meta-card{font-size:13px;color:var(--muted)}
 footer.rodape{background:var(--ink);border-top:1px solid #2B3430;color:#9AA6A0}
 footer.rodape .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;padding-top:28px;padding-bottom:40px;font-size:13px;line-height:1.6}
 footer.rodape .assinatura{display:flex;align-items:center;gap:10px;color:#fff;font-size:18px}
@@ -306,7 +325,7 @@ FORM = """
       <h2 class="cond">O essencial da energia, direto no seu e-mail</h2>
       <p class="serif">Notícias, guias práticos e análises do setor, em linguagem direta.</p>
     </div>
-    <form name="newsletter" method="POST" action="/obrigado.html" data-netlify="true" netlify-honeypot="empresa">
+    <form name="newsletter" method="POST" action="/obrigado/" data-netlify="true" netlify-honeypot="empresa">
       <input type="hidden" name="form-name" value="newsletter">
       <input type="hidden" name="origem" value="{origem}">
       <input type="hidden" name="versao_consentimento" value="v2-2026-09">
@@ -316,7 +335,7 @@ FORM = """
         <label class="campo">E-mail<input name="email" type="email" autocomplete="email" required></label>
       </div>
       <label class="check"><input type="checkbox" name="consentimento_newsletter" value="sim" required>
-        <span>Quero receber a newsletter Energia &amp; Capital e concordo com a <a href="/privacidade.html">Política de Privacidade</a>.</span></label>
+        <span>Quero receber a newsletter Energia &amp; Capital e concordo com a <a href="/privacidade/">Política de Privacidade</a>.</span></label>
       <label class="check"><input type="checkbox" name="consentimento_contato" value="sim">
         <span>(Opcional) Aceito ser informado(a) pela ZeroInvest, por e-mail, sobre eventuais iniciativas futuras relacionadas ao setor de energia, que seguirão a regulamentação aplicável.</span></label>
       <button type="submit">Assinar grátis</button>
@@ -334,13 +353,19 @@ def link_whatsapp(classe, texto):
             f'{ICONE_WA} {texto}</a>')
 
 
-def cabecalho(completo, secoes_home):
+
+
+ATIVO = ' class="ativo"'
+
+
+def cabecalho(completo, secoes_home, ativo=""):
     data = ('<span class="data" id="hoje"></span>'
             '<script>try{document.getElementById("hoje").textContent=new Date().toLocaleDateString("pt-BR",'
             '{weekday:"long",day:"numeric",month:"long",year:"numeric"})}catch(e){}</script>')
     topo = (f'<div class="topbar"><div class="wrap">{data}<nav aria-label="Atalhos">'
             f'{link_whatsapp("", "Canal no WhatsApp")}<a class="btn-sol" href="#newsletter">Assine grátis</a></nav></div></div>')
-    links = "".join(f'<a href="/#{s["id"]}">{html.escape(s["titulo"])}</a>' for s in secoes_home)
+    links = "".join(f'<a{ATIVO if s["id"] == ativo else ""} href="/{s["id"]}/">{html.escape(s["titulo"])}</a>'
+                    for s in secoes_home)
     if completo:
         return topo + f"""
 <header class="masthead">
@@ -349,13 +374,13 @@ def cabecalho(completo, secoes_home):
       <span class="nome cond"><span>ENERGIA</span><span><span class="amp">&amp;</span>CAPITAL</span></span></a>
     <p class="slogan">Notícias, guias e análises sobre energia no Brasil</p>
   </div>
-  <nav class="secoes" aria-label="Seções"><div class="wrap"><a class="ativo" href="/">Início</a>{links}<a href="#newsletter">Newsletter</a></div></nav>
+  <nav class="secoes" aria-label="Seções"><div class="wrap"><a class="ativo" href="/">Início</a>{links}<a href="/sobre/">Sobre</a></div></nav>
 </header>"""
     return topo + f"""
 <header class="masthead compacto">
   <div class="wrap">
     <a class="logo-h cond" href="/" aria-label="Energia &amp; Capital — página inicial">{simbolo(40)}<span>ENERGIA<span class="amp">&amp;</span>CAPITAL</span></a>
-    <nav aria-label="Seções"><a href="/">Início</a>{links}</nav>
+    <nav aria-label="Seções"><a href="/">Início</a>{links}<a href="/sobre/">Sobre</a></nav>
   </div>
 </header>"""
 
@@ -364,7 +389,8 @@ def rodape():
     return f"""
 <footer class="rodape"><div class="wrap">
   <span class="assinatura cond">{simbolo(32, invertido=True)} ENERGIA &amp; CAPITAL</span>
-  <p>{DISCLAIMER} <a href="/privacidade.html">Política de Privacidade</a> · <a href="/creditos.html">Créditos das imagens</a></p>
+  <p>{DISCLAIMER} <a href="/sobre/">Sobre a publicação</a> · <a href="/privacidade/">Política de Privacidade</a> ·
+  <a href="/creditos/">Créditos das imagens</a> · <a href="/feed.xml">RSS</a></p>
 </div></footer>"""
 
 
@@ -391,22 +417,33 @@ def absoluto(caminho):
     return f"{SITE}{caminho}"
 
 
-def page(title, body, description, secoes_home, completo=False, origem="pagina",
-         caminho="/", imagem=None, tipo="website", jsonld=None, indexar=True):
+ORG = {"@type": "Organization", "name": "Energia & Capital", "url": None,
+       "logo": {"@type": "ImageObject", "url": None, "width": 512, "height": 512}}
+
+
+def org():
+    o = json.loads(json.dumps(ORG))
+    o["url"] = absoluto("/")
+    o["logo"]["url"] = absoluto("/img/logo.png")
+    return o
+
+
+def page(title, body, description, secoes_home, completo=False, origem="pagina", caminho="/",
+         imagem="/img/og-padrao.png", tipo="website", jsonld=None, indexar=True, ativo=""):
     extras = [f'<link rel="canonical" href="{absoluto(caminho)}">',
               f'<meta property="og:url" content="{absoluto(caminho)}">',
               f'<meta property="og:type" content="{tipo}">',
               '<meta property="og:site_name" content="Energia &amp; Capital">',
               '<meta property="og:locale" content="pt_BR">',
-              f'<meta name="twitter:card" content="{"summary_large_image" if imagem else "summary"}">']
-    if imagem:
-        extras.append(f'<meta property="og:image" content="{absoluto(imagem)}">')
-    if not indexar:
-        extras.append('<meta name="robots" content="noindex">')
+              f'<meta property="og:image" content="{absoluto(imagem)}">',
+              f'<meta property="og:image:width" content="{1200 if imagem.endswith(".png") else 1600}">',
+              f'<meta property="og:image:height" content="{630 if imagem.endswith(".png") else 900}">',
+              '<meta name="twitter:card" content="summary_large_image">',
+              '<meta name="robots" content="' + ("index, follow, max-image-preview:large, max-snippet:-1" if indexar else "noindex, follow") + '">']
     if GOOGLE_VERIFICATION and caminho == "/":
         extras.append(f'<meta name="google-site-verification" content="{html.escape(GOOGLE_VERIFICATION)}">')
-    if jsonld:
-        extras.append('<script type="application/ld+json">' + json.dumps(jsonld, ensure_ascii=False).replace("</", "<\\/") + "</script>")
+    for bloco in (jsonld if isinstance(jsonld, list) else [jsonld] if jsonld else []):
+        extras.append('<script type="application/ld+json">' + json.dumps(bloco, ensure_ascii=False).replace("</", "<\\/") + "</script>")
     extras = "\n".join(extras)
     return f"""<!DOCTYPE html>
 <html lang="pt-BR">
@@ -420,17 +457,25 @@ def page(title, body, description, secoes_home, completo=False, origem="pagina",
 {extras}
 <meta name="theme-color" content="#0E1B17">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/logo.png">
+<link rel="alternate" type="application/rss+xml" title="Energia &amp; Capital" href="/feed.xml">
 {FONTS}
-<link rel="stylesheet" href="/style.css">
+<style>{CSS}</style>
 </head>
 <body>
-{cabecalho(completo, secoes_home)}
+{cabecalho(completo, secoes_home, ativo)}
 {body}
 {FORM.format(origem=origem, whatsapp=link_whatsapp("wa", "Prefere WhatsApp? Siga o canal Energia &amp; Capital"))}
 {rodape()}
 </body>
 </html>
 """
+
+
+def titulo(t):
+    """Acrescenta a marca só se o título couber no limite exibido pelo Google (~65 caracteres)."""
+    completo = f"{t} | Energia & Capital"
+    return completo if len(completo) <= 65 else t
 
 
 def resumo(texto, limite=180):
@@ -450,23 +495,38 @@ def load_articles():
         palavras = len(re.findall(r"\w+", src))
         atualizado = git_datas(path)[1] or meta["publicado"]
         arts[num] = {
-            "num": num, "slug": path.stem, "title": title, "summary": blocos[i].strip(),
-            "corpo": corpo, "leitura": max(1, round(palavras / 200)),
-            "atualizado": max(atualizado[:10], meta["publicado"]), **meta,
+            "num": num, "slug": re.sub(r"^\d+-", "", path.stem), "arquivo": path.stem, "title": title,
+            "summary": blocos[i].strip(), "corpo": corpo, "palavras": palavras,
+            "leitura": max(1, round(palavras / 200)), "atualizado": max(atualizado[:10], meta["publicado"]), **meta,
         }
     return arts
 
 
 def url(a):
-    return f"/artigos/{a['slug']}.html"
+    return f"/artigos/{a['slug']}/"
+
+
+def imagem_og(a):
+    return f"/img/{a['foto']}.jpg" if a.get("foto") else "/img/og-padrao.png"
 
 
 def thumb(a, classe="thumb", grande=False):
     if a.get("foto"):
         pasta = "img" if grande else "img/thumb"
-        return (f'<div class="{classe}"><img src="/{pasta}/{a["foto"]}.jpg" alt="{html.escape(a["alt"])}" '
-                f'loading="lazy" width="1600" height="900"></div>')
+        carga = 'fetchpriority="high"' if grande else 'loading="lazy"'
+        fontes = (f'/img/thumb/{a["foto"]}.webp 640w, /img/{a["foto"]}.webp 1600w" sizes="(max-width: 700px) 100vw, 820px'
+                  if grande else f'/img/thumb/{a["foto"]}.webp')
+        return (f'<div class="{classe}"><picture><source type="image/webp" srcset="{fontes}">'
+                f'<img src="/{pasta}/{a["foto"]}.jpg" alt="{html.escape(a["alt"])}" {carga} decoding="async" '
+                f'width="1600" height="900"></picture></div>')
     return f'<div class="{classe}">{ILUSTRACOES[a["ilustracao"]]}</div>'
+
+
+def card(a, com_resumo=False):
+    extra = f'<span class="serif">{html.escape(resumo(a["summary"], 140))}</span>' if com_resumo else ""
+    return (f'<a class="card" href="{url(a)}">{thumb(a)}<span class="kicker">{a["secao"]}</span>'
+            f'<strong>{html.escape(a["title"])}</strong>{extra}'
+            f'<time datetime="{a["publicado"]}">{data_br(a["publicado"])}</time></a>')
 
 
 def home(arts, secoes):
@@ -476,64 +536,82 @@ def home(arts, secoes):
         f'<strong>{html.escape(a["title"])}</strong></span></a>'
         for a in (arts[n] for n in ULTIMAS))
     pauta = "".join(f'<a href="{url(arts[n])}">{html.escape(t)}</a>' for t, n in EM_PAUTA)
-    out = [f'<div class="pauta"><div class="wrap"><span class="tag">Em pauta</span>{pauta}</div></div>',
+    out = ['<h1 class="sr-only">Energia &amp; Capital: notícias, guias e análises sobre energia no Brasil</h1>',
+           f'<nav class="pauta" aria-label="Em pauta"><div class="wrap"><span class="tag">Em pauta</span>{pauta}</div></nav>',
            '<main class="wrap">',
            f"""<section class="destaque">
   <article class="principal"><a href="{url(d)}">
     {thumb(d, grande=True)}
     <span class="kicker">{d["secao"]}</span>
-    <h1 class="cond">{html.escape(d["title"])}</h1>
+    <h2 class="cond" style="margin:8px 0 0;font-size:48px;line-height:1.02">{html.escape(d["title"])}</h2>
     <p class="linha-fina serif">{html.escape(resumo(d["summary"], 260))}</p>
-    <p class="meta">Redação · {d["leitura"]} min de leitura</p>
+    <p class="meta">Redação · <time datetime="{d["publicado"]}">{data_br(d["publicado"])}</time> · {d["leitura"]} min de leitura</p>
   </a></article>
   <aside class="lateral"><h2 class="rotulo">Últimas</h2>{ultimas}</aside>
 </section>"""]
     for s in secoes:
         itens = [arts[n] for n in s["artigos"]]
-        topo = f'<div class="secao-topo"><h2 class="cond">{html.escape(s["titulo"])}</h2></div>'
+        topo = (f'<div class="secao-topo"><h2 class="cond">{html.escape(s["titulo"])}</h2>'
+                f'<a href="/{s["id"]}/">Ver tudo em {html.escape(s["titulo"])} →</a></div>')
         if s["id"] == "investidor" and len(itens) > 1:
-            g, resto = itens[0], itens[1:]
+            g, resto = itens[0], itens[1:4]
             lista = "".join(f'<a href="{url(a)}"><span class="kicker">{a["secao"]}</span><strong>{html.escape(a["title"])}</strong></a>' for a in resto)
             corpo = (f'<div class="dupla"><a class="card-grande" href="{url(g)}">{thumb(g)}<span class="txt">'
                      f'<span class="kicker">Análise</span><strong class="cond">{html.escape(g["title"])}</strong>'
                      f'<span class="serif">{html.escape(resumo(g["summary"]))}</span></span></a>'
                      f'<div class="lista-texto">{lista}</div></div>')
         else:
-            corpo = '<div class="grade">' + "".join(
-                f'<a class="card" href="{url(a)}">{thumb(a)}<span class="kicker">{a["secao"]}</span>'
-                f'<strong>{html.escape(a["title"])}</strong></a>' for a in itens) + "</div>"
+            corpo = '<div class="grade">' + "".join(card(a) for a in itens[:4]) + "</div>"
         out.append(f'<section class="secao" id="{s["id"]}">{topo}{corpo}</section>')
     out.append("</main>")
     return "\n".join(out)
 
 
+def hub(s, arts):
+    itens = sorted((arts[n] for n in s["artigos"]), key=lambda a: a["publicado"], reverse=True)
+    return (f'<main class="wrap"><div class="hub-topo"><p class="trilha"><a href="/">Início</a> / {html.escape(s["titulo"])}</p>'
+            f'<h1 class="cond">{html.escape(s["titulo"])}</h1><p class="serif">{html.escape(s["descricao"])}</p></div>'
+            f'<section class="secao"><div class="grade">{"".join(card(a, True) for a in itens)}</div></section></main>')
+
+
+def breadcrumb(*nivel):
+    return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": i, "name": nome, "item": absoluto(c)} for i, (nome, c) in enumerate(nivel, 1)]}
+
+
+def grupo(a):
+    return next((s for s in SECOES if a["num"] in s["artigos"]), SECOES[0])
+
+
 def artigo_jsonld(a):
-    dados = {
+    return [{
         "@context": "https://schema.org", "@type": "Article",
         "headline": a["title"][:110], "description": resumo(a["summary"], 200), "inLanguage": "pt-BR",
-        "mainEntityOfPage": absoluto(url(a)),
-        "author": {"@type": "Organization", "name": "Redação Energia & Capital", "url": absoluto("/")},
-        "publisher": {"@type": "Organization", "name": "Energia & Capital",
-                      "logo": {"@type": "ImageObject", "url": absoluto("/img/logo.png")}},
-        "image": [absoluto(f"/img/{a['foto']}.jpg" if a.get("foto") else "/img/og-padrao.png")],
-    }
-    if a["publicado"]:
-        dados["datePublished"] = a["publicado"]
-        dados["dateModified"] = a["atualizado"]
-    return dados
+        "mainEntityOfPage": absoluto(url(a)), "articleSection": a["secao"], "wordCount": a["palavras"],
+        "datePublished": a["publicado"], "dateModified": a["atualizado"],
+        "author": {"@type": "Organization", "name": "Redação Energia & Capital", "url": absoluto("/sobre/")},
+        "publisher": org(), "image": [absoluto(imagem_og(a))],
+    }, breadcrumb(("Início", "/"), (grupo(a)["titulo"], f"/{grupo(a)['id']}/"), (a["title"], url(a)))]
+
+
+def relacionados(a, arts, n=3):
+    mesmo = [arts[k] for k in grupo(a)["artigos"] if k != a["num"]]
+    resto = sorted((x for x in arts.values() if x["num"] != a["num"] and x not in mesmo),
+                   key=lambda x: x["publicado"], reverse=True)
+    return (mesmo + resto)[:n]
 
 
 def artigo(a, arts, md):
-    outros = [x for n, x in arts.items() if n != a["num"]][:3]
+    g = grupo(a)
     mais = "".join(f'<a href="{url(x)}"><span class="n">{i}</span><strong>{html.escape(x["title"])}</strong></a>'
-                   for i, x in enumerate(outros, 1))
+                   for i, x in enumerate(relacionados(a, arts), 1))
     return f"""<main class="wrap"><div class="artigo-layout">
   <article class="artigo">
-    <p class="trilha"><a href="/">Início</a> / {a["secao"]}</p>
+    <nav class="trilha" aria-label="Trilha"><a href="/">Início</a> / <a href="/{g["id"]}/">{html.escape(g["titulo"])}</a></nav>
     <span class="kicker">{a["secao"]}</span>
     <h1 class="cond">{html.escape(a["title"])}</h1>
     <p class="linha-fina serif">{md.reset().convert(a["summary"])[3:-4]}</p>
-    <div class="byline"><b>Redação Energia &amp; Capital</b>{f'<time datetime="{a["publicado"][:10]}">{data_br(a["publicado"])}</time>' if a["publicado"] else ""}<span>{a["leitura"]} min de leitura</span></div>
+    <div class="byline"><b><a href="/sobre/">Redação Energia &amp; Capital</a></b><time datetime="{a["publicado"]}">{data_br(a["publicado"])}</time><span>{a["leitura"]} min de leitura</span></div>
     {thumb(a, "thumb capa", grande=True)}
     {f'<p class="credito">{credito(a["foto"])}</p>' if a.get("foto") else ""}
     <div class="corpo">{md.reset().convert(a["corpo"])}</div>
@@ -547,64 +625,130 @@ def artigo(a, arts, md):
 </div></main>"""
 
 
+SOBRE = f"""<main class="wrap pagina-simples corpo">
+<h1 class="cond">Sobre a Energia &amp; Capital</h1>
+<p>A <b>Energia &amp; Capital</b> é uma publicação sobre o setor de energia no Brasil. Explicamos, em linguagem direta,
+como a energia é gerada, contratada e regulada — e o que isso significa para consumidores, empresas e investidores.</p>
+<h2>Quem mantém</h2>
+<p>A publicação é mantida pela <b>ZeroInvest</b>, empresa que desenvolve projetos de energia. Informamos essa relação em
+todas as páginas. A Energia &amp; Capital não faz oferta, recomendação ou solicitação de investimento em valores
+mobiliários, e nenhum conteúdo menciona produtos da ZeroInvest.</p>
+<h2>Política editorial</h2>
+<ul>
+<li>Todo artigo cita fontes públicas — ANEEL, ONS, CCEE, EPE, legislação e relatórios setoriais.</li>
+<li>Todo artigo traz uma seção de riscos: nenhum ativo ou tecnologia de energia é livre de risco.</li>
+<li>Não usamos promessas de retorno, nem termos como "garantido" ou "sem risco".</li>
+<li>Estimativas próprias da Redação são identificadas como tal.</li>
+<li>Erros são corrigidos assim que identificados, com atualização da data do artigo.</li>
+</ul>
+<h2>Contato</h2>
+<p>Correções, sugestões de pauta e dúvidas sobre dados pessoais: {EMAIL_PRIVACIDADE}.</p>
+</main>"""
+
+
+def rss(arts):
+    itens = sorted(arts.values(), key=lambda a: a["publicado"], reverse=True)
+    def data_rss(iso):
+        return datetime.datetime.fromisoformat(iso + "T09:00:00-03:00").strftime("%a, %d %b %Y %H:%M:%S %z")
+    corpo = "".join(
+        f"<item><title>{html.escape(a['title'])}</title><link>{absoluto(url(a))}</link><guid>{absoluto(url(a))}</guid>"
+        f"<pubDate>{data_rss(a['publicado'])}</pubDate><category>{html.escape(a['secao'])}</category>"
+        f"<description>{html.escape(resumo(a['summary'], 300))}</description></item>" for a in itens)
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>'
+            f"<title>Energia &amp; Capital</title><link>{absoluto('/')}</link>"
+            "<description>Notícias, guias e análises sobre energia no Brasil.</description><language>pt-BR</language>"
+            f"{corpo}</channel></rss>\n")
+
+
+def escreve(caminho, conteudo):
+    destino = OUT / caminho.strip("/") / "index.html" if caminho.endswith("/") else OUT / caminho.lstrip("/")
+    destino.parent.mkdir(parents=True, exist_ok=True)
+    destino.write_text(conteudo, encoding="utf-8")
+
+
 def main():
     if OUT.exists():
         shutil.rmtree(OUT)
-    (OUT / "artigos").mkdir(parents=True)
+    OUT.mkdir()
     (OUT / "style.css").write_text(CSS, encoding="utf-8")
     (OUT / "favicon.svg").write_text(simbolo(64), encoding="utf-8")
-    shutil.copytree(ROOT / "imagens", OUT / "img")
+    shutil.copytree(ROOT / "imagens", OUT / "img", ignore=shutil.ignore_patterns("*.json"))
 
     arts = load_articles()
     secoes = [s for s in SECOES if s["artigos"]]
     md = markdown.Markdown(extensions=["tables"])
 
     for a in arts.values():
-        (OUT / "artigos" / f"{a['slug']}.html").write_text(
-            page(f"{a['title']} | Energia & Capital", artigo(a, arts, md), resumo(a["summary"], 160),
-                 secoes, origem=a["slug"], caminho=url(a), tipo="article",
-                 imagem=f"/img/{a['foto']}.jpg" if a.get("foto") else "/img/og-padrao.png",
-                 jsonld=artigo_jsonld(a)), encoding="utf-8")
+        escreve(url(a), page(titulo(a["seo"]), artigo(a, arts, md), resumo(a["summary"], 155),
+                             secoes, origem=a["slug"], caminho=url(a), tipo="article", imagem=imagem_og(a),
+                             jsonld=artigo_jsonld(a), ativo=grupo(a)["id"]))
 
-    (OUT / "index.html").write_text(
-        page("Energia & Capital — notícias, guias e análises sobre energia", home(arts, secoes),
-             "Notícias, guias práticos e análises sobre energia no Brasil.", secoes, completo=True, origem="home",
-             imagem="/img/og-padrao.png", jsonld={"@context": "https://schema.org", "@type": "WebSite",
-                                                  "name": "Energia & Capital", "url": absoluto("/"), "inLanguage": "pt-BR"}),
-        encoding="utf-8")
+    for s in secoes:
+        escreve(f"/{s['id']}/", page(titulo(s["seo"]), hub(s, arts), s["descricao"], secoes,
+                                     origem=s["id"], caminho=f"/{s['id']}/", ativo=s["id"],
+                                     jsonld=breadcrumb(("Início", "/"), (s["titulo"], f"/{s['id']}/"))))
 
-    (OUT / "obrigado.html").write_text(page(
+    escreve("/", page("Energia & Capital: notícias e análises sobre energia no Brasil", home(arts, secoes),
+                      "Notícias, guias práticos e análises sobre o setor elétrico: energia solar, mercado livre, "
+                      "conta de luz, data centers e investimento em infraestrutura.", secoes, completo=True, origem="home",
+                      jsonld=[{"@context": "https://schema.org", "@type": "WebSite", "name": "Energia & Capital",
+                               "url": absoluto("/"), "inLanguage": "pt-BR", "publisher": org()},
+                              {"@context": "https://schema.org", **org()}]))
+
+    escreve("/sobre/", page("Sobre a Energia & Capital: quem somos e política editorial", SOBRE,
+                            "Quem mantém a Energia & Capital, nossa política editorial e como entrar em contato.",
+                            secoes, origem="sobre", caminho="/sobre/",
+                            jsonld={"@context": "https://schema.org", "@type": "AboutPage", "name": "Sobre a Energia & Capital",
+                                    "url": absoluto("/sobre/"), "publisher": org()}))
+
+    escreve("/obrigado/", page(
         "Inscrição confirmada | Energia & Capital",
         '<main class="wrap pagina-simples"><h1 class="cond">Inscrição recebida</h1>'
         '<p class="serif" style="font-size:20px">Obrigado. Você receberá a próxima edição da Energia &amp; Capital no seu e-mail.</p>'
         '<p><a class="btn-sol" href="/">Voltar à página inicial</a></p></main>',
-        "Inscrição confirmada.", secoes, origem="obrigado", caminho="/obrigado.html", indexar=False), encoding="utf-8")
+        "Inscrição confirmada.", secoes, origem="obrigado", caminho="/obrigado/", indexar=False))
 
     privacidade = (ROOT / "landing" / "privacidade.md").read_text(encoding="utf-8")
     privacidade = privacidade.replace("{CONTROLADOR}", CONTROLADOR).replace("{EMAIL}", EMAIL_PRIVACIDADE)
-    (OUT / "privacidade.html").write_text(page(
+    escreve("/privacidade/", page(
         "Política de Privacidade | Energia & Capital",
         f'<main class="wrap pagina-simples corpo">{md.reset().convert(privacidade)}</main>',
-        "Política de Privacidade da Energia & Capital.", secoes, origem="privacidade", caminho="/privacidade.html"), encoding="utf-8")
+        "Como a Energia & Capital trata os dados de quem assina a newsletter, com base na LGPD.", secoes, origem="privacidade", caminho="/privacidade/"))
 
-    linhas = "".join(
-        f'<li><b>{html.escape(a["title"])}</b><br>{credito(a["foto"])}</li>'
-        for a in arts.values() if a.get("foto"))
-    (OUT / "creditos.html").write_text(page(
+    linhas = "".join(f'<li><b>{html.escape(a["title"])}</b><br>{credito(a["foto"])}</li>'
+                     for a in arts.values() if a.get("foto"))
+    escreve("/creditos/", page(
         "Créditos das imagens | Energia & Capital",
         '<main class="wrap pagina-simples corpo"><h1 class="cond">Créditos das imagens</h1>'
         '<p>As fotos são do Wikimedia Commons, usadas conforme as licenças indicadas e recortadas para o formato do site. '
         f'As demais imagens são ilustrações da Energia &amp; Capital.</p><ul>{linhas}</ul></main>',
-        "Créditos das imagens da Energia & Capital.", secoes, origem="creditos", caminho="/creditos.html"), encoding="utf-8")
+        "Autores e licenças das fotos usadas nos artigos da Energia & Capital, publicação sobre o setor de energia.", secoes, origem="creditos", caminho="/creditos/"))
 
+    escreve("/404.html", page(
+        "Página não encontrada | Energia & Capital",
+        '<main class="wrap pagina-simples"><h1 class="cond">Página não encontrada</h1>'
+        '<p class="serif" style="font-size:20px">O endereço mudou ou não existe. Veja as últimas notícias na página inicial.</p>'
+        '<p><a class="btn-sol" href="/">Ir para a página inicial</a></p></main>',
+        "Página não encontrada.", secoes, origem="404", caminho="/404.html", indexar=False))
+
+    # Sitemap com imagens, RSS, robots e redirecionamentos dos endereços antigos
     hoje = datetime.date.today().isoformat()
-    urls = [("/", hoje), ("/privacidade.html", None), ("/creditos.html", None)]
-    urls += [(url(a), (a["atualizado"] or "")[:10] or None) for a in arts.values()]
-    itens = "".join(f"<url><loc>{absoluto(c)}</loc>" + (f"<lastmod>{d}</lastmod>" if d else "") + "</url>" for c, d in urls)
-    (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n'
-                                     f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{itens}</urlset>\n', encoding="utf-8")
-    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /obrigado.html\n\nSitemap: {absoluto('/sitemap.xml')}\n",
+    ultima = max(a["atualizado"] for a in arts.values())
+    urls = [("/", ultima, None)] + [(f"/{s['id']}/", ultima, None) for s in secoes]
+    urls += [(url(a), a["atualizado"], imagem_og(a) if a.get("foto") else None) for a in arts.values()]
+    urls += [("/sobre/", hoje, None), ("/privacidade/", None, None), ("/creditos/", None, None)]
+    itens = "".join(f"<url><loc>{absoluto(c)}</loc>" + (f"<lastmod>{d}</lastmod>" if d else "")
+                    + (f"<image:image><image:loc>{absoluto(i)}</image:loc></image:image>" if i else "") + "</url>"
+                    for c, d, i in urls)
+    (OUT / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+        f'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">{itens}</urlset>\n', encoding="utf-8")
+    (OUT / "feed.xml").write_text(rss(arts), encoding="utf-8")
+    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /obrigado/\n\nSitemap: {absoluto('/sitemap.xml')}\n",
                                     encoding="utf-8")
+    redirects = [f"/artigos/{a['arquivo']}.html {url(a)} 301" for a in arts.values()]
+    redirects += [f"/{p}.html /{p}/ 301" for p in ("privacidade", "creditos", "obrigado")]
+    (OUT / "_redirects").write_text("\n".join(redirects) + "\n", encoding="utf-8")
     if not SITE:
         print("ATENÇÃO: URL do site não definida (SITE_URL/URL); canonical e sitemap ficaram com caminhos relativos.")
 

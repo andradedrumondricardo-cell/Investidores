@@ -42,6 +42,11 @@ Para testar localmente: `pip install -r requirements.txt && python3 scripts/buil
 
 ## Google (SEO)
 
-- O build gera `sitemap.xml`, `robots.txt`, link canônico, Open Graph (imagem ao compartilhar) e dados estruturados `Article` em cada artigo. O domínio vem da variável `URL` que o Netlify define no build (localmente: `SITE_URL=https://... python3 scripts/build.py`).
-- Verificação no Search Console pelo método "Tag HTML": crie no Netlify a variável `GOOGLE_SITE_VERIFICATION` com o código e publique de novo.
+- URLs limpas: `/artigos/<slug>/` e páginas de seção `/na-pratica/`, `/investidor/`, `/variedades/`; endereços antigos `.html` redirecionam (301) via `_redirects`.
+- Cada artigo tem `"seo"` (título para o Google, até ~60 caracteres) e `"publicado"` em `ARTIGOS`. A meta description vem do primeiro parágrafo (linha fina) — escreva-o com a palavra-chave.
+- O build gera `sitemap.xml` (com imagens), `feed.xml` (RSS), `robots.txt`, `404.html`, canônico, Open Graph e dados estruturados (`Article`, `BreadcrumbList`, `WebSite`, `Organization`, `AboutPage`).
+- Página `/sobre/` com política editorial e transparência sobre a ZeroInvest (credibilidade para o Google).
+- Desempenho: CSS embutido, fontes sem bloquear a renderização, imagens WebP com `srcset`, cache de imagens no Netlify. Lighthouse local: Desempenho 100, Acessibilidade 100, SEO 100.
+- O domínio vem da variável `URL` que o Netlify define no build (localmente: `SITE_URL=https://... python3 scripts/build.py`).
+- Verificação no Search Console: propriedade de **Domínio** (registro TXT no DNS) ou variável `GOOGLE_SITE_VERIFICATION` (método Tag HTML).
 - `scripts/imagens/marca.js` gera `imagens/og-padrao.png` e `imagens/logo.png`.
