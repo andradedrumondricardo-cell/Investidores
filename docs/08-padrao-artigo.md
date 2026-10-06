@@ -2,10 +2,20 @@
 
 Objetivo: o leitor termina o artigo **entendendo o tema a ponto de explicar para outra pessoa** e sabendo **o que isso muda para ele** (consumidor, empresa ou investidor). Profundidade com linguagem simples.
 
+## Tom: amigável, para qualquer leitor
+O leitor pode ser um aposentado, um dono de padaria ou um investidor experiente. Todos precisam entender na primeira leitura.
+- **Escreva como quem explica para um amigo inteligente que não é do setor.** Use "você", frases curtas e perguntas que o leitor faria.
+- **Comece com uma cena ou situação do dia a dia** (a conta de luz chegando, o sol do meio-dia, uma estrada congestionada), não com definição.
+- **Use metáforas e comparações do cotidiano** — de preferência uma por seção principal. Exemplos: rede elétrica = estradas; transmissão = rodovias, distribuição = ruas do bairro; contrato longo = aluguel com reajuste anual; curtailment = loja com estoque cheio e rua bloqueada; bateria = caixa d'água da energia; SCP = "um sócio que aparece na vitrine e outros que ficam nos bastidores". Evite a palavra "seguro" mesmo como metáfora (use "proteção", "rede de proteção").
+- **Jargão só quando necessário**, sempre traduzido na hora, em linguagem simples. Siglas: diga primeiro o que é ("o operador do sistema, o ONS").
+- **Números de leis e normas não pesam no texto corrido**: no corpo, diga o que a regra faz ("uma lei de 2025 mudou…"); o número completo vai entre parênteses no máximo uma vez, quando for importante, e sempre em "Fontes".
+- **Parágrafos de 2 a 4 frases.** Uma ideia por parágrafo.
+- Amigável não é vendedor: os riscos continuam claros e completos, sem minimizar. Nada de entusiasmo comercial.
+
 ## Tamanho e tom
-- **1.200 a 1.800 palavras** (6 a 9 min de leitura).
+- **1.200 a 1.700 palavras** (6 a 8 min de leitura).
 - Português do Brasil, frases curtas, sem jargão sem explicação (todo termo técnico é explicado na primeira vez).
-- Tom de jornalismo explicativo: contextualiza, compara, dá exemplos. Nada de texto de vendas.
+- Tom de jornalismo explicativo e próximo: contextualiza, compara, dá exemplos. Nada de texto de vendas.
 
 ## Estrutura obrigatória (nesta ordem)
 
