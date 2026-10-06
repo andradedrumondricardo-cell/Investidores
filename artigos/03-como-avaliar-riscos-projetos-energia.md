@@ -7,7 +7,7 @@ Energia tem fama de setor estável, mas cada usina carrega riscos próprios: que
 - O primeiro risco a examinar é o comprador da energia: um contrato longo vale tanto quanto a capacidade de pagamento de quem o assinou.
 - Projeções de geração devem trazer cenários conservadores (P90), e não só o cenário central (P50); cortes de geração pela rede (*curtailment*) e atrasos de obra reduzem a receita mesmo quando o sol e o vento colaboram.
 - Quando há captação de recursos de terceiros, a oferta precisa de registro ou dispensa na CVM — sem isso, o investidor fica sem a proteção básica do mercado regulado.
-- Promessa de retorno sem risco, pressão por decisão rápida e falta de documentos são sinais de alerta clássicos.
+- Promessa de retorno certo, pressão por decisão rápida e falta de documentos são sinais de alerta clássicos.
 
 ## Por que "setor estável" não basta
 
@@ -44,7 +44,7 @@ O setor é regulado pela ANEEL e por leis federais. Um exemplo de mudança relev
 
 ### 6. Estrutura jurídica e governança
 
-Qual é o veículo — sociedade anônima, limitada, sociedade em conta de participação ([SCP](/artigos/scp-sociedade-em-conta-de-participacao/)) ou fundo? Quem responde perante terceiros? Há demonstrações auditadas e prestação de contas periódica?
+Qual é o veículo — sociedade anônima, limitada, sociedade em conta de participação (SCP) ou fundo? Quem responde perante terceiros? Há demonstrações auditadas e prestação de contas periódica?
 
 Quando a estrutura capta recursos de terceiros com expectativa de retorno, tende a configurar valor mobiliário, e a oferta precisa ser **registrada ou dispensada de registro na CVM** (regras gerais na Resolução CVM 160; plataformas de financiamento coletivo seguem a Resolução CVM 88). Ofertas públicas sem esse enquadramento são irregulares, e a CVM mantém uma lista pública de alertas.
 
@@ -103,7 +103,7 @@ Consulte o site da CVM, que lista ofertas registradas, plataformas de financiame
 É o corte da produção de uma usina determinado pelo operador do sistema, por limitação da rede ou por excesso de oferta. A energia que deixa de ser gerada não é vendida e, em muitos casos, não é ressarcida integralmente. O tema é detalhado no artigo sobre [curtailment](/artigos/curtailment/).
 
 ### Quais são os sinais de alerta mais comuns em ofertas de energia?
-Promessa de retorno "garantido" ou "sem risco", rentabilidade muito acima de títulos públicos de prazo semelhante sem explicação do risco adicional e pressão por decisão rápida. A ausência de contratos de venda de energia, de auditoria ou de registro na CVM também deve acender o alerta.
+Promessa de retorno certo ou que omite os riscos, rentabilidade muito acima de títulos públicos de prazo semelhante sem explicação do risco adicional e pressão por decisão rápida. A ausência de contratos de venda de energia, de auditoria ou de registro na CVM também deve acender o alerta.
 
 ## Fontes
 - CVM — Resolução CVM 160/2022 (ofertas públicas), Resolução CVM 88/2022 (financiamento coletivo), alertas ao mercado e consulta de ofertas (gov.br/cvm)

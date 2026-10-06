@@ -25,34 +25,30 @@ O modelo atual do setor foi desenhado pela Lei 10.848/2004, que criou os dois am
 
 As distribuidoras precisam comprar energia suficiente para atender seus clientes cativos. Elas fazem isso em **leilões** organizados pelo governo, com regras da ANEEL e apoio técnico da EPE e da CCEE.
 
-Nos leilões de energia nova, vence quem oferece o menor preço. O vencedor assina contratos chamados CCEAR (Contratos de Comercialização de Energia no Ambiente Regulado) com as distribuidoras compradoras. O prazo depende da fonte e do edital, e costuma ficar entre 15 e 30 anos. O preço é reajustado anualmente pelo IPCA.
+Nos leilões de energia nova, vence quem oferece o menor preço e assina com as distribuidoras os CCEAR (Contratos de Comercialização de Energia no Ambiente Regulado). O prazo depende da fonte e do edital, e costuma ficar entre 15 e 30 anos.
 
-Os contratos regulados podem ser **por quantidade** (o gerador se compromete a entregar um volume de energia e responde pela diferença se gerar menos) ou **por disponibilidade** (o gerador recebe para manter a usina disponível, e os custos de operação efetiva seguem regras específicas, modelo comum em térmicas).
+Os contratos regulados podem ser **por quantidade** (o gerador se compromete a entregar um volume de energia e responde pela diferença se gerar menos) ou **por disponibilidade** (o gerador recebe para manter a usina disponível, modelo comum em térmicas).
 
 ### Ambiente de Contratação Livre (ACL)
 
 No mercado livre, consumidores aptos a migrar e comercializadoras negociam diretamente com geradores prazo, preço, volume, reajuste e garantias financeiras. Esses contratos são chamados de PPA (*power purchase agreement*, acordo de compra de energia).
 
-A maioria dos contratos no mercado livre é mais curta que a do regulado, de um a alguns anos. Mas contratos de 10 a 20 anos são comuns quando servem para viabilizar uma usina nova. Desde janeiro de 2024, todos os consumidores atendidos em alta tensão (Grupo A) podem migrar, conforme a Portaria MME 50/2022. As regras para os demais consumidores estão explicadas em [quem pode migrar para o mercado livre](/artigos/mercado-livre-quem-pode-migrar/).
+A maioria dura de um a alguns anos, mas contratos de 10 a 20 anos são comuns quando viabilizam uma usina nova. Desde janeiro de 2024, todos os consumidores atendidos em alta tensão (Grupo A) podem migrar, conforme a Portaria MME 50/2022. As regras para os demais consumidores estão explicadas em [quem pode migrar para o mercado livre](/artigos/mercado-livre-quem-pode-migrar/).
 
 ### O que fica fora dos contratos
 
 Nenhuma usina gera exatamente o volume contratado todo mês. As diferenças entre o que foi gerado, consumido e contratado são liquidadas na CCEE pelo **PLD** (Preço de Liquidação das Diferenças), calculado para cada hora a partir de modelos de otimização da operação do sistema, com piso e teto definidos pela ANEEL a cada ano. O PLD pode variar muito: sobe quando os reservatórios estão baixos e cai quando há sobra de energia.
 
-Por isso o contrato longo não elimina a exposição ao mercado; ele limita essa exposição às diferenças.
-
 ### Transmissão e geração distribuída
 
-Completam o quadro:
-
 - **Transmissão:** as linhas são concedidas em leilões, em geral por 30 anos. A transmissora recebe uma Receita Anual Permitida (RAP) pela disponibilidade da linha, não pelo volume de energia que passa por ela.
-- **Geração distribuída:** pequenas usinas próximas ao consumo geram créditos que abatem a conta de luz, pelas regras da Lei 14.300/2022. Não há contrato de venda de energia com a distribuidora, e sim um sistema de compensação. Veja [como funciona a geração distribuída](/artigos/geracao-distribuida-como-funciona/).
+- **Geração distribuída:** pequenas usinas próximas ao consumo geram créditos que abatem a conta de luz, pelas regras da Lei 14.300/2022. Veja [como funciona a geração distribuída](/artigos/geracao-distribuida-como-funciona/).
 
 ## O papel da correção pela inflação
 
 Um contrato de 20 anos sem reajuste perderia boa parte do valor no caminho. Por isso, a maioria prevê **reajuste anual por índice de inflação** — no regulado, o IPCA; no livre, o índice negociado, em geral também o IPCA.
 
-O reajuste protege o **valor real** do preço, ou seja, o poder de compra da receita. Ele não protege contra custos que sobem acima da inflação, contra juros mais altos na dívida nem contra geração menor.
+O reajuste protege o **valor real** (o poder de compra) da receita. Não protege contra custos que sobem acima da inflação, juros mais altos na dívida ou geração menor.
 
 ## Exemplo ilustrativo: o contrato em números
 
@@ -73,7 +69,7 @@ Agora o outro lado. Imagine que, num ano seco ou de pouco vento, a usina gere 9.
 - Se o PLD estiver em R$ 100/MWh, o custo extra é de R$ 100 mil.
 - Se o PLD estiver em R$ 500/MWh, o custo extra é de R$ 500 mil — um quarto da receita do ano.
 
-A mesma falta de 10% de geração pode custar pouco ou muito, dependendo do preço de mercado naquele momento. E anos de pouca chuva, quando o PLD tende a subir, são justamente os anos em que hidrelétricas geram menos.
+A mesma falta de 10% pode custar pouco ou muito, conforme o preço de mercado. E anos de pouca chuva, quando o PLD tende a subir, são justamente os anos em que hidrelétricas geram menos.
 
 > Contrato longo fixa o preço da energia vendida. Não fixa quanto a usina vai gerar, nem quanto custará cobrir o que faltar.
 
@@ -98,7 +94,7 @@ A mesma falta de 10% de geração pode custar pouco ou muito, dependendo do pre�
 
 Contrato longo não significa receita certa. Os principais riscos:
 
-1. **Inadimplência ou rescisão do comprador:** mais relevante no mercado livre, em que o crédito do comprador varia muito. Garantias financeiras reduzem, mas não eliminam, esse risco.
+1. **Inadimplência ou rescisão do comprador:** mais relevante no mercado livre, em que o crédito do comprador varia muito.
 2. **Risco de geração:** chuva, vento ou irradiação abaixo do previsto reduzem a energia disponível e podem obrigar a compra no curto prazo.
 3. **Restrições de escoamento (*curtailment*):** o ONS pode limitar a geração quando a rede não comporta ou há excesso de oferta, fenômeno que se intensificou para eólicas e solares desde 2023. Veja [o que é curtailment](/artigos/curtailment/).
 4. **Mudança regulatória:** tarifas, encargos, regras de compensação e de leilão podem mudar ao longo de duas décadas.
@@ -112,13 +108,13 @@ Contrato longo não significa receita certa. Os principais riscos:
 Porque o preço no curto prazo varia muito, e sem receita contratada fica mais difícil e caro financiar a obra. O contrato longo troca a chance de vender caro em alguns momentos por estabilidade de receita.
 
 ### Contrato de longo prazo elimina o risco do projeto?
-Não. Ele reduz a incerteza sobre o preço, mas o projeto continua exposto a geração menor, atrasos, cortes de produção, mudanças de regra e inadimplência do comprador. Por isso o contrato é o começo da análise, não o fim.
+Não. Ele reduz a incerteza sobre o preço, mas o projeto continua exposto a geração menor, atrasos, cortes de produção, mudanças de regra e inadimplência. O contrato é o começo da análise, não o fim.
 
 ### Quem paga os contratos dos leilões regulados?
-As distribuidoras pagam aos geradores e repassam esse custo aos consumidores cativos pela tarifa, conforme as regras de reajuste e revisão da ANEEL. Por isso o resultado dos leilões afeta a conta de luz por muitos anos.
+As distribuidoras pagam aos geradores e repassam o custo aos consumidores cativos pela tarifa, conforme as regras da ANEEL. Por isso o resultado dos leilões afeta a conta de luz por muitos anos.
 
 ### O que acontece quando o contrato termina e a usina ainda funciona?
-A usina pode vender energia em novo contrato ou no mercado, ao preço vigente naquele momento. Esse preço futuro é incerto, e análises de projeto precisam deixar claro qual valor estão supondo para esse período.
+A usina pode vender energia em novo contrato ou no mercado, ao preço vigente naquele momento. Esse preço é incerto, e análises de projeto precisam deixar claro qual valor supõem para o período.
 
 ### Onde encontro os resultados dos leilões de energia?
 A CCEE e a ANEEL publicam os resultados de cada leilão, com preços, volumes e vencedores. Termos técnicos estão no [glossário da energia](/artigos/glossario-da-energia/).

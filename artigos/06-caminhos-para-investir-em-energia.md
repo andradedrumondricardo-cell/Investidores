@@ -43,7 +43,7 @@ Três perguntas ajudam a comparar: **sou sócio ou credor?** (sócios dividem o 
 
 ### FIIs com ativos ligados à energia
 
-- **Como funciona:** fundos imobiliários que detêm terrenos ou estruturas associadas a usinas e recebem aluguel ou pagamentos contratuais. É um nicho ainda pequeno.
+- **Como funciona:** fundos imobiliários com terrenos ou estruturas associadas a usinas, que recebem aluguel ou pagamentos contratuais. Nicho ainda pequeno.
 - **Custos típicos:** taxa de administração e custos de negociação.
 - **Liquidez:** cotas na B3, com liquidez muito variável.
 - **Tributação geral:** rendimentos podem ser isentos para pessoa física se o fundo e o investidor cumprirem requisitos legais (como número mínimo de cotistas e participação máxima por cotista); ganhos na venda são tributados. Confirme a legislação vigente.
@@ -59,7 +59,7 @@ Três perguntas ajudam a comparar: **sou sócio ou credor?** (sócios dividem o 
 
 ### Participação direta em projetos
 
-- **Como funciona:** o investidor entra como sócio de uma sociedade de propósito específico, de uma [SCP](/artigos/scp-sociedade-em-conta-de-participacao/) ou de outro contrato ligado a uma usina.
+- **Como funciona:** o investidor entra como sócio de uma sociedade de propósito específico, de uma SCP ou de outro contrato ligado a uma usina.
 - **Custos típicos:** estruturação, assessoria jurídica e auditoria, geralmente absorvidos pelo projeto.
 - **Liquidez:** muito baixa; em geral não há comprador antes do fim do prazo.
 - **Tributação geral:** depende da estrutura e da forma de distribuição do resultado. Confirme a legislação vigente.
@@ -67,7 +67,7 @@ Três perguntas ajudam a comparar: **sou sócio ou credor?** (sócios dividem o 
 
 ## Participação direta: quando é preciso registro ou dispensa na CVM
 
-Participações em projetos oferecidas publicamente a terceiros com expectativa de retorno são, para a CVM, **valores mobiliários** (contratos de investimento coletivo). Essas ofertas precisam de registro ou de enquadramento em dispensa — pelas regras gerais da Resolução CVM 160 ou, via plataforma, pela Resolução CVM 88. A CVM publica alertas e *stop orders* (ordens de suspensão de ofertas irregulares).
+Participações em projetos oferecidas publicamente a terceiros com expectativa de retorno são **valores mobiliários** (contratos de investimento coletivo). Essas ofertas precisam de registro ou de enquadramento em dispensa — pelas regras gerais da Resolução CVM 160 ou, via plataforma, pela Resolução CVM 88. A CVM publica alertas e *stop orders* (ordens de suspensão de ofertas irregulares).
 
 Diante de qualquer oferta fora da bolsa, pergunte:
 1. Está registrada ou dispensada na CVM? Por qual norma?
@@ -121,7 +121,7 @@ Os números são **hipotéticos** e servem só para mostrar o mecanismo. Três p
 ## Perguntas frequentes
 
 ### Debêntures incentivadas são isentas de IR para pessoa física?
-A Lei 12.431/2011 prevê isenção de IR sobre os rendimentos para pessoa física nos papéis que cumprem os requisitos. As debêntures de infraestrutura da Lei 14.801/2024 seguem outra lógica, com benefício ao emissor. Confirme a legislação vigente.
+A Lei 12.431/2011 prevê essa isenção sobre os rendimentos nos papéis que cumprem os requisitos; as debêntures de infraestrutura da Lei 14.801/2024 seguem outra lógica. Confirme a legislação vigente.
 
 ### Qual a diferença entre FI-Infra e FIP-IE?
 O FI-Infra aplica principalmente em dívida de projetos, como debêntures incentivadas, e o cotista é credor indireto. O FIP-IE compra participações em empresas de infraestrutura, aproximando o cotista da posição de sócio, com menos transparência de preço.

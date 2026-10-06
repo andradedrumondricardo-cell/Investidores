@@ -11,7 +11,7 @@ Usinas solares e eólicas recebem cada vez mais ordens para reduzir a produção
 
 ## Um problema que cresceu com a expansão das renováveis
 
-O sistema elétrico brasileiro é interligado, e quem coordena sua operação em tempo real é o **ONS** (Operador Nacional do Sistema Elétrico). A cada instante, ele precisa garantir que a geração seja igual ao consumo, porque a rede não tem, por si só, onde guardar energia.
+O sistema elétrico brasileiro é interligado, e quem coordena sua operação em tempo real é o **ONS** (Operador Nacional do Sistema Elétrico). A cada instante, ele precisa manter a geração igual ao consumo, porque a rede não tem, por si só, onde guardar energia.
 
 Durante décadas, essa coordenação dependeu sobretudo de hidrelétricas, que seguram água no reservatório e geram quando for preciso. Nos últimos anos, a capacidade eólica e solar cresceu em ritmo forte, concentrada no Nordeste e no Norte de Minas Gerais. Somou-se a isso a expansão da [geração distribuída](/artigos/geracao-distribuida-como-funciona/), os painéis em telhados e pequenas usinas ligadas às distribuidoras.
 

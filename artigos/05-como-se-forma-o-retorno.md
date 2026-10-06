@@ -11,9 +11,7 @@ Quando um projeto de energia divulga uma TIR, o número resume dezenas de premis
 
 ## Por que olhar as premissas, e não só o número
 
-Projetos de energia são avaliados por modelos financeiros que projetam, ano a ano, quanto dinheiro entra e sai durante toda a vida da usina — em geral de 25 a 35 anos. O resultado desse modelo é resumido em poucos indicadores. O problema é que dois projetos com o mesmo indicador podem ter riscos completamente diferentes: um pode usar premissas conservadoras e outro, otimistas.
-
-Por isso analistas experientes começam pelas perguntas, não pelo número. É a mesma lógica de [avaliar os riscos de um projeto](/artigos/como-avaliar-riscos-projetos-energia/): entender o que precisa dar certo para a conta fechar.
+Projetos de energia são avaliados por modelos financeiros que projetam, ano a ano, o dinheiro que entra e sai durante a vida da usina — em geral 25 anos ou mais. O resultado é resumido em poucos indicadores, mas dois projetos com o mesmo indicador podem ter riscos muito diferentes: um usa premissas conservadoras, outro, otimistas. Por isso analistas começam pelas perguntas, não pelo número — a mesma lógica de [avaliar os riscos de um projeto](/artigos/como-avaliar-riscos-projetos-energia/).
 
 ## A equação básica, componente por componente
 
@@ -36,27 +34,25 @@ E o retorno compara esse caixa, ao longo dos anos, com o capital próprio invest
 
 Alguns termos merecem explicação:
 
-- **EPC** (*engineering, procurement and construction*): contrato em que uma empresa entrega a obra pronta, em geral com preço e prazo definidos e multas por atraso.
-- **P50 e P90:** estimativas estatísticas de geração. P50 é o volume que se espera superar em metade dos anos. P90 é o volume que se espera superar em 90% dos anos — mais baixo e mais conservador. Bancos costumam dimensionar a dívida com base em cenários do tipo P90.
+- **EPC** (*engineering, procurement and construction*): contrato de obra entregue pronta, em geral com preço, prazo e multa por atraso definidos.
+- **P50 e P90:** estimativas estatísticas de geração. P50 é o volume que se espera superar em metade dos anos; P90, em 90% dos anos — mais baixo e mais conservador.
 - **REIDI:** regime especial (Lei 11.488/2007) que suspende PIS e Cofins na compra de bens e serviços para obras de infraestrutura habilitadas.
-- **SUDENE/SUDAM:** projetos nas áreas dessas superintendências podem obter redução do imposto de renda, por prazo determinado e mediante aprovação.
+- **SUDENE/SUDAM:** projetos nessas áreas podem obter redução do imposto de renda, por prazo determinado e mediante aprovação.
 
 ## TIR e VPL: o que cada um diz
 
-**VPL (valor presente líquido)** traz todos os fluxos de caixa futuros para valores de hoje, usando uma taxa de desconto, e subtrai o investimento. VPL positivo significa que o projeto entrega mais do que a taxa exigida pelo investidor, se as premissas se confirmarem.
+**VPL (valor presente líquido)** traz os fluxos de caixa futuros para valores de hoje, usando uma taxa de desconto, e subtrai o investimento. VPL positivo indica que o projeto supera a taxa exigida — se as premissas se confirmarem.
 
-**TIR (taxa interna de retorno)** é a taxa de desconto que faz o VPL ser zero. É uma forma de expressar o resultado projetado como uma taxa anual.
+**TIR (taxa interna de retorno)** é a taxa de desconto que zera o VPL, ou seja, o resultado projetado expresso como taxa anual.
 
-Duas distinções importam:
-
-- **TIR nominal × TIR real:** a nominal inclui a inflação; a real a desconta. Contratos reajustados pelo IPCA costumam ser comparados à NTN-B, título do Tesouro que também paga IPCA mais uma taxa real. A diferença entre as duas é o prêmio pelo risco, tema de [energia como classe de ativo](/artigos/energia-como-classe-de-ativo/).
-- **TIR do projeto × TIR do acionista:** a do projeto ignora a dívida; a do acionista considera o efeito do financiamento, que pode aumentar ou reduzir o resultado de quem colocou capital próprio.
+- **TIR nominal × TIR real:** a nominal inclui a inflação; a real a desconta. A real costuma ser comparada à NTN-B, título do Tesouro que paga IPCA mais uma taxa real; a diferença é o prêmio pelo risco, tema de [energia como classe de ativo](/artigos/energia-como-classe-de-ativo/).
+- **TIR do projeto × TIR do acionista:** a do projeto ignora a dívida; a do acionista inclui o efeito do financiamento.
 
 > Uma TIR é uma projeção. Ao contrário da taxa de um título público, ninguém se compromete a pagá-la: ela depende de todas as premissas se confirmarem.
 
 ## Exemplo ilustrativo: um projeto hipotético e seus testes de estresse
 
-Todos os números abaixo são hipotéticos, simplificados e servem apenas para mostrar o mecanismo. Não representam nenhum projeto real nem indicam resultado esperado de qualquer investimento. Para facilitar, os valores estão em termos reais (sem inflação) e antes do imposto de renda.
+Todos os números abaixo são hipotéticos e simplificados, servem só para mostrar o mecanismo e não representam projeto real nem resultado esperado de qualquer investimento. Valores em termos reais (sem inflação) e antes do imposto de renda.
 
 **Cenário base:**
 
@@ -67,7 +63,7 @@ Todos os números abaixo são hipotéticos, simplificados e servem apenas para m
 - Serviço da dívida (juros e amortização): R$ 2,4 milhões por ano, durante 15 anos.
 - Caixa do acionista: R$ 1,1 milhão por ano nos anos 1 a 15 e R$ 3,5 milhões nos anos 16 a 20.
 
-Um indicador que os bancos acompanham é o **ICSD** (índice de cobertura do serviço da dívida): caixa operacional dividido pelo serviço da dívida. No cenário base, 3,5 ÷ 2,4 = 1,46. Suponha que o contrato de financiamento exija ICSD mínimo de 1,20; abaixo disso, a distribuição de dividendos fica bloqueada.
+Os bancos acompanham o **ICSD** (índice de cobertura do serviço da dívida): caixa operacional dividido pelo serviço da dívida. No cenário base, 3,5 ÷ 2,4 = 1,46. Suponha que o financiamento exija ICSD mínimo de 1,20; abaixo disso, dividendos ficam bloqueados.
 
 ### O que acontece em cada teste
 
@@ -81,18 +77,18 @@ Um indicador que os bancos acompanham é o **ICSD** (índice de cobertura do ser
 
 Como ler a tabela:
 
-- **P90:** a receita cai 8% (de R$ 5,0 para R$ 4,6 milhões), mas os custos e a dívida não mudam. O caixa do acionista cai de R$ 1,1 para R$ 0,7 milhão — **36% a menos**.
-- **Capex maior:** a obra custa R$ 46 milhões e os R$ 6 milhões extras saem do acionista, que passa a ter R$ 22 milhões investidos. O caixa anual é o mesmo, mas leva mais tempo para recuperar um valor maior.
-- **Atraso:** seis meses sem operar consomem cerca de R$ 1,75 milhão de caixa que precisa ser coberto pelo acionista. A conta ainda não inclui juros adicionais durante a obra, multas nem a eventual compra de energia para cumprir o contrato. Se o contrato tiver data fixa de término, ele também fica seis meses mais curto.
-- **Combinação:** dois desvios moderados juntos deixam apenas pouco mais de um ano de contrato depois de recuperar o capital. O resultado passa a depender quase todo do preço da energia depois do contrato.
+- **P90:** a receita cai 8% (para R$ 4,6 milhões), mas custos e dívida não mudam. O caixa do acionista cai de R$ 1,1 para R$ 0,7 milhão — **36% a menos**.
+- **Capex maior:** a obra custa R$ 46 milhões e os R$ 6 milhões extras saem do acionista. O caixa anual é o mesmo, mas há mais capital a recuperar.
+- **Atraso:** seis meses sem operar consomem cerca de R$ 1,75 milhão, cobertos pelo acionista — sem contar juros adicionais, multas e eventual compra de energia para cumprir o contrato. A tabela supõe contrato com data fixa de término, que fica seis meses mais curto.
+- **Combinação:** dois desvios moderados deixam pouco mais de um ano de contrato após recuperar o capital. O resultado passa a depender do preço depois do contrato.
 
 Dois outros testes completam o quadro. Um **corte de geração** (*curtailment*) de 5% ao ano reduziria a receita em R$ 250 mil e o caixa do acionista em cerca de 23% nos anos com dívida — veja [o que é curtailment](/artigos/curtailment/). E se o **preço depois do contrato** for 30% menor que os R$ 250/MWh supostos, o caixa operacional dos anos 21 a 25 cai de R$ 3,5 para R$ 2,0 milhões por ano.
 
 ## Alavancagem: o multiplicador de ida e volta
 
-Dívida com custo menor que o retorno do projeto aumenta o resultado do acionista no cenário base. Fontes comuns no setor são bancos de desenvolvimento, como o BNDES e o Banco do Nordeste, e debêntures incentivadas. Mas a dívida tem parcela fixa, e por isso amplifica qualquer desvio.
+Dívida mais barata que o retorno do projeto melhora o resultado do acionista no cenário base. Fontes comuns no setor são o BNDES, o Banco do Nordeste e debêntures incentivadas. Mas a parcela da dívida é fixa e amplifica qualquer desvio.
 
-Usando o mesmo projeto hipotético, com o serviço da dívida proporcional ao valor emprestado:
+No mesmo projeto hipotético, com serviço da dívida proporcional ao valor emprestado:
 
 | Dívida / capex | Caixa do acionista em P50 | Caixa do acionista em P90 | Queda | ICSD em P90 |
 |---|---|---|---|---|
@@ -106,16 +102,14 @@ Com 70% de dívida, um ano em P90 levaria o ICSD abaixo do mínimo hipotético d
 
 **Investidor:** diante de qualquer projeção de retorno, peça os cenários de sensibilidade — ou monte uma versão simplificada, como a do exemplo. Pergunte qual a geração suposta (P50 ou P90), se o capex é contratado ou estimado, quanto tempo falta de contrato e o que se supõe depois dele, e qual o nível de dívida. Os formatos de acesso ao setor estão em [caminhos para investir em energia](/artigos/caminhos-para-investir-em-energia/).
 
-**Empresa que contrata energia:** o preço oferecido por um gerador reflete essas mesmas contas. Contratos mais longos e compradores com melhor crédito ajudam o gerador a obter dívida, o que pode se refletir no preço.
-
-**Leitor em geral:** quando uma notícia diz que um projeto "rende X%", entenda que é uma projeção baseada em premissas. A pergunta útil é "e se as premissas não se confirmarem?".
+**Empresa que contrata energia:** o preço oferecido por um gerador reflete essas contas. Contratos longos e compradores com bom crédito facilitam a dívida, o que pode se refletir no preço.
 
 ## Riscos
 
-1. **Premissas otimistas de geração:** projeções baseadas em P50 sem testes em P90 tendem a superestimar o caixa; degradação de equipamentos também reduz a produção ao longo dos anos.
+1. **Premissas otimistas de geração:** projeções em P50 sem testes em P90 tendem a superestimar o caixa; a degradação dos equipamentos reduz a produção com o tempo.
 2. **Preço depois do contrato:** a usina dura mais que o contrato, e o preço desse período é uma projeção, não um valor contratado.
 3. **Custo e prazo de obra:** capex acima do orçado e atrasos consomem capital do acionista e podem gerar penalidades.
-4. **Juros e dívida:** custo de dívida acima do previsto reduz o caixa do acionista; exigências contratuais podem bloquear dividendos em anos ruins.
+4. **Juros e dívida:** dívida mais cara reduz o caixa do acionista; exigências contratuais podem bloquear dividendos em anos ruins.
 5. **Mudança tributária ou regulatória:** benefícios fiscais têm prazo e regras podem mudar.
 6. **Inadimplência do comprador e cortes de geração:** a receita depende de o comprador pagar e de a usina poder gerar.
 7. **Liquidez:** sair antes do prazo pode ser difícil e exigir desconto.
@@ -123,16 +117,13 @@ Com 70% de dívida, um ano em P90 levaria o ICSD abaixo do mínimo hipotético d
 ## Perguntas frequentes
 
 ### TIR alta significa projeto melhor?
-Não necessariamente. Uma TIR alta pode refletir premissas otimistas, alavancagem elevada ou riscos maiores, como obra ainda não iniciada ou comprador com crédito fraco. O número precisa ser lido junto com as premissas e os cenários de estresse.
+Não necessariamente. Ela pode refletir premissas otimistas, alavancagem elevada ou riscos maiores, como obra não iniciada ou comprador com crédito fraco. O número precisa ser lido junto com as premissas e os cenários de estresse.
 
 ### Qual a diferença entre P50 e P90?
 P50 é a geração que se espera superar em metade dos anos; P90, a que se espera superar em 90% dos anos. O P90 é mais baixo e mais conservador. Bancos costumam dimensionar a dívida com base em cenários desse tipo.
 
 ### Por que a dívida aumenta o risco do acionista?
 Porque a parcela da dívida é fixa, enquanto a receita varia com a geração. Quando a receita cai, a queda recai inteira sobre o que sobra para o acionista. Quanto maior a dívida, maior o efeito proporcional.
-
-### O que é ICSD?
-É o índice de cobertura do serviço da dívida: o caixa operacional dividido pelo valor de juros e amortização do ano. Contratos de financiamento costumam exigir um mínimo; abaixo dele, o pagamento de dividendos pode ser bloqueado.
 
 ### Uma projeção de "IPCA mais X%" é igual a um título indexado à inflação?
 Não. Num título público, a taxa é definida na compra e paga pelo emissor. Num projeto, "IPCA mais X%" é uma TIR real projetada, que depende de geração, custos, prazo, dívida e preço futuro se comportarem como o modelo supõe.

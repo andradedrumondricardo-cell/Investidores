@@ -32,7 +32,7 @@ O investidor não precisa adivinhar quanto o mercado cobra pelo risco do setor. 
 
 A NTN-B, vendida ao público como Tesouro IPCA+ com Juros Semestrais, é um título do Tesouro Nacional que paga a inflação medida pelo IPCA mais uma taxa real definida no momento da compra. Por ser emitida pelo governo federal, é usada como **referência de taxa livre de risco real** no Brasil. As taxas são publicadas diariamente no site do Tesouro Direto e variam conforme as condições do mercado.
 
-Como contratos de energia também costumam ser corrigidos pelo IPCA, a NTN-B é a régua natural de comparação: qualquer ativo de infraestrutura indexado à inflação precisa oferecer algo acima dela para compensar os riscos adicionais.
+Como contratos de energia também costumam ser corrigidos pelo IPCA, a NTN-B é a régua natural: um ativo de infraestrutura indexado à inflação precisa remunerar, acima dela, os riscos adicionais.
 
 ### WACC regulatório da ANEEL
 
@@ -58,7 +58,7 @@ A diferença entre a NTN-B e o retorno exigido de um investimento em energia é 
 | 4 | Usina em operação vendendo no mercado livre | Crédito do comprador, preço após o contrato | Maior |
 | 5 | Usina em construção, participação sem liquidez | Obra, atraso, capex, liquidez | Ainda maior |
 
-A tabela é conceitual. O prêmio real de cada ativo depende de contrato, comprador, local, tecnologia, estrutura de dívida e momento de mercado. O que ela mostra é a lógica: **quanto mais incertezas, maior o retorno que o mercado exige para assumi-las** — e maior a chance de o resultado efetivo ficar longe do projetado.
+A tabela é conceitual: o prêmio real depende de contrato, comprador, local, tecnologia, dívida e momento de mercado. Ela mostra a lógica: **quanto mais incertezas, maior o retorno que o mercado exige para assumi-las** — e maior a chance de o resultado efetivo ficar longe do projetado.
 
 ## Exemplo ilustrativo: por que juros importam para um ativo longo
 
@@ -72,19 +72,19 @@ Suponha um ativo que pague R$ 1 milhão por ano, em valores reais (já corrigido
 | 6% ao ano | R$ 11,5 milhões | cerca de 8% menor |
 | 7% ao ano | R$ 10,6 milhões | cerca de 15% menor |
 
-O fluxo de caixa é o mesmo nos três casos. O que muda é a taxa exigida — e ela se move junto com os juros reais da economia, cuja melhor referência pública é a NTN-B. Quando os juros reais sobem, ativos longos perdem valor de mercado, mesmo que nada tenha mudado na usina. Esse efeito, ligado à **duration** (prazo médio ponderado dos fluxos), é parecido com o de um título longo de renda fixa.
+O fluxo é o mesmo nos três casos; muda a taxa exigida, que acompanha os juros reais da economia (referência pública: NTN-B). Quando os juros reais sobem, ativos longos perdem valor de mercado, mesmo que nada tenha mudado na usina. Esse efeito, ligado à **duration** (prazo médio ponderado dos fluxos), é parecido com o de um título longo de renda fixa.
 
 ## O que isso significa para você
 
-**Investidor:** quando alguém descreve um ativo de energia, vale perguntar em que degrau da escada ele está. Receita regulada em operação e projeto em obra com comprador privado são investimentos muito diferentes, mesmo que ambos "sejam de energia". Para entender como as premissas viram resultado, veja [como se forma o retorno de um projeto](/artigos/como-se-forma-o-retorno/). Os formatos de acesso — ações de empresas listadas, debêntures, fundos de infraestrutura, participação direta — estão descritos em [caminhos para investir em energia](/artigos/caminhos-para-investir-em-energia/).
+**Investidor:** quando alguém descreve um ativo de energia, vale perguntar em que degrau da escada ele está. Receita regulada em operação e projeto em obra com comprador privado são coisas muito diferentes. Para entender como as premissas viram resultado, veja [como se forma o retorno de um projeto](/artigos/como-se-forma-o-retorno/). Os formatos de acesso — ações de empresas listadas, debêntures, fundos de infraestrutura, participação direta — estão descritos em [caminhos para investir em energia](/artigos/caminhos-para-investir-em-energia/).
 
-**Empresa:** o custo de capital do setor afeta o preço da energia contratada. Quando os juros sobem, novos projetos precisam de preços maiores para fechar a conta, o que aparece nos leilões e nas negociações do mercado livre.
+**Empresa:** quando os juros sobem, novos projetos precisam de preços maiores para fechar a conta, o que aparece nos leilões e no mercado livre.
 
-**Consumidor:** o WACC regulatório entra no cálculo das tarifas de distribuição e transmissão. É uma das razões pelas quais decisões técnicas da ANEEL acabam afetando a conta de luz.
+**Consumidor:** o WACC regulatório entra no cálculo das tarifas de distribuição e transmissão — uma decisão técnica da ANEEL que chega à conta de luz.
 
 ## Riscos
 
-1. **Juros:** como mostrado no exemplo, ativos longos perdem valor de mercado quando os juros reais sobem, mesmo com a operação normal.
+1. **Juros:** ativos longos perdem valor de mercado quando os juros reais sobem, mesmo com a operação normal.
 2. **Regulatório e político:** regras podem mudar ao longo de décadas. Exemplos conhecidos são a renovação antecipada de concessões em 2012–2013 (MP 579/2012, convertida na Lei 12.783/2013), que reduziu receitas de empresas do setor, e as mudanças nas regras da geração distribuída.
 3. **Risco hidrológico e de geração:** hidrelétricas dividem o risco de chuva pelo Mecanismo de Realocação de Energia (MRE), mas anos secos reduzem a geração de todas. Eólicas e solares dependem de vento e sol.
 4. **Curtailment:** cortes de geração determinados pelo ONS afetaram eólicas e solares nos últimos anos. Veja [o que é curtailment](/artigos/curtailment/).
@@ -96,7 +96,7 @@ Uma lista completa de perguntas está em [como avaliar os riscos de um projeto d
 ## Perguntas frequentes
 
 ### Por que fundos de pensão investem tanto em infraestrutura?
-Porque têm compromissos de longo prazo, como aposentadorias, que costumam ser corrigidos pela inflação. Ativos com receita longa e reajustada pela inflação ajudam a casar entradas e saídas de caixa ao longo do tempo. Além disso, esses fundos não precisam de liquidez imediata.
+Porque têm compromissos de longo prazo, como aposentadorias, que costumam ser corrigidos pela inflação. Ativos com receita longa e reajustada pela inflação ajudam a casar entradas e saídas de caixa ao longo do tempo.
 
 ### Receita contratada elimina o risco do investimento?
 Não. Receita contratada reduz algumas incertezas, mas o investidor continua exposto a juros, regulação, geração, cortes de produção, crédito do comprador e liquidez. O histórico do setor no Brasil tem exemplos de cada um desses riscos se materializando.
