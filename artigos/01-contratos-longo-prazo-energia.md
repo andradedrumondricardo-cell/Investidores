@@ -11,11 +11,11 @@ Poucos setores vendem hoje o que só vão entregar daqui a duas décadas. O de e
 
 ## Energia é infraestrutura de capital intensivo
 
-Uma usina hidrelétrica, eólica ou solar concentra o gasto no começo. Terreno, licenças, equipamentos, obra civil e conexão à rede são pagos antes do primeiro quilowatt-hora (kWh). Esse investimento inicial é chamado de **capex** (do inglês *capital expenditure*). Depois de pronta, a usina tem custo de operação relativamente baixo e pode funcionar por 25, 30 anos ou mais.
+Uma usina hidrelétrica, eólica ou solar paga terreno, licenças, equipamentos, obra e conexão à rede antes de gerar o primeiro quilowatt-hora (kWh). Esse investimento inicial é o **capex** (do inglês *capital expenditure*). Depois de pronta, a usina tem custo de operação relativamente baixo e pode funcionar por 25 anos ou mais.
 
-Essa combinação cria um problema de financiamento. Bancos e investidores só colocam dinheiro em algo que levará muitos anos para se pagar se houver uma estimativa razoável de quanto vai entrar de receita nesse período. Se o preço da energia fosse definido apenas dia a dia, no mercado à vista, a receita futura seria muito incerta, e o custo do dinheiro para construir usinas subiria.
+Bancos e investidores só financiam algo que levará muitos anos para se pagar se houver uma estimativa razoável da receita nesse período. Se o preço fosse definido apenas no mercado à vista, a receita futura seria muito incerta, e o custo do dinheiro para construir usinas subiria.
 
-O contrato de longo prazo resolve parte desse problema. Ele fixa **quanto** de energia será vendido, **a que preço**, **por quanto tempo** e **com qual reajuste**. Com isso, o projeto consegue mostrar ao financiador um fluxo de receita contratada, que vira a base para o empréstimo — modelo conhecido como *project finance*, em que a dívida é paga pelo caixa do próprio projeto.
+O contrato de longo prazo resolve parte desse problema. Ele fixa **quanto** de energia será vendido, **a que preço**, **por quanto tempo** e **com qual reajuste**. Essa receita contratada vira a base do empréstimo — no modelo de *project finance*, a dívida é paga pelo caixa do próprio projeto.
 
 ## Como a energia é contratada no Brasil
 
@@ -23,7 +23,7 @@ O modelo atual do setor foi desenhado pela Lei 10.848/2004, que criou os dois am
 
 ### Ambiente de Contratação Regulada (ACR)
 
-As distribuidoras — as empresas que levam energia até a casa do consumidor — precisam comprar energia suficiente para atender seus clientes cativos. Elas fazem isso em **leilões** organizados pelo governo, com regras da ANEEL e apoio técnico da EPE e da CCEE.
+As distribuidoras precisam comprar energia suficiente para atender seus clientes cativos. Elas fazem isso em **leilões** organizados pelo governo, com regras da ANEEL e apoio técnico da EPE e da CCEE.
 
 Nos leilões de energia nova, vence quem oferece o menor preço. O vencedor assina contratos chamados CCEAR (Contratos de Comercialização de Energia no Ambiente Regulado) com as distribuidoras compradoras. O prazo depende da fonte e do edital, e costuma ficar entre 15 e 30 anos. O preço é reajustado anualmente pelo IPCA.
 
@@ -31,9 +31,9 @@ Os contratos regulados podem ser **por quantidade** (o gerador se compromete a e
 
 ### Ambiente de Contratação Livre (ACL)
 
-No mercado livre, consumidores que cumprem os requisitos de migração e comercializadoras negociam diretamente com geradores. Prazo, preço, volume, reajuste e garantias financeiras são definidos entre as partes. Esses contratos costumam ser chamados de PPA (*power purchase agreement*, acordo de compra de energia).
+No mercado livre, consumidores aptos a migrar e comercializadoras negociam diretamente com geradores prazo, preço, volume, reajuste e garantias financeiras. Esses contratos são chamados de PPA (*power purchase agreement*, acordo de compra de energia).
 
-A maioria dos contratos no mercado livre é mais curta que a do regulado, de um a alguns anos. Mas contratos de 10 a 20 anos são comuns quando servem para viabilizar uma usina nova — por exemplo, quando uma indústria quer travar o custo da energia e o gerador precisa dessa receita para obter financiamento. Desde janeiro de 2024, todos os consumidores atendidos em alta tensão (Grupo A) podem migrar, conforme a Portaria MME 50/2022. As regras para os demais consumidores estão explicadas em [quem pode migrar para o mercado livre](/artigos/mercado-livre-quem-pode-migrar/).
+A maioria dos contratos no mercado livre é mais curta que a do regulado, de um a alguns anos. Mas contratos de 10 a 20 anos são comuns quando servem para viabilizar uma usina nova. Desde janeiro de 2024, todos os consumidores atendidos em alta tensão (Grupo A) podem migrar, conforme a Portaria MME 50/2022. As regras para os demais consumidores estão explicadas em [quem pode migrar para o mercado livre](/artigos/mercado-livre-quem-pode-migrar/).
 
 ### O que fica fora dos contratos
 
@@ -43,14 +43,14 @@ Por isso o contrato longo não elimina a exposição ao mercado; ele limita essa
 
 ### Transmissão e geração distribuída
 
-Duas outras formas de receita de longo prazo completam o quadro:
+Completam o quadro:
 
 - **Transmissão:** as linhas são concedidas em leilões, em geral por 30 anos. A transmissora recebe uma Receita Anual Permitida (RAP) pela disponibilidade da linha, não pelo volume de energia que passa por ela.
 - **Geração distribuída:** pequenas usinas próximas ao consumo geram créditos que abatem a conta de luz, pelas regras da Lei 14.300/2022. Não há contrato de venda de energia com a distribuidora, e sim um sistema de compensação. Veja [como funciona a geração distribuída](/artigos/geracao-distribuida-como-funciona/).
 
 ## O papel da correção pela inflação
 
-Um contrato de 20 anos sem reajuste perderia boa parte do valor no caminho. Por isso, a maioria dos contratos de energia prevê **reajuste anual por índice de inflação**. No ambiente regulado, o índice é o IPCA. No mercado livre, as partes escolhem, e o IPCA também é o mais comum.
+Um contrato de 20 anos sem reajuste perderia boa parte do valor no caminho. Por isso, a maioria prevê **reajuste anual por índice de inflação** — no regulado, o IPCA; no livre, o índice negociado, em geral também o IPCA.
 
 O reajuste protege o **valor real** do preço, ou seja, o poder de compra da receita. Ele não protege contra custos que sobem acima da inflação, contra juros mais altos na dívida nem contra geração menor.
 
@@ -88,9 +88,9 @@ A mesma falta de 10% de geração pode custar pouco ou muito, dependendo do pre�
 
 ## O que isso significa para você
 
-**Consumidor cativo:** os contratos que sua distribuidora assinou em leilões ao longo dos anos entram no custo da sua tarifa. Contratos antigos e caros, ou sobras de energia contratada, também acabam repassados conforme as regras da ANEEL.
+**Consumidor cativo:** os contratos que sua distribuidora assinou em leilões entram no custo da sua tarifa, conforme as regras da ANEEL.
 
-**Empresa:** quem pode migrar para o mercado livre tem a escolha de contratar por prazos longos para reduzir a incerteza de custo, ou por prazos curtos para aproveitar momentos de preço baixo. As duas escolhas têm riscos: travar preço alto ou ficar exposto a alta.
+**Empresa:** quem pode migrar para o mercado livre escolhe entre prazos longos, que reduzem a incerteza de custo, e curtos, que acompanham o mercado. Os riscos são travar preço alto ou ficar exposto a alta.
 
 **Investidor:** ao ler sobre um projeto de energia, a primeira pergunta é "quem compra, por quanto tempo e a que preço?". A segunda é "o que acontece se a usina gerar menos, atrasar ou o comprador não pagar?". Para entender como esses fatores viram resultado, leia [como se forma o retorno de um projeto](/artigos/como-se-forma-o-retorno/) e [energia como classe de ativo](/artigos/energia-como-classe-de-ativo/).
 
@@ -109,7 +109,7 @@ Contrato longo não significa receita certa. Os principais riscos:
 ## Perguntas frequentes
 
 ### Por que as usinas não vendem toda a energia no mercado de curto prazo?
-Porque o preço no curto prazo varia muito e a receita futura ficaria imprevisível. Sem receita contratada, fica mais difícil e mais caro conseguir financiamento para construir. O contrato longo troca a chance de vender caro em alguns momentos por estabilidade de receita.
+Porque o preço no curto prazo varia muito, e sem receita contratada fica mais difícil e caro financiar a obra. O contrato longo troca a chance de vender caro em alguns momentos por estabilidade de receita.
 
 ### Contrato de longo prazo elimina o risco do projeto?
 Não. Ele reduz a incerteza sobre o preço, mas o projeto continua exposto a geração menor, atrasos, cortes de produção, mudanças de regra e inadimplência do comprador. Por isso o contrato é o começo da análise, não o fim.
@@ -121,7 +121,7 @@ As distribuidoras pagam aos geradores e repassam esse custo aos consumidores cat
 A usina pode vender energia em novo contrato ou no mercado, ao preço vigente naquele momento. Esse preço futuro é incerto, e análises de projeto precisam deixar claro qual valor estão supondo para esse período.
 
 ### Onde encontro os resultados dos leilões de energia?
-A CCEE e a ANEEL publicam os resultados de cada leilão, com preços, volumes e vencedores. A EPE divulga os documentos técnicos e o cadastro de projetos. Termos técnicos estão no [glossário da energia](/artigos/glossario-da-energia/).
+A CCEE e a ANEEL publicam os resultados de cada leilão, com preços, volumes e vencedores. Termos técnicos estão no [glossário da energia](/artigos/glossario-da-energia/).
 
 ## Fontes
 - CCEE — Câmara de Comercialização de Energia Elétrica (ccee.org.br): leilões, PLD, contratos

@@ -3,7 +3,7 @@
 Energia tem fama de setor estável, mas cada usina carrega riscos próprios: quem compra a energia, quanto ela de fato vai gerar, se a rede consegue escoar a produção e se as regras vão mudar. Este guia mostra as perguntas que analistas fazem antes de olhar qualquer número de retorno — e como cada resposta pode mudar o resultado.
 
 ## Em resumo
-- Estabilidade do setor não é o mesmo que estabilidade de um projeto: contratos, geração, rede, obra, regulação e estrutura jurídica podem falhar de forma independente.
+- Estabilidade do setor não é estabilidade do projeto: contrato, geração, rede, obra, regulação e estrutura jurídica podem falhar de forma independente.
 - O primeiro risco a examinar é o comprador da energia: um contrato longo vale tanto quanto a capacidade de pagamento de quem o assinou.
 - Projeções de geração devem trazer cenários conservadores (P90), e não só o cenário central (P50); cortes de geração pela rede (*curtailment*) e atrasos de obra reduzem a receita mesmo quando o sol e o vento colaboram.
 - Quando há captação de recursos de terceiros, a oferta precisa de registro ou dispensa na CVM — sem isso, o investidor fica sem a proteção básica do mercado regulado.
@@ -13,51 +13,44 @@ Energia tem fama de setor estável, mas cada usina carrega riscos próprios: que
 
 A demanda por eletricidade é essencial, e boa parte da energia no Brasil é vendida em contratos de longo prazo, com preço reajustado por índices de inflação. Isso dá ao setor uma reputação de previsibilidade de receita, discutida em [Energia como classe de ativo](/artigos/energia-como-classe-de-ativo/) e em [Contratos de longo prazo](/artigos/contratos-longo-prazo-energia/).
 
-Mas essa previsibilidade é uma característica média do setor, não uma propriedade de cada usina. Um projeto isolado depende de um ou poucos compradores, de um único local (com seu sol, vento ou água), de uma conexão específica à rede e de uma equipe que constrói e opera. Basta um desses elos falhar para a receita esperada não se confirmar. Por isso, a análise de risco começa decompondo o projeto em partes e perguntando, para cada uma: o que pode dar errado, qual a probabilidade e quem arca com a perda?
+Mas essa previsibilidade é uma média do setor, não uma propriedade de cada usina. Um projeto isolado depende de poucos compradores, de um único local, de uma conexão específica à rede e de uma equipe que constrói e opera. Se um elo falha, a receita esperada não se confirma. Por isso, a análise começa decompondo o projeto e perguntando, para cada parte: o que pode dar errado e quem arca com a perda?
 
 ## As sete perguntas que organizam a análise
 
 ### 1. Quem compra a energia — e consegue pagar?
 
-O contrato de venda de energia (chamado de PPA, do inglês *power purchase agreement*, ou CCVE no mercado livre) é a base da receita. Pontos a verificar:
-
-- **Prazo, preço e reajuste:** por quanto tempo o comprador está obrigado, por qual preço e com qual índice de correção.
-- **Qualidade de crédito do comprador:** uma distribuidora, uma grande indústria e uma pequena empresa têm capacidades de pagamento muito diferentes.
-- **Garantias contratuais:** fiança bancária, conta vinculada ou carta de crédito reduzem o impacto de um atraso de pagamento.
-- **Concentração:** em geração compartilhada (modelo da [geração distribuída](/artigos/geracao-distribuida-como-funciona/)), a receita vem de muitos consumidores menores. Isso dilui o risco de um único inadimplente, mas exige olhar a rotatividade e o histórico de inadimplência da carteira.
-
-Sem contrato assinado, o projeto vende ao preço de mercado, que pode oscilar bastante. Isso não é necessariamente um defeito, mas é um risco diferente e deve ser tratado como tal.
+O contrato de venda de energia (o PPA, do inglês *power purchase agreement*) é a base da receita. Verifique prazo, preço e índice de reajuste; a capacidade de pagamento do comprador (uma distribuidora, uma grande indústria e uma pequena empresa são riscos muito diferentes); e as garantias contratuais, como fiança bancária ou conta vinculada. Em geração compartilhada, modelo da [geração distribuída](/artigos/geracao-distribuida-como-funciona/), a receita vem de muitos consumidores: o risco de um inadimplente fica diluído, mas é preciso olhar a rotatividade e o histórico de inadimplência da carteira. Sem contrato assinado, o projeto vende a preço de mercado, que pode oscilar bastante.
 
 ### 2. A usina vai gerar o que se espera?
 
-A receita é preço vezes quantidade, e a quantidade depende do recurso natural. Os estudos de recurso (irradiação solar, regime de ventos, vazão de rios) costumam apresentar cenários de probabilidade:
+A receita é preço vezes quantidade, e a quantidade depende do sol, do vento ou da água. Os estudos de recurso apresentam cenários de probabilidade:
 
-- **P50:** produção que se espera superar em metade dos anos. É o cenário central.
-- **P90:** produção que se espera superar em 90% dos anos. É mais conservador e costuma ser o cenário usado por bancos para dimensionar dívida.
+- **P50:** produção que se espera superar em metade dos anos (cenário central).
+- **P90:** produção que se espera superar em 90% dos anos (cenário conservador, que costuma ser usado por bancos para dimensionar dívida).
 
-Também importam a **degradação** dos equipamentos (painéis solares perdem um pouco de eficiência a cada ano), a **disponibilidade** (percentual do tempo em que a usina está apta a operar) e se o estudo foi feito ou revisado por **consultor independente**.
+Também contam a **degradação** dos equipamentos ao longo dos anos, a **disponibilidade** (percentual do tempo em que a usina está apta a operar) e se o estudo foi feito ou revisado por consultor independente.
 
 ### 3. A rede comporta a produção?
 
-Uma usina precisa de autorização de acesso à rede — da distribuidora, no caso de projetos menores, ou do ONS (Operador Nacional do Sistema Elétrico), na Rede Básica. Mesmo conectada, ela pode ter a produção cortada quando a rede não consegue escoar a energia ou quando há sobra de oferta no sistema. Esse corte é o [curtailment](/artigos/curtailment/), que vem crescendo em regiões com muita geração eólica e solar. Vale perguntar qual o histórico de cortes na região e se o modelo financeiro considera essa perda.
+A usina precisa de parecer de acesso da distribuidora ou do ONS (Operador Nacional do Sistema Elétrico). Mesmo conectada, pode ter a produção cortada quando a rede não escoa a energia ou quando sobra oferta no sistema — o [curtailment](/artigos/curtailment/), que cresce em regiões com muita geração eólica e solar. Pergunte qual o histórico de cortes na região e se o modelo financeiro considera essa perda.
 
 ### 4. Construção e operação
 
-Atrasos e estouros de orçamento são riscos típicos da fase de obra. O contrato de EPC (engenharia, suprimento e construção) com preço fechado, prazo definido e multa por atraso transfere parte desse risco ao construtor. Na fase de operação, o contrato de O&M (operação e manutenção) define quem responde por falhas, com que prazo de atendimento e com qual disponibilidade mínima. Apólices de cobertura para danos a equipamentos e para lucros cessantes também fazem parte da análise.
+Atrasos e estouros de orçamento são típicos da obra. Um contrato de EPC (engenharia, suprimento e construção) com preço fechado, prazo definido e multa por atraso transfere parte desse risco ao construtor. Na operação, o contrato de O&M (operação e manutenção) define quem responde por falhas e qual a disponibilidade mínima. Apólices para danos a equipamentos e lucros cessantes completam a análise.
 
 ### 5. Regulação
 
-O setor elétrico é regulado pela ANEEL e por leis federais, e mudanças de regra afetam receitas. Um exemplo conhecido é a Lei 14.300/2022, o marco legal da geração distribuída, que criou uma transição na forma como os créditos de energia compensam componentes da tarifa. A pergunta central é: em que regra o projeto está enquadrado e o que acontece com a receita se ela mudar?
+O setor é regulado pela ANEEL e por leis federais. Um exemplo de mudança relevante é a Lei 14.300/2022, marco legal da geração distribuída, que criou uma transição na forma como os créditos de energia compensam componentes da tarifa. A pergunta central: em que regra o projeto está e o que acontece com a receita se ela mudar?
 
 ### 6. Estrutura jurídica e governança
 
-Qual é o veículo do projeto — sociedade anônima, limitada, sociedade em conta de participação ([SCP](/artigos/scp-sociedade-em-conta-de-participacao/)) ou fundo? Quem responde perante terceiros? Há demonstrações financeiras auditadas, prestação de contas periódica e direito de informação para quem colocou dinheiro?
+Qual é o veículo — sociedade anônima, limitada, sociedade em conta de participação ([SCP](/artigos/scp-sociedade-em-conta-de-participacao/)) ou fundo? Quem responde perante terceiros? Há demonstrações auditadas e prestação de contas periódica?
 
-Quando a estrutura capta recursos de terceiros com expectativa de retorno, ela tende a configurar valor mobiliário. Nesse caso, a oferta precisa ser **registrada ou dispensada de registro na CVM** (as regras gerais estão na Resolução CVM 160; ofertas por plataformas de financiamento coletivo seguem a Resolução CVM 88). Ofertas públicas sem esse enquadramento são irregulares, e a CVM mantém uma lista pública de alertas.
+Quando a estrutura capta recursos de terceiros com expectativa de retorno, tende a configurar valor mobiliário, e a oferta precisa ser **registrada ou dispensada de registro na CVM** (regras gerais na Resolução CVM 160; plataformas de financiamento coletivo seguem a Resolução CVM 88). Ofertas públicas sem esse enquadramento são irregulares, e a CVM mantém uma lista pública de alertas.
 
 ### 7. Liquidez e prazo
 
-Projetos de energia têm vida útil de décadas, e participações diretas raramente têm mercado secundário. Pergunte se é possível sair antes do fim, a que custo e qual o horizonte esperado até a devolução do capital. O artigo [Como se forma o retorno](/artigos/como-se-forma-o-retorno/) detalha por que o prazo pesa tanto nessa conta.
+Projetos de energia duram décadas, e participações diretas raramente têm mercado secundário. É possível sair antes do fim? A que custo? Em quanto tempo o capital volta? O artigo [Como se forma o retorno](/artigos/como-se-forma-o-retorno/) mostra por que o prazo pesa tanto nessa conta.
 
 ## Exemplo ilustrativo: como cada risco mexe na receita
 
@@ -77,26 +70,14 @@ Imagine que o projeto tenha uma dívida com parcelas anuais de R$ 1,5 milhão e 
 | P90 com 8% de curtailment | 8.188 | 2.047 | 147 |
 | P90, 8% de cortes e comprador atrasa 2 meses | 8.188 | 1.706 (no ano) | –194 |
 
-O exemplo mostra três coisas. Primeiro, a diferença entre P50 e P90 já reduz a sobra em cerca de um terço. Segundo, um corte de geração moderado consome mais da metade do que restava. Terceiro, um problema de pagamento do comprador, somado aos outros, pode deixar o projeto sem caixa para honrar a dívida naquele ano. É por isso que bancos olham o **índice de cobertura do serviço da dívida** (quanto o caixa disponível supera as parcelas) no cenário conservador, e não no central.
+A diferença entre P50 e P90 já reduz a sobra em cerca de um terço; um corte moderado consome mais da metade do que restava; e um atraso do comprador, somado aos outros, deixa o projeto sem caixa para a dívida naquele ano. É por isso que bancos olham o **índice de cobertura do serviço da dívida** (quanto o caixa disponível supera as parcelas) no cenário conservador, e não no central.
 
 > Um projeto não é avaliado pelo cenário em que tudo dá certo, mas pela folga que ele tem quando várias coisas dão errado ao mesmo tempo.
 
-## Mapa de riscos: onde encontrar cada resposta
-
-| Risco | Pergunta-chave | Documento que responde | Sinal de alerta |
-|---|---|---|---|
-| Comprador | Quem paga e com que garantia? | Contrato de venda de energia | Contrato não assinado ou sem garantias |
-| Geração | Qual o cenário conservador? | Estudo de recurso independente | Só P50, sem revisão externa |
-| Rede | A energia será escoada? | Parecer de acesso; histórico do ONS | Região com cortes frequentes ignorados no modelo |
-| Obra | Quem paga o atraso? | Contrato de EPC | Preço aberto, sem multa |
-| Operação | Quem garante a disponibilidade? | Contrato de O&M; apólices | Sem metas de disponibilidade |
-| Regulação | Em que regra o projeto está? | Outorga, enquadramento regulatório | Receita dependente de regra em transição sem análise |
-| Estrutura | Quem responde e quem fiscaliza? | Estatuto/contrato social; registro na CVM | Captação de terceiros sem registro ou dispensa |
-
 ## O que isso significa para você
 
-- **Se você é investidor:** use as sete perguntas como roteiro antes de olhar a taxa apresentada. Se o material de uma oferta não responde a elas, ou se não informa o registro ou a dispensa na CVM, a informação disponível é insuficiente para avaliar o risco. O artigo [Caminhos para investir em energia](/artigos/caminhos-para-investir-em-energia/) compara os instrumentos regulados.
-- **Se você é empresa compradora de energia:** a mesma lógica vale ao contrário. A solidez do gerador e a sua capacidade de entregar a energia contratada importam tanto quanto o preço.
+- **Se você é investidor:** use as sete perguntas como roteiro antes de olhar qualquer taxa apresentada. Se o material não responde a elas nem informa o registro ou a dispensa na CVM, não há informação suficiente para avaliar o risco. O artigo [Caminhos para investir em energia](/artigos/caminhos-para-investir-em-energia/) compara os instrumentos regulados.
+- **Se você é empresa compradora de energia:** a lógica vale ao contrário: a solidez do gerador importa tanto quanto o preço.
 - **Se você é consumidor em geração compartilhada:** entender quem opera a usina e como funciona o contrato ajuda a avaliar a continuidade do desconto prometido na conta.
 
 ## Riscos
@@ -104,8 +85,8 @@ O exemplo mostra três coisas. Primeiro, a diferença entre P50 e P90 já reduz 
 1. **Risco de crédito do comprador:** atrasos ou inadimplência reduzem a receita e podem comprometer o pagamento de dívidas, mesmo com a usina gerando normalmente.
 2. **Risco de geração e de rede:** anos de recurso natural abaixo da média e cortes de produção pelo operador podem reduzir a energia vendida por longos períodos.
 3. **Risco regulatório e tributário:** mudanças de regra tarifária, de subsídios ou de impostos podem alterar a receita ou os custos de projetos já em operação.
-4. **Risco de liquidez e de estrutura:** participações em projetos costumam ser difíceis de vender antes do prazo, e estruturas sem registro na CVM oferecem menos informação e proteção ao investidor.
-5. **Risco de premissas:** modelos financeiros dependem de hipóteses de preço, inflação, juros e custos; pequenas mudanças nessas hipóteses podem alterar bastante o resultado.
+4. **Risco de liquidez e de estrutura:** participações em projetos costumam ser difíceis de vender antes do prazo, e estruturas sem registro na CVM oferecem menos informação e proteção.
+5. **Risco de premissas:** modelos financeiros dependem de hipóteses de preço, inflação, juros e custos; pequenas mudanças podem alterar bastante o resultado.
 
 ## Perguntas frequentes
 
@@ -113,7 +94,7 @@ O exemplo mostra três coisas. Primeiro, a diferença entre P50 e P90 já reduz 
 P90 é o nível de produção que se espera superar em 90% dos anos, segundo o estudo de recurso. É um cenário mais conservador que o P50, que representa a produção mediana. Bancos costumam usar o P90 para definir quanto de dívida o projeto suporta.
 
 ### Contrato de longo prazo elimina o risco do projeto?
-Não. O contrato reduz a incerteza sobre o preço, mas não elimina o risco de o comprador não pagar, de a usina gerar menos que o previsto ou de a rede cortar a produção. Ele também pode conter cláusulas de rescisão que precisam ser lidas com atenção.
+Não. O contrato reduz a incerteza sobre o preço, mas não elimina o risco de o comprador não pagar, de a usina gerar menos que o previsto ou de a rede cortar a produção.
 
 ### Como saber se uma oferta de participação em projeto está regular?
 Consulte o site da CVM, que lista ofertas registradas, plataformas de financiamento coletivo autorizadas e alertas sobre ofertas irregulares. Pergunte ao ofertante por qual norma a oferta foi registrada ou dispensada e peça o documento com os fatores de risco.
