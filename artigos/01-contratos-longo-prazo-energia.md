@@ -23,9 +23,9 @@ O modelo atual do setor foi desenhado pela Lei 10.848/2004, que organizou a come
 
 ### Ambiente de Contratação Regulada (ACR)
 
-As distribuidoras precisam comprar energia suficiente para atender seus clientes cativos. Elas fazem isso em **leilões** organizados pelo governo, com regras da ANEEL e apoio técnico da EPE e da CCEE.
+As distribuidoras precisam comprar energia suficiente para atender seus clientes cativos. Elas fazem isso em **leilões** com diretrizes do MME, promovidos pela ANEEL e operados pela CCEE, com habilitação técnica dos projetos pela EPE.
 
-Nos leilões de energia nova, vence quem oferece o menor preço e assina com as distribuidoras os CCEAR (Contratos de Comercialização de Energia no Ambiente Regulado). O prazo depende da fonte e do edital, e costuma ficar entre 15 e 30 anos.
+Nos leilões de energia nova, vence quem oferece o menor preço e assina com as distribuidoras os CCEAR (Contratos de Comercialização de Energia no Ambiente Regulado). O prazo depende da fonte e do edital, e costuma ficar entre 15 e 30 anos (a lei admite até 35). Nos leilões de energia existente, de usinas já em operação, os contratos vão de 1 a 15 anos.
 
 Os contratos regulados podem ser **por quantidade** (o gerador se compromete a entregar um volume de energia e responde pela diferença se gerar menos) ou **por disponibilidade** (o gerador recebe para manter a usina disponível, modelo comum em térmicas).
 
@@ -33,15 +33,15 @@ Os contratos regulados podem ser **por quantidade** (o gerador se compromete a e
 
 No mercado livre, consumidores aptos a migrar e comercializadoras negociam diretamente com geradores prazo, preço, volume, reajuste e garantias financeiras. Esses contratos são chamados de PPA (*power purchase agreement*, acordo de compra de energia).
 
-A maioria dura de um a alguns anos, mas contratos de 10 a 20 anos são comuns quando viabilizam uma usina nova. Desde janeiro de 2024, todos os consumidores atendidos em alta tensão (Grupo A) podem migrar, conforme a Portaria MME 50/2022. As regras para os demais consumidores estão explicadas em [quem pode migrar para o mercado livre](/artigos/mercado-livre-quem-pode-migrar/).
+A maioria dura de um a alguns anos, mas contratos de 10 a 20 anos são comuns quando viabilizam uma usina nova. Desde janeiro de 2024, todos os consumidores atendidos em média e alta tensão (Grupo A) podem migrar, conforme a Portaria MME 50/2022. As regras para os demais consumidores estão explicadas em [quem pode migrar para o mercado livre](/artigos/mercado-livre-quem-pode-migrar/).
 
 ### O que fica fora dos contratos
 
-Nenhuma usina gera exatamente o volume contratado todo mês. As diferenças entre o que foi gerado, consumido e contratado são liquidadas na CCEE pelo **PLD** (Preço de Liquidação das Diferenças), calculado para cada hora a partir de modelos de otimização da operação do sistema, com piso e teto definidos pela ANEEL a cada ano. O PLD pode variar muito: sobe quando os reservatórios estão baixos e cai quando há sobra de energia.
+Nenhuma usina gera exatamente o volume contratado todo mês. As diferenças entre o que foi gerado, consumido e contratado são liquidadas na CCEE pelo **PLD** (Preço de Liquidação das Diferenças), que a própria CCEE calcula para cada hora a partir de modelos de otimização da operação do sistema, com piso e tetos definidos pela ANEEL a cada ano. O PLD pode variar muito: sobe quando os reservatórios estão baixos e cai quando há sobra de energia.
 
 ### Transmissão e geração distribuída
 
-- **Transmissão:** as linhas são concedidas em leilões, em geral por 30 anos. A transmissora recebe uma Receita Anual Permitida (RAP) pela disponibilidade da linha, não pelo volume de energia que passa por ela.
+- **Transmissão:** as linhas são concedidas em leilões, em geral por 30 anos. A transmissora recebe uma Receita Anual Permitida (RAP) pela disponibilidade da linha, não pelo volume de energia que passa por ela; a RAP é reajustada todo ano pela inflação.
 - **Geração distribuída:** pequenas usinas próximas ao consumo geram créditos que abatem a conta de luz, pelas regras da Lei 14.300/2022. Veja [como funciona a geração distribuída](/artigos/geracao-distribuida-como-funciona/).
 
 ## O papel da correção pela inflação
@@ -62,6 +62,8 @@ Suponha um contrato de 20 anos para entregar 10.000 megawatts-hora (MWh) por ano
 | 10 | R$ 284,66 | R$ 2,85 milhões | R$ 140,52 |
 | 20 | R$ 421,37 | R$ 4,21 milhões | R$ 94,93 |
 
+*Números hipotéticos, apenas para ilustrar o mecanismo; não representam projeto, produto ou oferta existente.*
+
 Com reajuste, a receita nominal cresce, mas o poder de compra fica constante. Sem reajuste, no ano 20 o mesmo R$ 200 compraria o equivalente a menos da metade do que comprava no início.
 
 Agora o outro lado. Imagine que, num ano seco ou de pouco vento, a usina gere 9.000 MWh — 10% abaixo do contratado. Num contrato por quantidade, o gerador precisa entregar os 10.000 MWh mesmo assim e compra os 1.000 MWh que faltam no mercado de curto prazo:
@@ -77,7 +79,7 @@ A mesma falta de 10% pode custar pouco ou muito, conforme o preço de mercado. E
 
 | Modelo | Quem compra | Prazo típico | Reajuste | Principal ponto de atenção |
 |---|---|---|---|---|
-| ACR (leilão regulado) | Distribuidoras | 15 a 30 anos | IPCA | Exposição ao curto prazo se gerar menos (contratos por quantidade) |
+| ACR (leilão regulado) | Distribuidoras | 15 a 30 anos (energia nova) | IPCA | Exposição ao curto prazo se gerar menos (contratos por quantidade) |
 | ACL (PPA longo) | Indústrias, comercializadoras | 1 a 20 anos | Negociado, em geral IPCA | Saúde financeira do comprador |
 | Transmissão | Usuários do sistema, via encargos | Concessão de cerca de 30 anos | Definido no contrato de concessão | Disponibilidade da linha e regras de revisão |
 | Geração distribuída | Consumidor que recebe os créditos | Contrato privado, variável | Variável | Regras de compensação e inadimplência |

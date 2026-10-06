@@ -1,10 +1,10 @@
 # Energia como classe de ativo: por que os grandes investidores gostam de infraestrutura
 
-Fundos de pensão, fundos soberanos e gestoras de previdência mantêm parcelas relevantes da carteira em infraestrutura, e energia costuma ser o maior bloco. O motivo não é ausência de risco: é o perfil do fluxo de caixa. Entender esse perfil, e quanto o mercado cobra por cada risco, ajuda a ler qualquer notícia sobre investimento no setor.
+Fundos de pensão, fundos soberanos e gestoras de previdência mantêm parcelas relevantes da carteira em infraestrutura, e energia está entre os segmentos de maior peso. O motivo não é ausência de risco: é o perfil do fluxo de caixa. Entender esse perfil, e quanto o mercado cobra por cada risco, ajuda a ler qualquer notícia sobre investimento no setor.
 
 ## Em resumo
 - "Classe de ativo" é um grupo de investimentos com comportamento parecido; infraestrutura de energia se destaca por receita contratada de longo prazo, corrigida pela inflação.
-- Esse perfil combina com quem tem compromissos longos indexados à inflação, como fundos de previdência — por isso esses investidores são os mais presentes no setor.
+- Esse perfil combina com quem tem compromissos longos indexados à inflação, como fundos de previdência — por isso esses investidores têm presença relevante no setor.
 - O mercado mede o preço desse risco com referências públicas: NTN-B (Tesouro), WACC regulatório (ANEEL) e taxas de debêntures de infraestrutura (ANBIMA).
 - A diferença entre essas referências e o retorno exigido de um projeto é o prêmio de risco, que varia muito entre uma linha de transmissão em operação e uma usina ainda em obra.
 - Os riscos típicos da classe são juros, regulação, geração, cortes de produção e, sobretudo, liquidez.
@@ -17,7 +17,7 @@ De um título de renda fixa, a infraestrutura herda o fluxo de caixa relativamen
 
 ## As quatro características que atraem investidores de longo prazo
 
-1. **Receita contratada por longo prazo.** Leilões regulados, contratos no mercado livre e concessões de transmissão fixam preço e prazo por 10 a 30 anos. Os detalhes estão em [por que o setor funciona com contratos longos](/artigos/contratos-longo-prazo-energia/).
+1. **Receita contratada por longo prazo.** Leilões de energia nova, contratos longos no mercado livre e concessões de transmissão fixam preço e prazo por 10 a 30 anos. Os detalhes estão em [por que o setor funciona com contratos longos](/artigos/contratos-longo-prazo-energia/).
 2. **Correção pela inflação.** Boa parte dos contratos é reajustada anualmente, com frequência pelo IPCA. Isso casa com passivos de longo prazo indexados à inflação, como as aposentadorias que um fundo de pensão terá de pagar daqui a 20 anos.
 3. **Demanda essencial.** O consumo de eletricidade oscila menos com o ciclo econômico do que a maioria dos setores. Uma recessão reduz o consumo industrial, mas residências, hospitais e serviços continuam precisando de energia.
 4. **Capex concentrado no início.** Depois de construído, o ativo tem custo de operação baixo em relação à receita. A incerteza maior fica na fase de obra; na operação, o desafio passa a ser manter a usina disponível e gerando.
@@ -42,9 +42,9 @@ O dado mostra o que o próprio regulador considera um custo de capital razoável
 
 ### Debêntures de infraestrutura
 
-Debêntures são títulos de dívida emitidos por empresas. As **debêntures incentivadas** (Lei 12.431/2011) financiam projetos de infraestrutura e dão isenção de imposto de renda sobre os rendimentos para pessoas físicas. A Lei 14.801/2024 criou uma modalidade adicional, as debêntures de infraestrutura, em que o benefício fiscal fica com o emissor.
+Debêntures são títulos de dívida emitidos por empresas. As **debêntures incentivadas** (Lei 12.431/2011) financiam projetos de infraestrutura e dão isenção de imposto de renda sobre os rendimentos para pessoas físicas (benefício que já foi alvo de propostas de mudança; confirme a legislação vigente). A Lei 14.801/2024 criou uma modalidade adicional, as debêntures de infraestrutura, em que o benefício fiscal fica com o emissor.
 
-A ANBIMA divulga diariamente taxas indicativas desses papéis. A diferença entre a taxa de uma debênture e a da NTN-B de prazo parecido, chamada **spread**, mostra quanto o mercado cobra pelo risco de crédito daquela empresa ou projeto.
+A ANBIMA divulga diariamente taxas indicativas desses papéis. A diferença entre a taxa de uma debênture e a da NTN-B de prazo parecido, chamada **spread**, mostra quanto o mercado cobra pelo risco de crédito daquela empresa ou projeto; nas incentivadas, a isenção de IR também afeta essa diferença.
 
 ## Do título público ao projeto: a escada do prêmio de risco
 
@@ -53,7 +53,7 @@ A diferença entre a NTN-B e o retorno exigido de um investimento em energia é 
 | Degrau | Exemplo | Riscos que se somam | Prêmio exigido (relativo) |
 |---|---|---|---|
 | 1 | NTN-B | Juros e inflação | Referência |
-| 2 | Debênture de transmissora em operação | Crédito da empresa, regulação | Baixo |
+| 2 | Debênture de transmissora em operação | Crédito da empresa, regulação | Menor |
 | 3 | Usina em operação com contrato regulado | Geração, cortes de produção | Moderado |
 | 4 | Usina em operação vendendo no mercado livre | Crédito do comprador, preço após o contrato | Maior |
 | 5 | Usina em construção, participação sem liquidez | Obra, atraso, capex, liquidez | Ainda maior |
@@ -71,6 +71,8 @@ Suponha um ativo que pague R$ 1 milhão por ano, em valores reais (já corrigido
 | 5% ao ano | R$ 12,5 milhões | — |
 | 6% ao ano | R$ 11,5 milhões | cerca de 8% menor |
 | 7% ao ano | R$ 10,6 milhões | cerca de 15% menor |
+
+*Números hipotéticos, apenas para ilustrar o mecanismo; não representam projeto, produto ou oferta existente.*
 
 O fluxo é o mesmo nos três casos; muda a taxa exigida, que acompanha os juros reais da economia (referência pública: NTN-B). Quando os juros reais sobem, ativos longos perdem valor de mercado, mesmo que nada tenha mudado na usina. Esse efeito, ligado à **duration** (prazo médio ponderado dos fluxos), é parecido com o de um título longo de renda fixa.
 

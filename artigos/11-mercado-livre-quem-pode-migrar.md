@@ -1,17 +1,17 @@
 # Mercado livre de energia: quem já pode migrar e como funciona
 
-No mercado livre, o consumidor escolhe de quem compra energia e negocia preço, prazo e reajuste, como faz com qualquer outro insumo. Ele já está aberto a todos os consumidores de alta tensão e vem sendo estendido, por etapas, aos de baixa tensão — o que torna importante entender o que muda na conta e o que continua igual.
+No mercado livre, o consumidor escolhe de quem compra energia e negocia preço, prazo e reajuste, como faz com qualquer outro insumo. Ele já está aberto a todos os consumidores atendidos em média e alta tensão e, por lei, será estendido aos de baixa tensão a partir de novembro de 2027 — o que torna importante entender o que muda na conta e o que continua igual.
 
 ## Em resumo
 - No mercado livre, o consumidor compra a energia de geradoras ou comercializadoras, mas continua ligado à mesma rede e pagando à distribuidora pelo uso do fio (a TUSD).
-- Desde 2024, qualquer unidade atendida em alta tensão (Grupo A) pode migrar; as menores participam por meio de um comercializador varejista.
-- A abertura para a baixa tensão (residências e pequenos comércios) está sendo implantada em etapas; o calendário vigente está nos sites do MME e da CCEE.
+- Desde 2024, qualquer unidade atendida em média ou alta tensão (Grupo A) pode migrar; as menores participam por meio de um comercializador varejista.
+- A abertura para a baixa tensão (residências e pequenos comércios) está prevista em lei, em duas etapas: comércios e indústrias a partir de novembro de 2027 e os demais consumidores a partir de novembro de 2028.
 - O preço da energia pode ficar menor ou maior que no mercado regulado: depende do contrato, do perfil de consumo e do momento do mercado.
 - Os principais riscos são preço, volume consumido fora do contratado, saúde financeira do fornecedor e regras para voltar ao mercado regulado.
 
 ## Dois mercados, a mesma rede
 
-O Brasil tem dois ambientes de contratação de energia. No **Ambiente de Contratação Regulada (ACR)**, o chamado mercado cativo, o consumidor compra obrigatoriamente da distribuidora da sua região, pagando uma tarifa definida pela ANEEL. No **Ambiente de Contratação Livre (ACL)**, o mercado livre, ele negocia diretamente com geradoras ou comercializadoras.
+O Brasil tem dois ambientes de contratação de energia. No **Ambiente de Contratação Regulada (ACR)**, as distribuidoras compram energia em leilões para atender o chamado mercado cativo, em que o consumidor compra obrigatoriamente da distribuidora da sua região, pagando uma tarifa definida pela ANEEL. No **Ambiente de Contratação Livre (ACL)**, o mercado livre, ele negocia diretamente com geradoras ou comercializadoras.
 
 Para entender o que muda, é preciso separar a conta de luz em duas partes:
 
@@ -33,10 +33,10 @@ As [bandeiras tarifárias](/artigos/bandeiras-tarifarias/) incidem sobre a energ
 
 ## Quem já pode migrar
 
-Os consumidores são divididos por nível de tensão de atendimento. O **Grupo A** reúne quem é atendido em alta tensão (a partir de 2,3 kV), em geral indústrias, shoppings, hospitais e grandes comércios. O **Grupo B**, em baixa tensão, inclui residências, pequenos comércios e propriedades rurais.
+Os consumidores são divididos por nível de tensão de atendimento. O **Grupo A** reúne quem é atendido em média ou alta tensão (a partir de 2,3 kV), em geral indústrias, shoppings, hospitais e grandes comércios. O **Grupo B**, em baixa tensão, inclui residências, pequenos comércios e propriedades rurais.
 
-- **Grupo A:** desde 1º de janeiro de 2024, por portaria do Ministério de Minas e Energia (Portaria MME 50/2022), qualquer unidade de alta tensão pode migrar, independentemente da demanda contratada. Antes, havia limites mínimos de demanda.
-- **Grupo B:** a abertura está sendo implantada em etapas, definidas em lei e em regulamentação. Como o cronograma pode ser ajustado, consulte o calendário vigente nos sites do MME e da CCEE antes de qualquer planejamento.
+- **Grupo A:** desde 1º de janeiro de 2024, por portaria do Ministério de Minas e Energia (Portaria MME 50/2022), qualquer unidade do Grupo A pode migrar, independentemente da demanda contratada. Antes, havia limites mínimos de demanda.
+- **Grupo B:** a Lei 15.269/2025, regulamentada pelo Decreto 13.097/2026, prevê a abertura em duas etapas: consumidores industriais e comerciais atendidos em baixa tensão poderão migrar a partir de novembro de 2027, e os demais, incluindo residências, a partir de novembro de 2028. A lei também prevê o supridor de última instância (SUI), que atende temporariamente o consumidor que ficar sem fornecedor, por exemplo se a representação pelo varejista acabar; os detalhes ainda dependem de regulação da ANEEL.
 
 ## O papel do comercializador varejista
 
@@ -50,7 +50,7 @@ O varejista também é peça central na abertura para a baixa tensão, porque mi
 
 1. **Diagnóstico do consumo:** levantar pelo menos 12 meses de faturas, com horários de uso e variações sazonais.
 2. **Cotação e comparação de contratos:** preço, prazo, índice de reajuste, flexibilidade de volume (quanto se pode consumir acima ou abaixo do contratado sem custo extra), multas e garantias exigidas.
-3. **Aviso à distribuidora:** encerrar o contrato de compra de energia com a distribuidora dentro do prazo de aviso previsto nas regras da ANEEL. O contrato de uso da rede continua.
+3. **Aviso à distribuidora:** encerrar o contrato de compra de energia com a distribuidora dentro do prazo de aviso previsto na regulamentação. O contrato de uso da rede continua.
 4. **Adequação da medição:** quando necessário, instalar medição compatível com as exigências da CCEE.
 5. **Início do fornecimento:** a energia passa a ser faturada pelo novo fornecedor, e a distribuidora segue faturando a TUSD.
 
@@ -66,6 +66,8 @@ Suponha uma indústria que consome 300 MWh por mês.
 | Uso da rede (TUSD) | R$ 200/MWh → R$ 60.000 | R$ 200/MWh → R$ 60.000 |
 | Custos de representação e da CCEE | — | R$ 10/MWh → R$ 3.000 |
 | **Total mensal** | **R$ 150.000** | **R$ 135.000** |
+
+*Números hipotéticos, apenas para ilustrar o mecanismo; não representam projeto, produto ou oferta existente.*
 
 Note que a TUSD é igual nos dois casos: a economia, quando existe, está só na parcela de energia — e precisa cobrir os custos extras de estar no mercado livre.
 
@@ -85,7 +87,7 @@ Agora imagine que, num mês de produção forte, a fábrica consuma 345 MWh, 15%
 1. **Preço:** contratos curtos ou indexados ao mercado de curto prazo expõem o consumidor à volatilidade do PLD, que pode subir muito em períodos de seca ou de restrição de oferta.
 2. **Volume:** consumir muito acima ou abaixo do contratado, sem flexibilidade prevista, gera liquidações no mercado de curto prazo que podem encarecer a conta.
 3. **Contraparte:** se a comercializadora ou o varejista tiver problemas financeiros, o consumidor pode precisar buscar novo fornecedor às pressas, em condições piores.
-4. **Retorno ao cativo:** voltar para a distribuidora exige aviso prévio com prazo definido em regulação, o que limita a reação a um cenário desfavorável.
+4. **Retorno ao cativo:** voltar para a distribuidora exige aviso prévio com prazo definido em lei e regulamento, o que limita a reação a um cenário desfavorável.
 5. **Mudanças regulatórias:** regras de abertura, encargos e subsídios ainda estão em ajuste e podem alterar a comparação entre os dois mercados.
 
 ## Perguntas frequentes
@@ -94,7 +96,7 @@ Agora imagine que, num mês de produção forte, a fábrica consuma 345 MWh, 15%
 Não. O consumidor continua conectado à mesma rede e paga à distribuidora a TUSD, que remunera o uso do fio e inclui encargos. O que muda é o fornecedor da energia em si.
 
 ### Residências já podem entrar no mercado livre?
-A abertura para a baixa tensão está sendo implantada em etapas. O calendário vigente e as condições de cada etapa são divulgados pelo MME e pela CCEE, que devem ser consultados antes de qualquer decisão.
+Ainda não. Pela Lei 15.269/2025 e pelo Decreto 13.097/2026, residências poderão migrar a partir de novembro de 2028, um ano depois de comércios e indústrias atendidos em baixa tensão. As condições de cada etapa ainda dependem de regulação da ANEEL e são divulgadas também pelo MME e pela CCEE.
 
 ### O que faz um comercializador varejista?
 Ele representa o consumidor na CCEE, assumindo o registro de contratos, as garantias e a liquidação mensal. Para unidades do Grupo A com demanda abaixo de 500 kW, a representação por varejista é obrigatória.
@@ -103,11 +105,13 @@ Ele representa o consumidor na CCEE, assumindo o registro de contratos, as garan
 Não necessariamente. O resultado depende do preço contratado, da aderência entre contrato e consumo real, dos custos de representação e das condições do mercado de curto prazo. Por isso, a comparação deve ser feita com o perfil real de consumo.
 
 ### É possível voltar para o mercado cativo?
-Sim, mas com regras próprias, que incluem aviso prévio à distribuidora com prazo definido em regulação. Esse prazo deve ser considerado antes de migrar.
+Sim, mas com regras próprias. A Lei 9.074/1995 exige aviso prévio de cinco anos à distribuidora, prazo que pode ser reduzido; para a baixa tensão, o Decreto 13.097/2026 prevê um ano. Esse prazo deve ser considerado antes de migrar.
 
 ## Fontes
 - CCEE — informações sobre o mercado livre, comercialização varejista e PLD (ccee.org.br)
 - MME — Portaria MME 50/2022 e informações sobre a abertura do mercado (gov.br/mme)
+- Lei 15.269/2025 (abertura para a baixa tensão e supridor de última instância) e Decreto 13.097/2026 (regulamentação da abertura) (planalto.gov.br)
+- Lei 9.074/1995, art. 15 (prazo de aviso para retorno ao mercado regulado) (planalto.gov.br)
 - ANEEL — estrutura tarifária (TE e TUSD) e regras de faturamento, REN 1.000/2021 (gov.br/aneel)
 
 ---
