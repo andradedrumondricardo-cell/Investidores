@@ -3,7 +3,7 @@
 Quando um projeto de energia divulga uma TIR, o número resume dezenas de premissas sobre obra, geração, preço, custos e dívida. Entender essas premissas — e o que acontece quando elas não se confirmam — é mais útil do que olhar o número final.
 
 ## Em resumo
-- O retorno de um projeto é resultado de uma conta: investimento inicial, energia gerada, preço, custos, impostos, dívida e prazo. Mudou uma premissa, mudou o resultado.
+- O retorno de um projeto resulta de uma conta: investimento, geração, preço, custos, impostos, dívida e prazo. Mudou uma premissa, mudou o resultado.
 - TIR e VPL são as duas medidas mais usadas; ambas são projeções, não taxas contratadas como a de um título público.
 - Geração em P90, capex maior, atraso na obra e preço mais baixo depois do contrato são os testes que mais alteram o resultado.
 - A dívida amplifica tudo: com alavancagem, uma queda de 8% na geração pode reduzir o caixa do acionista em mais de um terço, como mostra o exemplo ilustrativo abaixo.
@@ -23,13 +23,13 @@ E o retorno compara esse caixa, ao longo dos anos, com o capital próprio invest
 
 | Componente | O que é | O que perguntar |
 |---|---|---|
-| Capex | Investimento na construção | Contrato de obra fechado (EPC) ou estimativa? Há contingência para imprevistos? |
-| Geração | Energia produzida por ano | Projeção em P50 ou P90? Estudo feito por terceiro independente? Qual a degradação dos equipamentos? |
+| Capex | Investimento na construção | Contrato de obra fechado (EPC) ou estimativa? Há contingência? |
+| Geração | Energia produzida por ano | P50 ou P90? Estudo independente? Qual a degradação dos equipamentos? |
 | Preço | Valor recebido por MWh | Preço contratado ou projetado? Até quando vale o contrato? |
 | Reajuste | Índice aplicado ao preço | IPCA integral? Há defasagem ou limite? |
-| Custos | Operação e manutenção (O&M), arrendamento do terreno, encargos de uso da rede, proteção patrimonial | Reajustados por qual índice? Há custos que sobem acima da inflação? |
+| Custos | Operação e manutenção (O&M), arrendamento, encargos de rede | Reajustados por qual índice? |
 | Prazo | Vida útil e duração do contrato | O que se supõe para os anos depois do fim do contrato? |
-| Estrutura de capital | Proporção entre dívida e capital próprio | Qual a alavancagem? Qual o custo, o prazo e as exigências da dívida? |
+| Estrutura de capital | Dívida × capital próprio | Qual a alavancagem? Custo, prazo e exigências da dívida? |
 | Impostos | Regime tributário e benefícios | Lucro presumido ou real? Benefícios como SUDENE/SUDAM ou REIDI valem por quanto tempo? |
 
 Alguns termos merecem explicação:
@@ -100,18 +100,18 @@ Com 70% de dívida, um ano em P90 levaria o ICSD abaixo do mínimo hipotético d
 
 ## O que isso significa para você
 
-**Investidor:** diante de qualquer projeção de retorno, peça os cenários de sensibilidade — ou monte uma versão simplificada, como a do exemplo. Pergunte qual a geração suposta (P50 ou P90), se o capex é contratado ou estimado, quanto tempo falta de contrato e o que se supõe depois dele, e qual o nível de dívida. Os formatos de acesso ao setor estão em [caminhos para investir em energia](/artigos/caminhos-para-investir-em-energia/).
+**Investidor:** diante de qualquer projeção de retorno, peça os cenários de sensibilidade ou monte uma versão simplificada, como a do exemplo. Pergunte a geração suposta (P50 ou P90), se o capex é contratado, quanto falta de contrato, o que se supõe depois dele e o nível de dívida. Os formatos de acesso ao setor estão em [caminhos para investir em energia](/artigos/caminhos-para-investir-em-energia/).
 
 **Empresa que contrata energia:** o preço oferecido por um gerador reflete essas contas. Contratos longos e compradores com bom crédito facilitam a dívida, o que pode se refletir no preço.
 
 ## Riscos
 
-1. **Premissas otimistas de geração:** projeções em P50 sem testes em P90 tendem a superestimar o caixa; a degradação dos equipamentos reduz a produção com o tempo.
-2. **Preço depois do contrato:** a usina dura mais que o contrato, e o preço desse período é uma projeção, não um valor contratado.
-3. **Custo e prazo de obra:** capex acima do orçado e atrasos consomem capital do acionista e podem gerar penalidades.
+1. **Geração otimista:** projeções em P50 sem testes em P90 tendem a superestimar o caixa.
+2. **Preço depois do contrato:** é uma projeção, não um valor contratado.
+3. **Custo e prazo de obra:** capex maior e atrasos consomem capital do acionista e podem gerar multas.
 4. **Juros e dívida:** dívida mais cara reduz o caixa do acionista; exigências contratuais podem bloquear dividendos em anos ruins.
 5. **Mudança tributária ou regulatória:** benefícios fiscais têm prazo e regras podem mudar.
-6. **Inadimplência do comprador e cortes de geração:** a receita depende de o comprador pagar e de a usina poder gerar.
+6. **Inadimplência e cortes de geração:** a receita depende de o comprador pagar e de a usina poder gerar.
 7. **Liquidez:** sair antes do prazo pode ser difícil e exigir desconto.
 
 ## Perguntas frequentes
@@ -123,7 +123,7 @@ Não necessariamente. Ela pode refletir premissas otimistas, alavancagem elevada
 P50 é a geração que se espera superar em metade dos anos; P90, a que se espera superar em 90% dos anos. O P90 é mais baixo e mais conservador. Bancos costumam dimensionar a dívida com base em cenários desse tipo.
 
 ### Por que a dívida aumenta o risco do acionista?
-Porque a parcela da dívida é fixa, enquanto a receita varia com a geração. Quando a receita cai, a queda recai inteira sobre o que sobra para o acionista. Quanto maior a dívida, maior o efeito proporcional.
+Porque a parcela da dívida é fixa e a receita varia com a geração. Quando a receita cai, a queda recai inteira sobre o que sobra ao acionista. Quanto maior a dívida, maior o efeito.
 
 ### Uma projeção de "IPCA mais X%" é igual a um título indexado à inflação?
 Não. Num título público, a taxa é definida na compra e paga pelo emissor. Num projeto, "IPCA mais X%" é uma TIR real projetada, que depende de geração, custos, prazo, dívida e preço futuro se comportarem como o modelo supõe.
