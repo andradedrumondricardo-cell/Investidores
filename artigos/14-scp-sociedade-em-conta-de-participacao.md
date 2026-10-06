@@ -2,6 +2,14 @@
 
 A sociedade em conta de participação (SCP) é há décadas um dos formatos mais usados na construção civil para reunir recursos de vários sócios em um empreendimento. Agora ela começa a aparecer com frequência em projetos de energia solar. Entender como funciona — e quando passa a ser regulada pela CVM — é essencial antes de qualquer decisão.
 
+## Em resumo
+
+- A SCP é prevista no Código Civil: um sócio ostensivo toca o negócio em seu nome, e os sócios participantes entram com recursos e dividem o resultado.
+- Ela se popularizou na construção civil e em hotéis pela flexibilidade e agora aparece em projetos de energia solar.
+- Uma SCP entre poucos sócios, negociada de forma privada, é um contrato societário comum.
+- Quando participações são oferecidas ao público em geral, a CVM tende a tratá-las como valor mobiliário, que exige registro ou dispensa.
+- Antes de qualquer decisão, avalie o sócio ostensivo, a prestação de contas, as regras de saída e se a oferta é regular.
+
 ## O que diz a lei
 
 A SCP está prevista no Código Civil (arts. 991 a 996). Suas características principais:
@@ -52,6 +60,23 @@ A CVM já emitiu alertas e ordens de suspensão contra ofertas públicas irregul
 3. **Liquidez baixa:** participações em SCP raramente têm mercado secundário; sair antes do prazo pode ser difícil.
 4. **Risco regulatório:** ofertas públicas sem registro ou dispensa na CVM podem ser suspensas, gerando insegurança para todos os envolvidos.
 5. **Riscos do próprio empreendimento:** no caso de energia, os mesmos riscos de qualquer projeto — geração, regulação, cortes de geração, inadimplência de compradores.
+
+## Perguntas frequentes
+
+### SCP é uma empresa?
+Não. A SCP não tem personalidade jurídica nem nome próprio no mercado. Quem contrata e responde perante terceiros é o sócio ostensivo; o contrato vale entre os sócios.
+
+### Qual a diferença entre sócio ostensivo e sócio participante?
+O sócio ostensivo administra o negócio e responde por ele perante terceiros. O participante entra com recursos e participa dos resultados, mas não atua na gestão nem nas relações externas.
+
+### Participar de uma SCP é investir em valor mobiliário?
+Depende de como a participação é oferecida. Entre poucos sócios que já se conhecem, é um contrato societário. Oferecida ao público em geral, com expectativa de retorno pelo esforço de terceiros, tende a ser enquadrada como contrato de investimento coletivo, regulado pela CVM.
+
+### Como saber se uma oferta é regular?
+Pergunte qual é o registro ou a dispensa na CVM e confira no site da própria CVM, que mantém consulta de ofertas e alertas sobre ofertas irregulares. Plataformas de investimento participativo precisam ser autorizadas.
+
+### Dá para sair de uma SCP antes do prazo?
+Só se o contrato prever. Participações em SCP raramente têm mercado secundário, por isso as regras de saída, de transferência e de encerramento precisam estar escritas antes da entrada.
 
 ## Fontes
 - Código Civil (Lei 10.406/2002), arts. 991 a 996

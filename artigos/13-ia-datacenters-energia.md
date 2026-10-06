@@ -2,6 +2,14 @@
 
 Enquanto grandes data centers esperam anos por conexão na Rede Básica, conexões ociosas na distribuição e a sobra de renováveis abrem espaço para projetos modulares de 5 a 20 MW. O maior obstáculo, porém, não está na energia: está no imposto sobre os equipamentos.
 
+## Em resumo
+
+- A disputa da inteligência artificial virou uma disputa por megawatts conectados; a rede não acompanha o ritmo, no Brasil e no mundo.
+- No Brasil, falta rede nos centros de consumo e sobra energia renovável onde está a geração — parte dela é cortada.
+- Cargas de 5 a 20 MW podem se conectar pela distribuição em meses, e conexões industriais ociosas são um atalho pouco explorado.
+- Baterias fazem mais sentido para tirar a carga da rede no horário de ponta do que para abastecer a noite inteira.
+- O principal obstáculo econômico é o imposto sobre servidores e GPUs importados, não o preço da energia.
+
 ## A corrida agora é por megawatts
 
 A corrida da inteligência artificial deixou de ser uma corrida por chips e virou uma corrida por megawatts conectados. A consultoria JLL estima que a capacidade global de data centers vai dobrar até 2030, de 103 GW para 200 GW, com 97% de ocupação e três quartos das obras já pré-alugadas. A Agência Internacional de Energia (IEA) projeta que o consumo elétrico desses centros pode mais que dobrar no mesmo período.
@@ -79,6 +87,23 @@ A janela é curta. A partir de 2028 entram os grandes campi já anunciados, e a 
 3. **Tributação:** o Redata vale por cinco anos e a redução de ICMS ainda depende do Confaz.
 4. **Janela de tempo:** a entrada dos grandes campi a partir de 2028 pode reduzir a escassez e a vantagem de velocidade.
 5. **Estimativas:** os números de custo de baterias, comparação internacional e custo total por kW são estimativas da Redação, sensíveis a câmbio, tarifas e premissas.
+
+## Perguntas frequentes
+
+### Por que data centers de IA consomem tanta energia?
+Os chips usados para treinar e rodar modelos de inteligência artificial concentram muita potência por rack e funcionam 24 horas por dia. Um único campus pode demandar centenas de megawatts, o equivalente ao consumo de uma cidade média.
+
+### O Brasil tem energia sobrando para data centers?
+Há sobra de energia renovável em algumas regiões e horários, tanto que parte da geração eólica e solar é cortada. O gargalo é levar essa energia até onde está a demanda: falta capacidade de rede nos grandes centros de consumo.
+
+### O que é conectar pela distribuição em vez da Rede Básica?
+Cargas menores, de 5 a 20 MW, podem se ligar à rede das distribuidoras locais, com prazos de meses. Grandes cargas precisam da Rede Básica de transmissão, cujas obras costumam levar de 42 a 60 meses.
+
+### O que é o Redata?
+É o regime especial de tributação para data centers, sancionado em setembro, que suspende por cinco anos tributos federais sobre equipamentos importados, com exigências como baixo consumo de água. O ICMS, estadual, ficou de fora.
+
+### Data centers podem ajudar o sistema elétrico?
+Podem, se forem flexíveis: consumindo quando há excesso de oferta e reduzindo o consumo no fim da tarde, quando a geração solar cai. Para isso, precisam de sinais tarifários e programas de resposta da demanda que reconheçam esse valor.
 
 ## Fontes
 - JLL — relatórios globais de data centers
