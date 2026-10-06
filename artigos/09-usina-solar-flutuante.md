@@ -100,7 +100,7 @@ Pode gerar um pouco mais por potência instalada, porque a água ajuda a resfria
 Depende de quanto do lago é coberto e das características do reservatório. Coberturas parciais tendem a ter efeitos menores, mas luz, temperatura e oxigênio precisam ser monitorados no licenciamento.
 
 ### O que é uma usina híbrida?
-É um empreendimento que combina duas ou mais fontes, como hidrelétrica e solar, usando a mesma conexão à rede. A ANEEL regulamentou as usinas híbridas e associadas, o que permite aproveitar subestações e linhas existentes.
+É um empreendimento que combina duas ou mais fontes, como hidrelétrica e solar, usando a mesma conexão à rede. A ANEEL regulamentou as usinas híbridas e associadas (Resolução Normativa 954/2021), o que permite aproveitar subestações e linhas existentes.
 
 ### Onde existem usinas solares flutuantes no Brasil?
 Houve pilotos nos reservatórios de Balbina (AM) e Sobradinho (BA), e há projetos como a usina flutuante Araucária, em São Paulo. Para a lista atualizada, consulte o banco de dados de geração da ANEEL.

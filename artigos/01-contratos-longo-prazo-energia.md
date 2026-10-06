@@ -19,7 +19,7 @@ O contrato de longo prazo resolve parte desse problema. Ele fixa **quanto** de e
 
 ## Como a energia é contratada no Brasil
 
-O modelo atual do setor foi desenhado pela Lei 10.848/2004, que criou os dois ambientes de comercialização e a Câmara de Comercialização de Energia Elétrica (CCEE), responsável por registrar os contratos e liquidar as diferenças.
+O modelo atual do setor foi desenhado pela Lei 10.848/2004, que organizou a comercialização em dois ambientes e autorizou a criação da Câmara de Comercialização de Energia Elétrica (CCEE), responsável por registrar os contratos e liquidar as diferenças.
 
 ### Ambiente de Contratação Regulada (ACR)
 

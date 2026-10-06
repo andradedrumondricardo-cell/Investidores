@@ -6,7 +6,7 @@ Por mais de um século, a eletricidade precisou ser consumida no instante em que
 - Sistemas de armazenamento em baterias (BESS, na sigla em inglês) carregam quando sobra energia e descarregam quando a rede precisa.
 - Predomina o lítio, sobretudo a química lítio-ferro-fosfato (LFP), e uma mesma bateria pode prestar vários serviços: deslocar energia, oferecer reserva, regular frequência, aliviar a ponta e reduzir cortes.
 - Duas métricas são essenciais: potência (MW) e energia (MWh). A divisão entre elas dá a duração, em geral de 2 a 4 horas em projetos de rede.
-- No Brasil, as regras de remuneração e a participação das baterias em leilões de capacidade ainda estão em discussão na ANEEL e no MME.
+- No Brasil, a Portaria MME 136/2026 marcou os primeiros leilões de baterias para dezembro de 2026, com contratos de 15 anos; outras regras de remuneração seguem em discussão.
 
 ## Por que o armazenamento entrou na pauta
 
@@ -89,7 +89,7 @@ O armazenamento ainda não tem marco regulatório consolidado no país. Pontos e
 
 - **Como a bateria é classificada:** se é geração, consumo ou um agente próprio. Isso define os encargos e tarifas que paga — por exemplo, se paga ao carregar e ao descarregar.
 - **Como é remunerada:** por energia (arbitragem), por capacidade (disponibilidade) ou por serviços ancilares (como regulação de frequência), e se pode somar receitas.
-- **Participação em leilões:** o MME sinalizou a intenção de incluir baterias em leilões de reserva de capacidade, contratando potência para a ponta. Cronograma e regras vêm sendo ajustados; confira as datas nas portarias do MME e nos editais da ANEEL.
+- **Participação em leilões:** a Portaria MME 136/2026 estabeleceu dois Leilões de Reserva de Capacidade na forma de potência exclusivos para baterias, previstos para 2 e 4 de dezembro de 2026, com contratos de 15 anos e início de suprimento em agosto de 2028. Um dos certames tem exigência de conteúdo nacional. Datas e regras podem ser ajustadas; confira as portarias do MME e os editais da ANEEL.
 - **Baterias associadas a usinas:** a regulação de usinas híbridas e associadas da ANEEL permite instalar armazenamento junto a usinas existentes, compartilhando a conexão.
 
 A ANEEL conduziu consultas públicas sobre o tema, e a EPE publica estudos sobre o papel do armazenamento no planejamento. Enquanto isso, os projetos no país são poucos e concentrados em aplicações específicas.
@@ -128,7 +128,7 @@ Principalmente porque as regras de remuneração e de encargos ainda estão em d
 
 ## Fontes
 - ANEEL — consultas públicas sobre armazenamento e regulação de usinas híbridas e associadas (gov.br/aneel)
-- MME — portarias e diretrizes de leilões de reserva de capacidade (gov.br/mme)
+- MME — Portaria MME 136/2026, diretrizes dos leilões de reserva de capacidade com baterias (gov.br/mme)
 - EPE — estudos sobre armazenamento e Plano Decenal de Expansão de Energia (epe.gov.br)
 - ONS — dados de operação e curvas de carga (ons.org.br)
 - IEA — relatórios sobre baterias e armazenamento de energia (iea.org)

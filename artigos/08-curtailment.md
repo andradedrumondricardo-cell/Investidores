@@ -5,8 +5,8 @@ Usinas solares e eólicas recebem cada vez mais ordens para reduzir a produção
 ## Em resumo
 - *Curtailment* (corte de geração) é a redução da produção de uma usina determinada pelo ONS.
 - Há três origens: falta de transmissão (restrição elétrica), excesso de oferta (energética) e estabilidade da rede (confiabilidade).
-- Em 2025, 20,6% da energia eólica e solar disponível deixou de ser gerada, com perda estimada em R$ 6 bilhões, segundo dados do ONS.
-- Em 2026, cerca de dois terços dos cortes foram por excesso de oferta, fora do ressarcimento regulamentado pela Portaria MME 140/2026.
+- Em 2025, 20,6% da energia eólica e solar disponível deixou de ser gerada, com perda estimada em mais de R$ 6 bilhões, segundo levantamentos de consultorias com dados do ONS.
+- A Portaria MME 140/2026 regulamentou o ressarcimento de cortes passados por razões elétricas; os cortes por excesso de oferta ficaram de fora.
 - As soluções passam por transmissão, baterias, cargas flexíveis e sinais de preço — e todas levam tempo.
 
 ## Um problema que cresceu com a expansão das renováveis
@@ -15,7 +15,7 @@ O sistema elétrico brasileiro é interligado, e quem coordena sua operação em
 
 Durante décadas, essa coordenação dependeu sobretudo de hidrelétricas, que seguram água no reservatório e geram quando for preciso. Nos últimos anos, a capacidade eólica e solar cresceu em ritmo forte, concentrada no Nordeste e no Norte de Minas Gerais. Somou-se a isso a expansão da [geração distribuída](/artigos/geracao-distribuida-como-funciona/), os painéis em telhados e pequenas usinas ligadas às distribuidoras.
 
-Essas fontes produzem quando a natureza permite, não quando o consumo pede. E as linhas de transmissão, que levam anos entre o leilão e a operação, não acompanharam o ritmo da geração. Segundo dados do ONS, **20,6% da energia eólica e solar disponível em 2025 deixou de ser gerada**, uma perda estimada em **R$ 6 bilhões** para os geradores.
+Essas fontes produzem quando a natureza permite, não quando o consumo pede. E as linhas de transmissão, que levam anos entre o leilão e a operação, não acompanharam o ritmo da geração. Segundo levantamentos de consultorias com dados do ONS, **20,6% da energia eólica e solar disponível em 2025 deixou de ser gerada**, uma perda estimada em **mais de R$ 6 bilhões** para os geradores.
 
 ## Os três tipos de restrição
 
@@ -37,7 +37,7 @@ Uma análise da Redação com dados abertos do ONS mostra como isso muda de luga
 | Causa | Gargalo de transmissão na região | Sobra de energia no sistema inteiro |
 | Quando ocorre | Quando a região gera acima da capacidade de escoamento | Horários de baixa demanda e muita geração (meio-dia, feriados) |
 | Solução principal | Linhas e subestações, consumo próximo | Armazenamento, consumo flexível, sinais de preço |
-| Ressarcimento em 2026 | Previsto em parte dos casos, conforme regras e limites vigentes | Fora do ressarcimento da Portaria MME 140/2026 |
+| Ressarcimento (Portaria MME 140/2026) | Previsto para cortes entre set/2023 e nov/2025 por indisponibilidade externa ou confiabilidade elétrica, mediante adesão | Excluído |
 
 ## Exemplo ilustrativo: o efeito dos cortes na receita de uma usina
 
@@ -60,7 +60,7 @@ Quando a usina deixa de gerar por ordem do operador, quem paga? Depende do tipo 
 
 Os geradores contestam essa leitura. Argumentam que planejaram projetos com base em estudos oficiais, que a geração distribuída (que não sofre cortes da mesma forma) agravou a sobra e que perdas bilionárias comprometem financiamentos. Do outro lado, ressarcir todos os cortes transferiria o custo aos consumidores por meio de encargos.
 
-Em 2026, a **Portaria MME 140/2026** regulamentou o ressarcimento, mas cerca de dois terços dos cortes do ano, por excesso de oferta, ficaram fora da compensação. O tema segue em discussão, e as regras podem mudar; acompanhe as portarias do MME e a regulação da ANEEL.
+Em 2026, a **Portaria MME 140/2026**, que operacionaliza a Lei 15.269/2025, regulamentou o ressarcimento dos cortes ocorridos entre setembro de 2023 e novembro de 2025 causados por indisponibilidade externa ou por confiabilidade elétrica. Os valores são acertados na CCEE, e o gerador que adere precisa assinar um termo de compromisso e desistir de ações judiciais e arbitrais sobre o tema. Os cortes por excesso de oferta (razão energética) ficaram expressamente de fora. O tema segue em discussão, e as regras podem mudar; acompanhe as portarias do MME e a regulação da ANEEL.
 
 ## O que pode reduzir o problema
 
@@ -92,7 +92,7 @@ Em 2026, a **Portaria MME 140/2026** regulamentou o ressarcimento, mas cerca de 
 Às vezes ela não consegue chegar a quem consome, por falta de linhas de transmissão. Em outros, o país inteiro não tem consumo suficiente naquele horário. Sem armazenamento ou consumo flexível, resta gerar menos.
 
 ### O gerador recebe alguma compensação pelo corte?
-Em parte dos casos. A Portaria MME 140/2026 regulamentou o ressarcimento, mas os cortes por excesso de oferta — cerca de dois terços do total em 2026 — ficaram de fora. O tema continua em discussão.
+Em parte dos casos. A Portaria MME 140/2026 regulamentou o ressarcimento dos cortes de setembro de 2023 a novembro de 2025 por razões elétricas, mediante adesão. Os cortes por excesso de oferta ficaram de fora. O tema continua em discussão.
 
 ### Os cortes afetam a minha conta de luz?
 Indiretamente. Se o ressarcimento aos geradores for ampliado, o custo pode ser repassado aos consumidores por meio de encargos. Ao mesmo tempo, a sobra tende a baixar os preços de mercado em certos horários.
@@ -102,7 +102,7 @@ Ajudam, mas não sozinhas. Elas deslocam energia do meio-dia para a noite, o que
 
 ## Fontes
 - ONS — dados abertos de restrição de operação (constrained-off) de usinas eólicas e solares (ons.org.br e dados.ons.org.br)
-- MME — Portaria MME 140/2026 (gov.br/mme)
+- Lei 15.269/2025 e Portaria MME 140/2026 — ressarcimento de cortes de geração (planalto.gov.br; gov.br/mme)
 - ANEEL — regulação de restrições de operação e leilões de transmissão (gov.br/aneel)
 - EPE — Plano Decenal de Expansão de Energia (epe.gov.br)
 - CCEE — informações sobre o mercado de curto prazo (ccee.org.br)

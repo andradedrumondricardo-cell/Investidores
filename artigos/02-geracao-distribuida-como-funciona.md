@@ -17,7 +17,7 @@ O sistema de compensação nasceu com a Resolução Normativa ANEEL 482/2012 e f
 
 Com a queda do preço dos painéis, a solar passou a dominar o segmento. O número atualizado de capacidade instalada, por estado, fonte e modalidade, está no painel de geração distribuída da ANEEL.
 
-A regra distingue **microgeração** (até 75 kW, típica de residências e pequenos comércios) e **minigeração** (acima de 75 kW, até o limite da lei — 5 MW, com teto menor para fontes não despacháveis, como a solar, em pedidos posteriores à lei).
+A regra distingue **microgeração** (até 75 kW, típica de residências e pequenos comércios) e **minigeração** (acima de 75 kW, até o limite da lei — 5 MW, e 3 MW para fontes não despacháveis, como a solar, em pedidos feitos depois da regra de transição da lei).
 
 ## Como funciona a compensação, passo a passo
 

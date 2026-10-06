@@ -26,7 +26,7 @@ Parte desses pedidos é especulativa. O próprio ONS projeta cerca de 3,5 GW de 
 
 ## O paradoxo: energia sobrando
 
-Do outro lado, a geração renovável corta produção. Em 2025, 20,6% da energia eólica e solar disponível deixou de ser gerada, uma perda estimada em R$ 6 bilhões. Em 2026, cerca de dois terços dos cortes se devem a excesso de oferta no sistema, e esses cortes ficaram fora do ressarcimento regulamentado pela Portaria MME 140/2026. Geradores com energia cortada passaram a ter motivo de sobra para vender a quem consuma.
+Do outro lado, a geração renovável corta produção. Em 2025, 20,6% da energia eólica e solar disponível deixou de ser gerada, uma perda estimada em mais de R$ 6 bilhões, segundo levantamentos de consultorias com dados do ONS. A Portaria MME 140/2026 regulamentou o ressarcimento de cortes passados por razões elétricas, mas os cortes por excesso de oferta no sistema ficaram de fora. Geradores com energia cortada passaram a ter motivo de sobra para vender a quem consuma.
 
 Colocar um data center ao lado da usina, porém, não resolve o corte em todo lugar. A análise da Redação com dados abertos do ONS mostra dois casos opostos:
 

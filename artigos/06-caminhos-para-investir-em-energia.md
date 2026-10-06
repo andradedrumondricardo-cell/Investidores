@@ -22,7 +22,7 @@ Três perguntas ajudam a comparar: **sou sócio ou credor?** (sócios dividem o 
 - **Como funciona:** compra, na B3, de ações de geradoras, transmissoras, distribuidoras ou empresas integradas. O investidor vira sócio da companhia inteira, não de um projeto.
 - **Custos típicos:** corretagem (muitas vezes zerada), emolumentos da B3 e eventual custódia.
 - **Liquidez:** em geral alta nas empresas grandes; menor nas pouco negociadas.
-- **Tributação geral:** ganho de capital tributado pelo IR, com regras próprias para *day trade*. Dividendos foram historicamente isentos para pessoa física, mas a legislação do IR mudou recentemente nesse ponto; juros sobre capital próprio têm IR retido na fonte. Confirme a legislação vigente.
+- **Tributação geral:** ganho de capital tributado pelo IR, com regras próprias para *day trade*. Dividendos foram historicamente isentos para pessoa física, mas a Lei 15.270/2025 passou a prever, a partir de 2026, retenção de IR sobre dividendos acima de determinado valor mensal pagos por uma mesma empresa, além de um imposto mínimo para altas rendas; juros sobre capital próprio têm IR retido na fonte. Confirme a legislação vigente.
 - **Riscos:** volatilidade de bolsa, gestão, endividamento, revisões tarifárias e regulação.
 
 ### Debêntures incentivadas (Lei 12.431)

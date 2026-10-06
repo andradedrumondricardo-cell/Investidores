@@ -36,7 +36,7 @@ Alguns termos merecem explicação:
 
 - **EPC** (*engineering, procurement and construction*): contrato de obra entregue pronta, em geral com preço, prazo e multa por atraso definidos.
 - **P50 e P90:** estimativas estatísticas de geração. P50 é o volume que se espera superar em metade dos anos; P90, em 90% dos anos — mais baixo e mais conservador.
-- **REIDI:** regime especial (Lei 11.488/2007) que suspende PIS e Cofins na compra de bens e serviços para obras de infraestrutura habilitadas.
+- **REIDI:** regime especial (Lei 11.488/2007) que suspende PIS e Cofins na compra de bens e serviços para obras de infraestrutura habilitadas. Com a reforma tributária (EC 132/2023 e LC 214/2025), PIS e Cofins serão substituídos pela CBS a partir de 2027, e o tratamento desses regimes passa por transição; confira as regras vigentes na data do projeto.
 - **SUDENE/SUDAM:** projetos nessas áreas podem obter redução do imposto de renda, por prazo determinado e mediante aprovação.
 
 ## TIR e VPL: o que cada um diz
