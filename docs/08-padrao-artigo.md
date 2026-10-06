@@ -39,6 +39,7 @@ Os títulos das seções entre colchetes são livres (use títulos descritivos, 
 ## Exemplo prático
 - Use números para mostrar o mecanismo (conta de luz, projeto hipotético, contrato).
 - Números inventados para ilustrar devem estar **identificados**: "Exemplo ilustrativo:", "Suponha que…", "números hipotéticos". Nunca apresente exemplo como dado real.
+- Logo abaixo de cada tabela ou bloco de exemplo com números hipotéticos, inclua a linha padrão: *Números hipotéticos, apenas para ilustrar o mecanismo; não representam projeto, produto ou oferta existente.*
 - Dados reais só com fonte pública verificável. Na dúvida, explique o conceito e indique onde o leitor acha o número atualizado.
 - Em temas de investimento, o exemplo mostra **como a conta funciona e como os riscos alteram o resultado** — nunca sugere uma taxa de retorno esperada nem compara favoravelmente com renda fixa/CDI.
 
@@ -49,4 +50,6 @@ Os títulos das seções entre colchetes são livres (use títulos descritivos, 
 - Links internos para outros artigos do site quando o tema se conecta (formato `/artigos/<slug>/`).
 
 ## Regras de conformidade (inalteradas)
+Normas e números citados devem estar **vigentes na data da publicação** (confira em gov.br/aneel, gov.br/mme, planalto.gov.br, CCEE, ONS, EPE, CVM); atribua estimativas a quem as fez ("segundo a consultoria X, com dados do ONS"). A data de atualização aparece automaticamente no artigo a partir do histórico do git.
+
 Seguem `docs/02-guia-editorial.md`: sem promessa de rentabilidade; sem "seguro/garantido/baixo risco/oportunidade/invista"; sem mencionar a ZeroInvest no texto (só no rodapé padrão), seus produtos ou SCPs; sem recomendação de ativo específico; fatos e números só com fonte pública.

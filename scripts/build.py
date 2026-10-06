@@ -43,7 +43,7 @@ ARTIGOS = {
     "09": {"seo": "Usina solar flutuante: como funciona e vantagens", "publicado": "2026-10-03", "secao": "Curiosidade", "ilustracao": "flutuante", "foto": "solar-flutuante", "alt": "Usina fotovoltaica flutuante Araucária, em São Paulo"},
     "10": {"seo": "Baterias na rede elétrica: o que muda com o armazenamento", "publicado": "2026-10-03", "secao": "Tecnologia", "ilustracao": "bateria", "foto": "baterias", "alt": "Sistema de armazenamento em baterias ao lado de usina solar na Califórnia, EUA"},
     "11": {"seo": "Mercado livre de energia: quem pode migrar e como funciona", "publicado": "2026-10-03", "secao": "Mercado livre", "ilustracao": "mercado"},
-    "12": {"seo": "Glossário do setor elétrico: 20 termos para entender energia", "publicado": "2026-10-03", "secao": "Glossário", "ilustracao": "glossario"},
+    "12": {"seo": "Glossário do setor elétrico: 42 termos para entender energia", "publicado": "2026-10-03", "secao": "Glossário", "ilustracao": "glossario"},
     "13": {"seo": "IA e data centers: o desafio de energia no Brasil", "publicado": "2026-10-03", "secao": "IA e energia", "ilustracao": "datacenter", "foto": "data-center", "alt": "Racks de servidores iluminados em um data center"},
 }
 
@@ -657,7 +657,7 @@ def artigo(a, arts, md):
     <span class="kicker">{a["secao"]}</span>
     <h1 class="cond">{html.escape(a["title"])}</h1>
     <p class="linha-fina serif">{md.reset().convert(a["summary"])[3:-4]}</p>
-    <div class="byline"><b><a href="/sobre/">Redação Energia &amp; Capital</a></b><time datetime="{a["publicado"]}">{data_br(a["publicado"])}</time><span>{a["leitura"]} min de leitura</span></div>
+    <div class="byline"><b><a href="/sobre/">Redação Energia &amp; Capital</a></b><time datetime="{a["publicado"]}">{data_br(a["publicado"])}</time>{f'<span>Atualizado em <time datetime="{a["atualizado"]}">{data_br(a["atualizado"])}</time></span>' if a["atualizado"] > a["publicado"] else ""}<span>{a["leitura"]} min de leitura</span></div>
     {thumb(a, "thumb capa", grande=True)}
     {f'<p class="credito">{credito(a["foto"])}</p>' if a.get("foto") else ""}
     <div class="corpo">{corpo_html(a, md)}</div>
