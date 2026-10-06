@@ -1,37 +1,35 @@
-# Geração distribuída: como a energia gerada vira desconto na conta de luz
+# Geração distribuída: como a energia do seu telhado vira desconto na conta de luz
 
-A geração distribuída (GD) permite produzir energia perto de onde ela é consumida — no telhado, em outro imóvel ou em uma usina compartilhada — e abater essa produção da conta de luz por meio de créditos. Entender as regras e a transição da Lei 14.300/2022 é o que separa uma expectativa realista de uma promessa vazia.
+Painéis no telhado ou numa usina compartilhada podem baixar a sua conta de luz, mas não a zeram. Veja como a energia vira crédito, o que continua sendo cobrado e o que mudou para quem instala agora.
 
 ## Em resumo
-- Na geração distribuída, a energia injetada na rede vira **créditos em kWh** que abatem o consumo de uma ou mais unidades vinculadas, com validade de **60 meses**.
-- Há quatro modalidades: **autoconsumo local**, **autoconsumo remoto**, **geração compartilhada** e **múltiplas unidades consumidoras** (condomínios).
-- A conta não zera: continuam o **custo de disponibilidade** (ou a demanda contratada, no caso de empresas atendidas em média tensão), a iluminação pública e parte dos impostos.
-- Pela Lei 14.300/2022, projetos novos passam a pagar **gradualmente** a parcela da tarifa que remunera a rede de distribuição, o chamado **"Fio B"**. Por isso, o desconto por kWh tende a ser menor do que o de sistemas mais antigos.
-- O resultado depende da tarifa, da produção real da usina e das regras vigentes — nenhum desses fatores é fixo.
+- A energia que você manda para a rede vira **créditos em kWh**, que abatem o consumo de uma ou mais unidades e valem por **60 meses**.
+- Há quatro formatos: **autoconsumo local**, **autoconsumo remoto**, **geração compartilhada** e **múltiplas unidades consumidoras** (condomínios).
+- A conta não zera: continuam o **custo de disponibilidade** (ou a demanda contratada, para empresas atendidas em média tensão), a iluminação pública e parte dos impostos.
+- Desde a lei de 2022, sistemas novos pagam **aos poucos** a parte da tarifa que remunera a rede, o **"Fio B"**. Por isso, o desconto por kWh tende a ser menor que o dos sistemas antigos.
+- O resultado depende da tarifa, da produção real e das regras em vigor, e nada disso é fixo.
 
-## Por que a geração distribuída virou assunto de todo mundo
+## Quando a sua casa também vira usina
 
-Durante décadas, a energia seguiu um caminho de mão única: grandes usinas distantes, transmissão e, no fim, a distribuidora levando a energia até a tomada. Na geração distribuída, o consumidor também gera, e a rede local funciona como uma "bateria contábil".
+Pense no sol do meio-dia batendo no telhado. Durante décadas, a energia fez um caminho de mão única: de grandes usinas distantes até a sua tomada. Na geração distribuída, você também produz, e a rede do bairro passa a funcionar como um caderninho que anota o que você entrega e o que você usa.
 
-O sistema de compensação nasceu com a Resolução Normativa ANEEL 482/2012 e foi ampliado pela REN 687/2015. Em janeiro de 2022, a **Lei 14.300** — o Marco Legal da Micro e Minigeração Distribuída — levou essas regras para a lei e criou uma transição para a cobrança pelo uso da rede, regulamentada pela ANEEL na **REN 1.059/2023**.
+As regras nasceram em normas da ANEEL, a agência que regula o setor, a partir de 2012. Em janeiro de 2022, o Marco Legal da Micro e Minigeração Distribuída (Lei 14.300/2022) levou tudo para a lei e criou uma transição para cobrar pelo uso da rede. Com a queda no preço dos painéis, a solar passou a dominar esse mercado; os números atualizados estão no painel de geração distribuída da ANEEL.
 
-Com a queda do preço dos painéis, a solar passou a dominar o segmento. O número atualizado de capacidade instalada, por estado, fonte e modalidade, está no painel de geração distribuída da ANEEL.
+Há dois tamanhos. A **microgeração** vai até 75 kW, típica de casas e pequenos comércios. A **minigeração** fica acima disso, até 3 MW no caso da solar.
 
-A regra distingue **microgeração** (até 75 kW, típica de residências e pequenos comércios) e **minigeração** (acima de 75 kW até 5 MW para fontes despacháveis e 3 MW para as não despacháveis, como a solar), em corrente alternada. A solar com baterias que modulem ao menos 20% da geração mensal conta como despachável, mas fica limitada a 3 MW; sistemas da regra antiga podem ter até 5 MW.
+## O banco de energia: como os créditos funcionam
 
-## Como funciona a compensação, passo a passo
+Imagine uma conta-corrente em kWh, não em reais. O nome oficial é **sistema de compensação de energia elétrica**:
 
-O **sistema de compensação de energia elétrica** (em inglês, *net metering*) funciona assim:
+1. **A usina gera.** O que a casa usa na hora nem passa pelo medidor como consumo da rede.
+2. **A sobra vai para a rede.** Um medidor de mão dupla registra o que você entregou.
+3. **A entrega vira crédito em kWh.** É energia guardada, não dinheiro.
+4. **O crédito abate o consumo.** Primeiro na unidade que gera; depois, nas unidades vinculadas, conforme o cadastro na distribuidora.
+5. **O saldo fica na conta.** Créditos não usados no mês valem por **60 meses**. Depois disso, vencem sem nenhuma indenização.
 
-1. **A usina gera.** No autoconsumo local, o que a casa usa no momento da geração nem chega a ser medido como consumo da rede.
-2. **O excedente vai para a rede.** O medidor bidirecional registra a energia injetada.
-3. **A injeção vira crédito em kWh** — energia, não dinheiro.
-4. **O crédito abate o consumo.** Primeiro na própria unidade geradora; depois, nas unidades vinculadas, conforme percentuais ou ordem de prioridade cadastrados na distribuidora.
-5. **A sobra fica guardada.** Créditos não usados no mês ficam disponíveis por **60 meses**. Depois disso, expiram sem indenização.
+Atenção: quanto o crédito vale em reais depende da **tarifa** no mês em que você o usa. Se a tarifa sobe, cada kWh compensado vale mais; se cai, vale menos.
 
-O crédito é em **kWh**, mas seu valor em reais depende da **tarifa** da distribuidora no mês em que é usado: se a tarifa sobe, cada kWh compensado vale mais; se cai, vale menos.
-
-### As quatro modalidades
+### Quatro jeitos de participar
 
 | Modalidade | Onde fica a usina | Quem usa os créditos | Exemplo típico |
 |---|---|---|---|
@@ -40,79 +38,77 @@ O crédito é em **kWh**, mas seu valor em reais depende da **tarifa** da distri
 | **Geração compartilhada** | Em outro endereço, na mesma distribuidora | Consumidores reunidos em consórcio, cooperativa, condomínio civil voluntário ou associação | Usina de solo que atende dezenas de residências e pequenos negócios |
 | **Múltiplas unidades consumidoras** | Na área do empreendimento | Unidades de um condomínio, cada uma com sua fração | Prédio com painéis na cobertura |
 
-Em todas, usina e unidades beneficiadas precisam estar na **área da mesma distribuidora**.
+Em todos os casos, usina e unidades beneficiadas precisam estar na **área da mesma distribuidora**.
 
-## O que a conta continua cobrando
+## A assinatura mínima: o que a conta continua cobrando
 
-Mesmo com créditos de sobra, a conta não zera:
+Mesmo com créditos sobrando, a conta não zera. É como um plano com assinatura mínima:
 
-- **Custo de disponibilidade:** valor mínimo cobrado de consumidores de baixa tensão (Grupo B) por estarem conectados. Equivale ao consumo de **30 kWh** para ligações monofásicas, **50 kWh** para bifásicas e **100 kWh** para trifásicas. Desde a Lei 14.300 e a REN 1.059, não há cobrança em duplicidade: para quem tem GD, esse mínimo só entra quando a fatura, em reais, fica abaixo dele.
-- **Demanda contratada:** empresas atendidas em média ou alta tensão (Grupo A) pagam pela potência reservada na rede, que não é abatida por créditos de energia.
-- **Iluminação pública:** a contribuição municipal (Cosip) segue na conta.
-- **Tributos:** o tratamento de ICMS e PIS/Cofins sobre a energia compensada varia por estado e enquadramento.
-- **Bandeira tarifária:** não incide sobre a energia compensada, só sobre o consumo da rede que sobra após a compensação (veja [bandeiras tarifárias](/artigos/bandeiras-tarifarias/)).
+- **Custo de disponibilidade:** o mínimo pago em baixa tensão só por estar ligado à rede: **30 kWh** em ligações monofásicas, **50 kWh** nas bifásicas e **100 kWh** nas trifásicas. Não há cobrança em dobro: para quem tem geração distribuída, esse mínimo só entra quando a fatura, em reais, fica abaixo dele.
+- **Demanda contratada:** empresas em média ou alta tensão pagam pela potência reservada na rede, sem abatimento por créditos.
+- **Iluminação pública:** a contribuição da prefeitura continua na conta.
+- **Impostos:** a cobrança de ICMS e PIS/Cofins sobre a energia compensada varia por estado e enquadramento.
+- **Bandeira tarifária:** não incide sobre a energia compensada, só sobre o consumo da rede que sobra depois da compensação (veja [bandeiras tarifárias](/artigos/bandeiras-tarifarias/)).
 
-## O "Fio B" e a transição da Lei 14.300
+## O pedágio da estrada: o "Fio B" e a transição
 
-A tarifa tem duas grandes partes: a **TE** (tarifa de energia, que paga a geração) e a **TUSD** (tarifa de uso do sistema de distribuição, que paga a rede). Dentro da TUSD, o **"Fio B"** remunera os ativos da própria distribuidora: postes, cabos, transformadores e manutenção.
+A tarifa tem duas partes: uma paga a energia das usinas, outra paga o transporte. Dentro do transporte está o **"Fio B"**, que remunera postes, cabos, transformadores e manutenção da distribuidora. É o pedágio pelo uso da estrada que leva a energia até você.
 
-Nas regras antigas, o crédito compensava praticamente toda a tarifa, inclusive o Fio B — o que, segundo críticos, transferia o custo da rede para quem não gera. A Lei 14.300 criou um meio-termo:
+Nas regras antigas, o crédito cobria quase toda a tarifa, inclusive esse pedágio, o que, segundo críticos, jogava o custo da rede no colo de quem não gera. A lei de 2022 criou um meio-termo:
 
-- **Sistemas antigos** — já existentes ou com pedido de acesso protocolado até 7 de janeiro de 2023 — mantêm as regras anteriores até o fim de 2045.
-- **Sistemas novos**, com pedido posterior, passam a **não compensar uma fração crescente do Fio B**. A fração começou em 15% em 2023 e sobe em degraus anuais até 90% em 2028. A partir de 2029, vale a regra definida pela ANEEL com base no cálculo de custos e benefícios da GD para o sistema.
-- **Exceções:** pedidos feitos entre o 13º e o 18º mês após a lei só passam à regra definitiva em 2031; e a minigeração acima de 500 kW em fonte não despachável, no autoconsumo remoto ou na geração compartilhada com titular de 25% ou mais, paga até 2028 todo o Fio B, 40% do Fio A (transmissão) e os encargos TFSEE e P&D.
+- **Sistemas antigos**, já existentes ou com pedido de conexão feito até 7 de janeiro de 2023, mantêm as regras anteriores até o fim de 2045.
+- **Sistemas novos**, com pedido posterior, deixam de compensar uma fatia crescente do Fio B: 15% em 2023, subindo em degraus anuais até 90% em 2028. A partir de 2029, vale a regra que a ANEEL definir com base nos custos e benefícios da geração distribuída.
+- **Exceções:** há casos com calendário próprio, como pedidos feitos entre o 13º e o 18º mês após a lei e algumas usinas acima de 500 kW.
 
-Na prática, cada kWh compensado por um sistema novo gera um desconto menor que o de um sistema antigo, e a diferença cresce durante a transição. Como o peso do Fio B varia entre distribuidoras, o mesmo sistema pode ter resultados diferentes em cidades diferentes.
+Na prática, cada kWh compensado por um sistema novo dá um desconto menor, e a diferença cresce durante a transição. Como o peso do Fio B muda entre distribuidoras, o mesmo sistema rende descontos diferentes em cidades diferentes.
 
 ## Exemplo ilustrativo: uma conta com compensação
 
-Suponha uma residência com sistema solar no telhado, enquadrada nas regras novas:
+Suponha uma casa com painéis, nas regras novas:
 
-- Consumo total do mês: **400 kWh**. Geração: **340 kWh**, dos quais **120 kWh** consumidos na hora e **220 kWh** injetados na rede.
+- Consumo total do mês: **400 kWh**. Geração: **340 kWh**, dos quais **120 kWh** usados na hora e **220 kWh** enviados para a rede.
 - Energia que veio da rede: 400 − 120 = **280 kWh**.
-- Tarifa hipotética: **R$ 1,00 por kWh**, sendo **R$ 0,30** de Fio B. Fração do Fio B não compensada no ano (hipotética): **50%**.
+- Tarifa hipotética: **R$ 1,00 por kWh**, sendo **R$ 0,30** de Fio B. Fatia do Fio B não compensada no ano (hipotética): **50%**.
 
-O cálculo:
+| Etapa | Cálculo | Valor |
+|---|---|---|
+| Consumo da rede que sobra após os créditos | 280 − 220 = 60 kWh × R$ 1,00 | R$ 60,00 |
+| Pedágio do Fio B não compensado | 220 kWh × R$ 0,30 × 50% | R$ 33,00 |
+| **Total (antes de iluminação pública e impostos)** | | **R$ 93,00** |
+| Custo de disponibilidade bifásico (50 kWh) | Não cobrado, porque R$ 93,00 supera R$ 50,00 | — |
 
-1. Os 220 kWh injetados abatem 220 dos 280 kWh. Sobram **60 kWh** pela tarifa cheia: **R$ 60,00**.
-2. Sobre os 220 kWh compensados incide a parte do Fio B não compensada: 220 × R$ 0,30 × 50% = **R$ 33,00**.
-3. A soma (R$ 93,00) supera o custo de disponibilidade bifásico (50 kWh, ou R$ 50,00), que por isso não é cobrado. Somam-se iluminação pública e tributos.
-
-Sem geração, os 400 kWh custariam R$ 400,00 nessa tarifa hipotética, contra R$ 93,00 com o sistema. Num sistema anterior à lei, o item 2 não existiria. Num mês nublado, menos créditos significariam uma conta maior.
+Sem geração, os 400 kWh custariam R$ 400,00. Num sistema anterior à lei, a linha do pedágio não existiria. Num mês nublado, menos créditos significariam uma conta maior.
 
 *Números hipotéticos, apenas para ilustrar o mecanismo; não representam projeto, produto ou oferta existente.*
 
 ## O que isso significa para você
 
-- **Consumidor residencial:** peça a simulação com a **tarifa real da sua distribuidora**, o Fio B da transição e o custo de disponibilidade. Desconfie de projeções de conta "zerada".
-- **Assinante de geração compartilhada:** você não compra equipamento; recebe créditos e paga uma mensalidade à associação ou cooperativa. Leia prazo, multa de saída, cálculo do desconto e o que ocorre se a usina gerar menos.
-- **Empresa:** o autoconsumo remoto permite concentrar a geração em um terreno e distribuir créditos entre filiais na mesma distribuidora. Para cargas maiores, compare com a migração ao [mercado livre](/artigos/mercado-livre-quem-pode-migrar/).
-- **Quem acompanha o setor como investidor:** a receita de uma usina de GD depende da tarifa regulada e de regras que já mudaram — lógica diferente da dos [contratos de longo prazo](/artigos/contratos-longo-prazo-energia/) da geração centralizada.
+- **Se você mora em casa ou apartamento:** peça a simulação com a **tarifa real da sua distribuidora**, o Fio B da transição e o custo de disponibilidade. Desconfie de quem promete conta "zerada".
+- **Se você assina geração compartilhada:** você não compra equipamento; recebe créditos e paga uma mensalidade. Leia prazo, multa de saída, cálculo do desconto e o que acontece se a usina gerar menos.
+- **Se você tem uma empresa:** o autoconsumo remoto permite gerar num terreno e dividir créditos entre filiais na mesma distribuidora. Para consumos maiores, compare com o [mercado livre](/artigos/mercado-livre-quem-pode-migrar/).
+- **Se você acompanha o setor como investidor:** a receita dessas usinas depende da tarifa regulada e de regras que já mudaram, lógica diferente da dos [contratos de longo prazo](/artigos/contratos-longo-prazo-energia/) das grandes usinas.
 
 ## Riscos e pontos de atenção
 
-1. **Regulatório:** a regra já mudou com a Lei 14.300 e pode ser revista; a valoração a partir de 2029 depende da ANEEL.
-2. **Tarifário:** o crédito acompanha a tarifa; quedas tarifárias ou mudanças em tributos reduzem o desconto.
-3. **Conexão e inversão de fluxo:** distribuidoras têm negado ou condicionado conexões por limite da rede. Veja também [curtailment](/artigos/curtailment/).
-4. **Performance:** sombreamento, sujeira, degradação dos painéis, falhas de inversor e furto reduzem a geração e, com ela, os créditos.
-5. **Geração compartilhada:** a saída de consorciados deixa créditos sem destino (e eles vencem em 60 meses); cláusulas de fidelidade e reajuste variam entre fornecedores.
+1. **Regras:** a regra já mudou em 2022 e pode ser revista. O valor dos créditos a partir de 2029 depende da ANEEL.
+2. **Tarifa:** o crédito acompanha a tarifa; quedas tarifárias ou mudanças em impostos reduzem o desconto.
+3. **Conexão:** distribuidoras têm negado ou condicionado conexões por limite da rede. Veja também [curtailment](/artigos/curtailment/).
+4. **Desempenho:** sombra, sujeira, desgaste dos painéis, falhas no inversor (o aparelho que converte a energia dos painéis) e furto reduzem a geração e, com ela, os créditos.
+5. **Geração compartilhada:** a saída de participantes deixa créditos sem destino, que vencem em 60 meses; fidelidade e reajuste variam entre fornecedores.
 
 ## Perguntas frequentes
 
 ### A geração distribuída zera a conta de luz?
-Não. Continuam o custo de disponibilidade (ou a demanda contratada no Grupo A), a iluminação pública e parte dos tributos. Em sistemas novos, há ainda a parcela do Fio B não compensada, sem duplicidade: o custo de disponibilidade só entra se a fatura ficar abaixo dele.
+Não. Continuam o custo de disponibilidade (ou a demanda contratada, para empresas), a iluminação pública e parte dos impostos. Em sistemas novos, há ainda a parte do Fio B não compensada.
 
 ### Quanto tempo valem os créditos de energia?
-Os créditos valem por 60 meses a partir da data de faturamento em que foram gerados. Depois desse prazo, expiram sem compensação em dinheiro.
+Por 60 meses a partir do faturamento em que foram gerados. Depois, vencem sem compensação em dinheiro.
 
 ### Posso usar os créditos em um imóvel de outra cidade?
-Sim, se os dois imóveis estiverem na área da mesma distribuidora. No autoconsumo remoto, o titular deve ser o mesmo; na geração compartilhada, os consumidores precisam integrar o consórcio, cooperativa ou associação.
+Sim, se os dois imóveis estiverem na área da mesma distribuidora. No autoconsumo remoto, o titular precisa ser o mesmo; na geração compartilhada, os consumidores precisam integrar o grupo.
 
 ### O que é o Fio B e por que ele importa?
-É a parcela da TUSD que remunera a rede da distribuidora. Sistemas com pedido de acesso após 7 de janeiro de 2023 deixam de compensar uma fração crescente dele, o que reduz o desconto por kWh.
-
-### Quem tem sistema antigo perde o direito às regras anteriores?
-Não: sistemas com pedido protocolado até 7 de janeiro de 2023 mantêm as regras anteriores até o fim de 2045. Já a potência acrescentada com pedido posterior segue as regras novas.
+É a parte da tarifa que paga a rede da distribuidora, um pedágio pelo uso da estrada. Sistemas com pedido após 7 de janeiro de 2023 deixam de compensar uma fatia crescente dele, o que reduz o desconto.
 
 ## Fontes
 - Lei 14.300/2022 — Marco Legal da Micro e Minigeração Distribuída (planalto.gov.br)
