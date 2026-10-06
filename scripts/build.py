@@ -263,6 +263,19 @@ svg{display:block}
 .corpo table{width:100%;border-collapse:collapse;font:15px/1.45 'Archivo',sans-serif;display:block;overflow-x:auto;margin:16px 0}
 .corpo th,.corpo td{border-bottom:1px solid var(--linha);padding:10px 8px;text-align:left;vertical-align:top}
 .corpo th{background:var(--papel)}
+.resumo{background:var(--papel);border-radius:10px;padding:18px 22px;margin:0 0 24px;font-family:'Archivo',sans-serif;font-size:17px;line-height:1.5}
+.resumo .kicker{margin:0 0 6px}
+.resumo ul{margin:0;padding-left:20px}
+.resumo li{margin:6px 0}
+.indice{border:1px solid var(--linha);border-radius:10px;padding:16px 22px;margin:0 0 28px;font-family:'Archivo',sans-serif;font-size:15px}
+.indice .kicker{margin:0 0 6px}
+.indice ol{margin:0;padding-left:20px;columns:2;column-gap:32px}
+.indice li{margin:4px 0;break-inside:avoid}
+.indice a{color:var(--ink);text-decoration:none}
+.indice a:hover{color:var(--verde);text-decoration:underline}
+.corpo h3{font-family:'Archivo',sans-serif;font-size:20px;font-weight:800;margin:24px 0 6px;color:var(--ink)}
+.corpo blockquote{margin:20px 0;padding:16px 20px;background:#FBF6DD;border-radius:10px;font-size:18px}
+.corpo blockquote p{margin:0}
 .aviso{margin-top:32px;padding:18px 20px;border:1px solid var(--linha);border-radius:10px;font-size:13px;line-height:1.6;color:var(--muted)}
 .cta-lateral{background:var(--ink);color:#fff;border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:14px}
 .cta-lateral strong{font-size:24px;line-height:1.05}
@@ -313,6 +326,7 @@ footer.rodape a{color:#fff;text-decoration:underline}
   .destaque h1{font-size:34px}.artigo h1{font-size:36px}
   .destaque .linha-fina,.artigo .linha-fina{font-size:18px}
   .corpo{font-size:18px}.news h2{font-size:32px}
+  .indice ol{columns:1}
   .secoes .wrap{justify-content:flex-start;gap:0 18px;overflow-x:auto;flex-wrap:nowrap}
 }
 """
@@ -585,6 +599,36 @@ def grupo(a):
     return next((s for s in SECOES if a["num"] in s["artigos"]), SECOES[0])
 
 
+def perguntas(a):
+    """Extrai (pergunta, resposta) da seção '## Perguntas frequentes' do markdown."""
+    m = re.search(r"^## Perguntas frequentes\s*$(.*?)(?=^## |\Z)", a["corpo"], re.M | re.S)
+    if not m:
+        return []
+    itens = re.findall(r"^### (.+?)\s*$\n(.*?)(?=^### |\Z)", m.group(1), re.M | re.S)
+    return [(q.strip(), re.sub(r"[*_]", "", " ".join(r.split())).strip()) for q, r in itens if r.strip()]
+
+
+def faq_jsonld(a):
+    itens = perguntas(a)
+    if not itens:
+        return []
+    return [{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": r}} for q, r in itens]}]
+
+
+def corpo_html(a, md):
+    """Converte o corpo e acrescenta a caixa 'Em resumo' e o índice automático."""
+    h = md.reset().convert(a["corpo"])
+    h = re.sub(r'<h2 id="[^"]*">Em resumo</h2>\s*(<ul>.*?</ul>)',
+               r'<aside class="resumo"><p class="kicker">Em resumo</p>\1</aside>', h, count=1, flags=re.S)
+    secoes = re.findall(r'<h2 id="([^"]+)">(.*?)</h2>', h)
+    if len(secoes) >= 4:
+        itens = "".join(f'<li><a href="#{i}">{t}</a></li>' for i, t in secoes)
+        indice = f'<nav class="indice" aria-label="Neste artigo"><p class="kicker">Neste artigo</p><ol>{itens}</ol></nav>'
+        h = h.replace("</aside>", "</aside>" + indice, 1) if '<aside class="resumo">' in h else indice + h
+    return h
+
+
 def artigo_jsonld(a):
     return [{
         "@context": "https://schema.org", "@type": "Article",
@@ -593,7 +637,7 @@ def artigo_jsonld(a):
         "datePublished": a["publicado"], "dateModified": a["atualizado"],
         "author": {"@type": "Organization", "name": "Redação Energia & Capital", "url": absoluto("/sobre/")},
         "publisher": org(), "image": [absoluto(imagem_og(a))],
-    }, breadcrumb(("Início", "/"), (grupo(a)["titulo"], f"/{grupo(a)['id']}/"), (a["title"], url(a)))]
+    }, breadcrumb(("Início", "/"), (grupo(a)["titulo"], f"/{grupo(a)['id']}/"), (a["title"], url(a)))] + faq_jsonld(a)
 
 
 def relacionados(a, arts, n=3):
@@ -616,7 +660,7 @@ def artigo(a, arts, md):
     <div class="byline"><b><a href="/sobre/">Redação Energia &amp; Capital</a></b><time datetime="{a["publicado"]}">{data_br(a["publicado"])}</time><span>{a["leitura"]} min de leitura</span></div>
     {thumb(a, "thumb capa", grande=True)}
     {f'<p class="credito">{credito(a["foto"])}</p>' if a.get("foto") else ""}
-    <div class="corpo">{md.reset().convert(a["corpo"])}</div>
+    <div class="corpo">{corpo_html(a, md)}</div>
     <div class="aviso">{DISCLAIMER}</div>
   </article>
   <aside class="lateral" style="gap:32px">
@@ -680,7 +724,7 @@ def main():
 
     arts = load_articles()
     secoes = [s for s in SECOES if s["artigos"]]
-    md = markdown.Markdown(extensions=["tables"])
+    md = markdown.Markdown(extensions=["tables", "toc"], extension_configs={"toc": {"permalink": False}})
 
     for a in arts.values():
         escreve(url(a), page(titulo(a["seo"]), artigo(a, arts, md), resumo(a["summary"], 155),
