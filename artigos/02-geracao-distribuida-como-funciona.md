@@ -40,7 +40,7 @@ O crédito é em **kWh**, mas seu valor em reais depende da **tarifa** da distri
 | **Geração compartilhada** | Em outro endereço, na mesma distribuidora | Consumidores reunidos em consórcio, cooperativa, condomínio civil voluntário ou associação | Usina de solo que atende dezenas de residências e pequenos negócios |
 | **Múltiplas unidades consumidoras** | Na área do empreendimento | Unidades de um condomínio, cada uma com sua fração | Prédio com painéis na cobertura |
 
-Em todas elas, a usina e as unidades beneficiadas precisam estar na **área de concessão da mesma distribuidora**. Não é possível gerar em Minas Gerais e abater a conta em São Paulo de outra empresa.
+Em todas, usina e unidades beneficiadas precisam estar na **área da mesma distribuidora**.
 
 ## O que a conta continua cobrando
 
@@ -63,7 +63,7 @@ Nas regras antigas, o crédito compensava praticamente toda a tarifa, inclusive 
 
 Na prática, cada kWh compensado por um sistema novo gera um desconto menor que o de um sistema antigo, e a diferença cresce durante a transição. Como o peso do Fio B varia entre distribuidoras, o mesmo sistema pode ter resultados diferentes em cidades diferentes.
 
-> O crédito é em kWh, mas o desconto é em reais. Tarifa, Fio B e tributos decidem quanto cada kWh vale na conta.
+> O crédito é em kWh; o desconto, em reais. Tarifa, Fio B e tributos decidem quanto cada kWh vale.
 
 ## Exemplo ilustrativo: uma conta com compensação
 
