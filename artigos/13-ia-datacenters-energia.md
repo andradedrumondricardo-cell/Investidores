@@ -20,13 +20,13 @@ O Brasil vive a mesma pressão, em escala menor e com uma particularidade: **fal
 
 ## A fila nos centros de consumo
 
-Em fevereiro, havia cerca de 7 GW em pedidos de acesso de data centers à Rede Básica, 3,9 GW só em São Paulo. A nova política de acesso à transmissão (PNAST) viabilizou 30,7 GW em 2026, sendo 13,5 GW de novas cargas. Em São Paulo, porém, 451 MW de consumo disputam 228 MW de margem num processo competitivo marcado para outubro. A CPFL relatou ter negado cerca de 8 GW em pedidos de data centers no interior paulista, e o ONS suspendeu novas conexões no Pecém, no Ceará.
+Em fevereiro, havia cerca de 7 GW em pedidos de acesso de data centers à Rede Básica, 3,9 GW só em São Paulo. A nova política de acesso à transmissão (PNAST) viabilizou 30,7 GW em 2026, sendo 13,5 GW de novas cargas. Em São Paulo, porém, 451 MW de consumo disputam 228 MW de margem num processo competitivo marcado para outubro. A CPFL relatou ter negado cerca de 8 GW em pedidos de data centers no interior paulista, e, no Pecém, no Ceará, o ONS chegou a suspender novas conexões de data centers por falta de infraestrutura e hoje condiciona parte dos projetos a novas obras de transmissão.
 
-Parte desses pedidos é especulativa. O próprio ONS projeta cerca de 3,5 GW de demanda real de data centers em 2030, contra perto de 10 GW nas contas do Ministério de Minas e Energia. Mas a escassez é concreta para quem já tem equipamento contratado e precisa ligá-lo em meses. O país tem hoje entre 706 e 826 MW de data centers instalados, e a capacidade com refrigeração líquida dos grandes operadores — exigida pelas GPUs atuais — está praticamente vendida até meados de 2027.
+Parte desses pedidos é especulativa. A previsão oficial de carga de ONS, EPE e CCEE indica cerca de 5,7 GW médios de consumo de data centers em 2030, contra perto de 10 GW nas contas do Ministério de Minas e Energia. Mas a escassez é concreta para quem já tem equipamento contratado e precisa ligá-lo em meses. O país tem hoje entre 706 e 826 MW de data centers instalados, e a capacidade com refrigeração líquida dos grandes operadores — exigida pelas GPUs atuais — está praticamente vendida até meados de 2027.
 
 ## O paradoxo: energia sobrando
 
-Do outro lado, a geração renovável corta produção. Em 2025, 20,6% da energia eólica e solar disponível deixou de ser gerada, uma perda estimada em mais de R$ 6 bilhões, segundo levantamentos de consultorias com dados do ONS. A Portaria MME 140/2026 regulamentou o ressarcimento de cortes passados por razões elétricas, mas os cortes por excesso de oferta no sistema ficaram de fora. Geradores com energia cortada passaram a ter motivo de sobra para vender a quem consuma.
+Do outro lado, a geração renovável corta produção. Em 2025, 20,6% da energia eólica e solar disponível deixou de ser gerada, uma perda estimada em mais de R$ 6 bilhões, segundo a consultoria Volt Robotics, com dados do ONS. A Portaria MME 140/2026 regulamentou o ressarcimento dos cortes de 2023 a 2025 por indisponibilidade externa ou confiabilidade elétrica, mas os cortes por excesso de oferta no sistema ficaram de fora. Geradores com energia cortada passaram a ter motivo de sobra para vender a quem consuma.
 
 Colocar um data center ao lado da usina, porém, não resolve o corte em todo lugar. A análise da Redação com dados abertos do ONS mostra dois casos opostos:
 
@@ -57,6 +57,8 @@ Para o setor elétrico, um data center flexível também pode ser um recurso. Es
 - **Bateria para a noite inteira**, com a rede só como reserva, ainda não se paga. A energia sai entre R$ 450 e R$ 770 por MWh, contra R$ 330 a R$ 450 da rede com contrato no mercado livre em 138 kV. Além disso, a rede precisa continuar contratada para os dias nublados.
 - **Bateria de três a quatro horas para o horário de ponta** se paga em cinco a sete anos em média tensão. Ela tira o data center da rede justamente na rampa do fim da tarde, quando a geração solar some e o ONS mais precisa de alívio.
 
+*Números hipotéticos, apenas para ilustrar o mecanismo; não representam projeto, produto ou oferta existente.*
+
 ## O obstáculo não é a energia
 
 Na comparação internacional, a energia brasileira fica no meio do caminho. Para uma grande carga em alta tensão, com tudo incluído, o custo estimado vai de US$ 81 a US$ 117 por MWh. É mais caro que no Texas (US$ 60 a 75), mas equivalente a Virgínia, Ohio, Chile e México. A energia em si custa quase o mesmo que no Texas; o que dobra a conta são as tarifas de rede, os encargos e o ICMS.
@@ -64,8 +66,10 @@ Na comparação internacional, a energia brasileira fica no meio do caminho. Par
 O que realmente afasta o investimento é o imposto sobre os equipamentos importados — servidores e, principalmente, GPUs. Um exercício de custo total para um site de inferência de 10 MW, somando energia, infraestrutura e impostos sobre a TI:
 
 - **Brasil sem benefícios fiscais:** cerca de US$ 430 por kW por mês, contra US$ 181 no Texas. Cerca de 77% da diferença é imposto.
-- **Com o Redata**, sancionado em setembro, caem por cinco anos o imposto de importação, o PIS/Cofins e o IPI. Mas o ICMS ficou de fora.
+- **Com o Redata**, criado pela Lei 15.504/2026, sancionada em setembro, cai por cinco anos o imposto de importação; o PIS/Cofins e o IPI, só até o fim de 2026, por causa da reforma tributária. Mas o ICMS ficou de fora.
 - **Somando todas as alavancas**, o custo cai para perto de US$ 190 e praticamente empata com Texas e Chile. Além do Redata, entram uma redução de ICMS em discussão no Confaz, a autoprodução, o reaproveitamento de sites e o financiamento do BNDES.
+
+*Números hipotéticos, apenas para ilustrar o mecanismo; não representam projeto, produto ou oferta existente.*
 
 ## O que o setor pode fazer
 
@@ -82,7 +86,7 @@ A janela é curta. A partir de 2028 entram os grandes campi já anunciados, e a 
 
 ## Riscos e incertezas
 
-1. **Demanda incerta:** a distância entre as projeções do ONS (cerca de 3,5 GW em 2030) e do MME (cerca de 10 GW) mostra o tamanho da dúvida; ganhos de eficiência dos chips podem reduzir a necessidade de energia.
+1. **Demanda incerta:** a distância entre a previsão oficial de carga (cerca de 5,7 GW médios em 2030) e a do MME (cerca de 10 GW) mostra o tamanho da dúvida; ganhos de eficiência dos chips podem reduzir a necessidade de energia.
 2. **Regulação em revisão:** as regras para grandes cargas na distribuição estão na agenda da ANEEL e podem restringir o atalho descrito aqui.
 3. **Tributação:** o Redata vale por cinco anos e a redução de ICMS ainda depende do Confaz.
 4. **Janela de tempo:** a entrada dos grandes campi a partir de 2028 pode reduzir a escassez e a vantagem de velocidade.
@@ -100,7 +104,7 @@ Há sobra de energia renovável em algumas regiões e horários, tanto que parte
 Cargas menores, de 5 a 20 MW, podem se ligar à rede das distribuidoras locais, com prazos de meses. Grandes cargas precisam da Rede Básica de transmissão, cujas obras costumam levar de 42 a 60 meses.
 
 ### O que é o Redata?
-É o regime especial de tributação para data centers, sancionado em setembro, que suspende por cinco anos tributos federais sobre equipamentos importados, com exigências como baixo consumo de água. O ICMS, estadual, ficou de fora.
+É o regime especial de tributação para data centers, criado pela Lei 15.504/2026, sancionada em setembro, que suspende por até cinco anos tributos federais sobre equipamentos importados, com exigências como baixo consumo de água. O ICMS, estadual, ficou de fora.
 
 ### Data centers podem ajudar o sistema elétrico?
 Podem, se forem flexíveis: consumindo quando há excesso de oferta e reduzindo o consumo no fim da tarde, quando a geração solar cai. Para isso, precisam de sinais tarifários e programas de resposta da demanda que reconheçam esse valor.
@@ -108,10 +112,10 @@ Podem, se forem flexíveis: consumindo quando há excesso de oferta e reduzindo 
 ## Fontes
 - JLL — relatórios globais de data centers
 - IEA — *Energy and AI* (2025)
-- ONS — dados abertos de restrição de geração e acesso à Rede Básica
-- MME — PNAST e Portaria MME 140/2026
+- ONS — dados abertos de restrição de geração e acesso à Rede Básica; previsão de carga 2026–2030 (com EPE e CCEE)
+- MME — PNAST (Decreto 12.772/2025) e Portaria MME 140/2026
 - ANEEL — REN 1.000/2021 e agenda regulatória 2026–2027
-- Lei 15.269/2025 e Redata
+- Lei 15.269/2025 e Lei 15.504/2026 (Redata)
 - Cemig e Invest Minas — mapas de capacidade para data centers
 
 ---

@@ -4,9 +4,9 @@ O setor elétrico tem um vocabulário próprio, cheio de siglas. Este glossário
 
 ## Em resumo
 - **Potência não é energia:** kW mede a capacidade em um instante; kWh mede a energia ao longo do tempo, e é o que você paga na conta.
-- Cinco instituições organizam o setor: **MME** (política), **ANEEL** (regulação), **ONS** (operação), **CCEE** (mercado) e **EPE** (planejamento).
+- Cinco instituições organizam o setor: **MME** (política), **ANEEL** (regulação), **ONS** (operação), **CCEE** (mercado) e **EPE** (estudos de planejamento).
 - A tarifa tem duas partes principais — **TE** (energia) e **TUSD** (rede) — e a energia pode ser comprada no mercado regulado (**ACR**) ou no livre (**ACL**).
-- Termos como **curtailment**, **fator de capacidade**, **garantia física** e **P90** explicam por que uma usina pode gerar menos do que a sua potência sugere.
+- Termos como **curtailment**, **fator de capacidade**, **garantia física** e **P90** explicam por que uma usina pode gerar ou vender menos do que a sua potência sugere.
 - Use a busca do navegador (Ctrl+F) para achar um termo rapidamente.
 
 ## Medidas
@@ -17,16 +17,16 @@ O setor elétrico tem um vocabulário próprio, cheio de siglas. Este glossário
 4. **MWh e GWh:** energia em escala de usina ou de mercado. Contratos e leilões costumam usar R$/MWh como unidade de preço.
 5. **MWmédio:** a energia de um período expressa como uma potência constante. Exemplo: 1 MWmédio durante um ano equivale a 8.760 MWh (1 MW × 8.760 horas).
 6. **kWp (quilowatt-pico):** potência nominal de painéis solares, medida em condições padronizadas de laboratório. Na prática, a usina raramente gera no pico.
-7. **Fator de capacidade:** quanto uma usina gera de fato em relação ao máximo teórico, operando 100% do tempo na potência nominal. Solar e eólica têm fatores menores que hidrelétricas e térmicas porque dependem do sol e do vento.
+7. **Fator de capacidade:** quanto uma usina gera de fato em relação ao máximo teórico, operando 100% do tempo na potência nominal. Na solar e na eólica, ele depende do sol e do vento; em hidrelétricas e térmicas, também de quanto o operador as aciona.
 8. **Demanda (kW) e demanda contratada:** a potência máxima solicitada da rede em um intervalo. Empresas atendidas em média e alta tensão contratam e pagam uma demanda, além da energia consumida.
 
 ## Instituições
 
 9. **MME (Ministério de Minas e Energia):** formula a política energética, define diretrizes de leilões e aprova o planejamento do setor.
-10. **ANEEL (Agência Nacional de Energia Elétrica):** agência reguladora. Define tarifas e regras, concede outorgas e fiscaliza as empresas do setor.
+10. **ANEEL (Agência Nacional de Energia Elétrica):** agência reguladora. Define tarifas e regras, fiscaliza as empresas do setor e concede outorgas — que, conforme o caso, cabem a ela ou ao MME.
 11. **ONS (Operador Nacional do Sistema Elétrico):** coordena em tempo real as usinas e a transmissão do sistema interligado, decidindo quem gera e quando.
-12. **CCEE (Câmara de Comercialização de Energia Elétrica):** registra e liquida os contratos de compra e venda de energia, calcula o PLD e opera leilões por delegação da ANEEL.
-13. **EPE (Empresa de Pesquisa Energética):** faz estudos e o planejamento de longo prazo, como o Plano Decenal de Expansão de Energia (PDE).
+12. **CCEE (Câmara de Comercialização de Energia Elétrica):** registra os contratos de compra e venda de energia, contabiliza e liquida as diferenças no mercado de curto prazo, calcula o PLD, opera leilões por delegação da ANEEL e administra contas setoriais, como a CDE e a das bandeiras.
+13. **EPE (Empresa de Pesquisa Energética):** faz os estudos que embasam o planejamento do setor, como o Plano Decenal de Expansão de Energia (PDE).
 14. **Distribuidora:** concessionária que leva a energia até o consumidor final em uma área definida e cobra a conta de luz dos consumidores cativos.
 15. **SIN (Sistema Interligado Nacional):** a rede que conecta usinas e consumidores de quase todo o país, permitindo levar energia de uma região a outra.
 16. **Sistemas isolados:** localidades não conectadas ao SIN, principalmente na região Norte, atendidas em geral por geração local.
@@ -39,11 +39,11 @@ O setor elétrico tem um vocabulário próprio, cheio de siglas. Este glossário
 20. **Submercado:** cada uma das quatro regiões de preço do SIN — Sudeste/Centro-Oeste, Sul, Nordeste e Norte. O PLD pode diferir entre elas quando a transmissão fica congestionada.
 21. **TE (Tarifa de Energia):** a parte da tarifa que paga a energia em si, comprada pela distribuidora.
 22. **TUSD (Tarifa de Uso do Sistema de Distribuição):** a parte da tarifa que paga o uso da rede, além de encargos e perdas.
-23. **Fio B:** parcela da TUSD que remunera os ativos da própria distribuidora. Pela Lei 14.300/2022, novos projetos de geração distribuída deixam de compensá-la de forma gradual. Veja [geração distribuída](/artigos/geracao-distribuida-como-funciona/).
-24. **Bandeira tarifária:** acréscimo mensal na conta, cobrado por 100 kWh, que sinaliza o custo de geração do período. Veja [bandeiras tarifárias](/artigos/bandeiras-tarifarias/).
-25. **Grupo A e Grupo B:** classificação dos consumidores pela tensão. O Grupo A (2,3 kV ou mais) reúne indústrias e grandes comércios; o Grupo B (baixa tensão), residências e pequenos negócios.
-26. **Horário de ponta e tarifa branca:** a ponta são três horas consecutivas de maior demanda, definidas por cada distribuidora em dias úteis. A tarifa branca, opcional para parte do Grupo B, cobra preços diferentes conforme o horário.
-27. **Encargos setoriais:** valores embutidos na tarifa para financiar políticas públicas. O principal é a CDE (Conta de Desenvolvimento Energético), que custeia, entre outros, a tarifa social e subsídios.
+23. **Fio B:** parcela da TUSD que remunera os ativos da própria distribuidora. Pela Lei 14.300/2022, projetos de geração distribuída com pedido de acesso após 7 de janeiro de 2023 deixam de compensá-la de forma gradual. Veja [geração distribuída](/artigos/geracao-distribuida-como-funciona/).
+24. **Bandeira tarifária:** sinal mensal do custo de geração na conta dos consumidores cativos; nas cores amarela e vermelha, acrescenta um valor a cada 100 kWh. Veja [bandeiras tarifárias](/artigos/bandeiras-tarifarias/).
+25. **Grupo A e Grupo B:** classificação dos consumidores pela tensão. O Grupo A (2,3 kV ou mais, além do subgrupo AS, atendido por rede subterrânea em tensão menor) reúne indústrias e grandes comércios; o Grupo B (baixa tensão, abaixo de 2,3 kV), residências e pequenos negócios.
+26. **Horário de ponta e tarifa branca:** a ponta são três horas diárias consecutivas de maior demanda, nos dias úteis, definidas por cada distribuidora e aprovadas pela ANEEL. A tarifa branca, opcional para parte do Grupo B, cobra preços diferentes conforme o horário.
+27. **Encargos setoriais:** valores embutidos na tarifa para financiar políticas públicas e custos do sistema. O principal é a CDE (Conta de Desenvolvimento Energético), que custeia, entre outros, a tarifa social e subsídios. Há ainda o PROINFA (energia de fontes alternativas contratada pelo programa federal), o ESS (Encargo de Serviços do Sistema, que cobre, por exemplo, térmicas acionadas por segurança) e o EER (Encargo de Energia de Reserva, que paga as usinas contratadas como reserva).
 28. **Reajuste e revisão tarifária:** o reajuste atualiza a tarifa da distribuidora uma vez por ano; a revisão, a cada poucos anos, recalcula de forma ampla os custos e a remuneração da empresa.
 29. **Comercializador varejista:** empresa que representa consumidores menores no mercado livre, cuidando das obrigações junto à CCEE.
 
@@ -51,20 +51,22 @@ O setor elétrico tem um vocabulário próprio, cheio de siglas. Este glossário
 
 30. **Geração centralizada:** grandes usinas conectadas à transmissão ou à distribuição que vendem energia em leilões ou no mercado livre.
 31. **Geração distribuída (GD):** geração próxima ao consumo, como painéis no telhado ou usinas compartilhadas, que abate a conta por meio de créditos válidos por 60 meses.
-32. **Micro e minigeração:** os dois portes da GD. Microgeração vai até 75 kW; minigeração fica acima disso, até o limite definido na Lei 14.300/2022.
+32. **Micro e minigeração:** os dois portes da GD. Microgeração vai até 75 kW; minigeração fica acima disso, até 5 MW para fontes despacháveis e 3 MW para as não despacháveis, em corrente alternada, conforme a Lei 14.300/2022.
 33. **Rede Básica:** a malha de transmissão de alta tensão (230 kV ou mais) que forma a espinha dorsal do SIN.
-34. **Fontes despacháveis e intermitentes:** despacháveis (hidrelétricas com reservatório, térmicas) geram quando o operador pede; intermitentes (solar, eólica) dependem do recurso natural disponível.
+34. **Fontes despacháveis e intermitentes:** despacháveis (hidrelétricas com reservatório, térmicas) geram quando o operador pede; intermitentes (solar, eólica) dependem do recurso natural disponível. Na geração distribuída, a Lei 14.300/2022 tem definição própria, que inclui, por exemplo, biomassa, biogás e solar com baterias que atendam a requisitos mínimos.
 35. **Curtailment (corte de geração):** redução da produção de uma usina determinada pelo operador por limite de rede, excesso de oferta ou segurança. Veja [curtailment](/artigos/curtailment/).
 36. **Armazenamento (BESS):** sistemas de baterias que guardam energia para uso posterior, como na rampa do fim da tarde. Veja [baterias na rede](/artigos/baterias-na-rede/).
 37. **Garantia física:** a quantidade máxima de energia que uma usina pode vender em contratos, definida pelo MME com cálculos da EPE. Não é a potência instalada.
-38. **GSF (risco hidrológico):** a relação entre o que as hidrelétricas do sistema geram e a sua garantia física somada. Quando fica abaixo de 1, os geradores precisam comprar a diferença no mercado de curto prazo.
+38. **GSF (risco hidrológico):** a relação entre o que as hidrelétricas do MRE (Mecanismo de Realocação de Energia, que divide entre elas o risco hidrológico) geram e a soma das suas garantias físicas. Quando fica abaixo de 1, as usinas que venderam toda a garantia física ficam expostas a comprar a diferença no mercado de curto prazo, ao PLD.
 
 ## Projetos e financiamento
 
 39. **PPA (contrato de compra de energia):** contrato de longo prazo entre um gerador e um comprador, com preço, volume e prazo definidos. Veja [contratos de longo prazo](/artigos/contratos-longo-prazo-energia/).
-40. **Leilão de energia:** processo competitivo em que geradores disputam contratos para vender energia às distribuidoras, vencendo quem oferece o menor preço.
-41. **Autoprodução:** quando o consumidor gera a própria energia, inclusive por participação societária em uma usina, o que pode reduzir encargos pagos na tarifa.
+40. **Leilão de energia:** processo competitivo em que geradores disputam contratos para vender energia, em geral às distribuidoras; costuma vencer quem oferece o menor preço.
+41. **Autoprodução:** quando o consumidor gera a própria energia, o que pode reduzir encargos pagos na tarifa. Grandes consumidores também podem ser equiparados a autoprodutores por participação societária em uma usina; a Lei 15.269/2025 endureceu essa regra, exigindo, entre outros requisitos, demanda somada de ao menos 30 MW e participação mínima de 30% no capital do empreendimento.
 42. **P50 e P90:** estimativas de produção de uma usina. P50 é a mediana esperada; P90, a produção que se espera superar em 90% dos anos, mais conservadora e usada por financiadores. Exemplo: uma usina pode ter P50 de 100 GWh/ano e P90 de 92 GWh/ano (números hipotéticos).
+
+*Números hipotéticos, apenas para ilustrar o mecanismo; não representam projeto, produto ou oferta existente.*
 
 ## Riscos que aparecem nestes termos
 
@@ -94,7 +96,7 @@ Sim. Limites, regras de tarifa e critérios de mercado são revistos por leis e 
 - ONS — Glossário e dados de operação (ons.org.br)
 - CCEE — PLD, submercados e regras de comercialização (ccee.org.br)
 - EPE — Plano Decenal de Expansão de Energia (epe.gov.br)
-- Lei 14.300/2022 e Lei 10.848/2004 (planalto.gov.br)
+- Lei 14.300/2022, Lei 10.848/2004 e Lei 15.269/2025 (planalto.gov.br)
 
 ---
 *Energia & Capital é uma publicação mantida pela ZeroInvest, empresa que desenvolve projetos de energia. O conteúdo é educacional e informativo, não constitui oferta, recomendação ou solicitação de investimento em valores mobiliários. Retornos passados ou de terceiros não garantem resultados futuros.*

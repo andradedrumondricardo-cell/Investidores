@@ -36,8 +36,8 @@ Alguns termos merecem explicação:
 
 - **EPC** (*engineering, procurement and construction*): contrato de obra entregue pronta, em geral com preço, prazo e multa por atraso definidos.
 - **P50 e P90:** estimativas estatísticas de geração. P50 é o volume que se espera superar em metade dos anos; P90, em 90% dos anos — mais baixo e mais conservador.
-- **REIDI:** regime especial (Lei 11.488/2007) que suspende PIS e Cofins na compra de bens e serviços para obras de infraestrutura habilitadas. Com a reforma tributária (EC 132/2023 e LC 214/2025), PIS e Cofins serão substituídos pela CBS a partir de 2027, e o tratamento desses regimes passa por transição; confira as regras vigentes na data do projeto.
-- **SUDENE/SUDAM:** projetos nessas áreas podem obter redução do imposto de renda, por prazo determinado e mediante aprovação.
+- **REIDI:** regime especial (Lei 11.488/2007) que suspende PIS e Cofins na compra de bens e serviços para obras de infraestrutura de projetos aprovados. Com a reforma tributária (EC 132/2023 e LC 214/2025), PIS e Cofins serão substituídos pela CBS a partir de 2027, e a LC 214/2025 manteve o REIDI, com suspensão de IBS e CBS; confira as regras vigentes na data do projeto.
+- **SUDENE/SUDAM:** projetos aprovados nessas áreas podem reduzir em 75% o imposto de renda da empresa (IRPJ), por prazo determinado. A LC 224/2025 cortou em 10% esse benefício (para 67,5%) e o do REIDI em projetos aprovados a partir de 2026.
 
 ## TIR e VPL: o que cada um diz
 
@@ -52,7 +52,7 @@ Alguns termos merecem explicação:
 
 ## Exemplo ilustrativo: um projeto hipotético e seus testes de estresse
 
-Todos os números abaixo são hipotéticos e simplificados, servem só para mostrar o mecanismo e não representam projeto real nem resultado esperado de qualquer investimento. Valores em termos reais (sem inflação) e antes do imposto de renda.
+Todos os números abaixo são hipotéticos e simplificados e não representam resultado esperado de qualquer investimento. Valores em termos reais (sem inflação) e antes do imposto de renda.
 
 **Cenário base:**
 
@@ -75,6 +75,8 @@ Os bancos acompanham o **ICSD** (índice de cobertura do serviço da dívida): c
 | Atraso de 6 meses | R$ 1,1 mi | 1,46 | 15,4 anos | 4,1 |
 | P90 + capex 15% maior | R$ 0,7 mi | 1,29 | 18,7 anos | 1,3 |
 
+*Números hipotéticos, apenas para ilustrar o mecanismo; não representam projeto, produto ou oferta existente.*
+
 Como ler a tabela:
 
 - **P90:** a receita cai 8% (para R$ 4,6 milhões), mas custos e dívida não mudam. O caixa do acionista cai de R$ 1,1 para R$ 0,7 milhão — **36% a menos**.
@@ -95,6 +97,8 @@ No mesmo projeto hipotético, com serviço da dívida proporcional ao valor empr
 | 0% | R$ 3,5 mi | R$ 3,1 mi | −11% | — |
 | 60% | R$ 1,1 mi | R$ 0,7 mi | −36% | 1,29 |
 | 70% | R$ 0,7 mi | R$ 0,3 mi | −57% | 1,11 |
+
+*Números hipotéticos, apenas para ilustrar o mecanismo; não representam projeto, produto ou oferta existente.*
 
 Com 70% de dívida, um ano em P90 levaria o ICSD abaixo do mínimo hipotético de 1,20, e o acionista ficaria sem receber dividendos naquele ano. É por isso que os bancos limitam o tamanho da dívida a partir de cenários conservadores de geração.
 
@@ -134,7 +138,8 @@ Não. Num título público, a taxa é definida na compra e paga pelo emissor. Nu
 - CCEE — contratos e preço de liquidação das diferenças
 - ONS — dados de restrição de geração
 - BNDES — condições de financiamento para energia
-- Lei 11.488/2007 (REIDI) e Lei 12.431/2011 (debêntures incentivadas)
+- Lei 11.488/2007 (REIDI), Lei 12.431/2011 (debêntures incentivadas), EC 132/2023, LC 214/2025 e LC 224/2025 (planalto.gov.br; gov.br/receitafederal)
+- SUDENE e SUDAM — incentivos fiscais (gov.br/sudene)
 - Termos técnicos: [glossário da energia](/artigos/glossario-da-energia/)
 
 ---

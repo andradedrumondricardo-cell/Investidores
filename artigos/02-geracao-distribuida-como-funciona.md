@@ -17,7 +17,7 @@ O sistema de compensação nasceu com a Resolução Normativa ANEEL 482/2012 e f
 
 Com a queda do preço dos painéis, a solar passou a dominar o segmento. O número atualizado de capacidade instalada, por estado, fonte e modalidade, está no painel de geração distribuída da ANEEL.
 
-A regra distingue **microgeração** (até 75 kW, típica de residências e pequenos comércios) e **minigeração** (acima de 75 kW, até o limite da lei — 5 MW, e 3 MW para fontes não despacháveis, como a solar, em pedidos feitos depois da regra de transição da lei).
+A regra distingue **microgeração** (até 75 kW, típica de residências e pequenos comércios) e **minigeração** (acima de 75 kW até 5 MW para fontes despacháveis e 3 MW para as não despacháveis, como a solar), em corrente alternada. A solar com baterias que modulem ao menos 20% da geração mensal conta como despachável, mas fica limitada a 3 MW; sistemas da regra antiga podem ter até 5 MW.
 
 ## Como funciona a compensação, passo a passo
 
@@ -46,11 +46,11 @@ Em todas, usina e unidades beneficiadas precisam estar na **área da mesma distr
 
 Mesmo com créditos de sobra, a conta não zera:
 
-- **Custo de disponibilidade:** valor mínimo cobrado de consumidores de baixa tensão (Grupo B) por estarem conectados. Equivale ao consumo de **30 kWh** para ligações monofásicas, **50 kWh** para bifásicas e **100 kWh** para trifásicas. A forma como esse mínimo interage com os créditos depende do enquadramento do sistema (anterior ou posterior à lei); a distribuidora informa a regra aplicável.
+- **Custo de disponibilidade:** valor mínimo cobrado de consumidores de baixa tensão (Grupo B) por estarem conectados. Equivale ao consumo de **30 kWh** para ligações monofásicas, **50 kWh** para bifásicas e **100 kWh** para trifásicas. Desde a Lei 14.300 e a REN 1.059, não há cobrança em duplicidade: para quem tem GD, esse mínimo só entra quando a fatura, em reais, fica abaixo dele.
 - **Demanda contratada:** empresas atendidas em média ou alta tensão (Grupo A) pagam pela potência reservada na rede, que não é abatida por créditos de energia.
 - **Iluminação pública:** a contribuição municipal (Cosip) segue na conta.
 - **Tributos:** o tratamento de ICMS e PIS/Cofins sobre a energia compensada varia por estado e enquadramento.
-- **Bandeira tarifária:** incide sobre a energia que continua faturada após a compensação (veja [bandeiras tarifárias](/artigos/bandeiras-tarifarias/)).
+- **Bandeira tarifária:** não incide sobre a energia compensada, só sobre o consumo da rede que sobra após a compensação (veja [bandeiras tarifárias](/artigos/bandeiras-tarifarias/)).
 
 ## O "Fio B" e a transição da Lei 14.300
 
@@ -60,14 +60,11 @@ Nas regras antigas, o crédito compensava praticamente toda a tarifa, inclusive 
 
 - **Sistemas antigos** — já existentes ou com pedido de acesso protocolado até 7 de janeiro de 2023 — mantêm as regras anteriores até o fim de 2045.
 - **Sistemas novos**, com pedido posterior, passam a **não compensar uma fração crescente do Fio B**. A fração começou em 15% em 2023 e sobe em degraus anuais até 90% em 2028. A partir de 2029, vale a regra definida pela ANEEL com base no cálculo de custos e benefícios da GD para o sistema.
+- **Exceções:** pedidos feitos entre o 13º e o 18º mês após a lei só passam à regra definitiva em 2031; e a minigeração acima de 500 kW em fonte não despachável, no autoconsumo remoto ou na geração compartilhada com titular de 25% ou mais, paga até 2028 todo o Fio B, 40% do Fio A (transmissão) e os encargos TFSEE e P&D.
 
 Na prática, cada kWh compensado por um sistema novo gera um desconto menor que o de um sistema antigo, e a diferença cresce durante a transição. Como o peso do Fio B varia entre distribuidoras, o mesmo sistema pode ter resultados diferentes em cidades diferentes.
 
-> O crédito é em kWh; o desconto, em reais. Tarifa, Fio B e tributos decidem quanto cada kWh vale.
-
 ## Exemplo ilustrativo: uma conta com compensação
-
-*Números hipotéticos, apenas para mostrar o mecanismo. Não representam a tarifa de nenhuma distribuidora.*
 
 Suponha uma residência com sistema solar no telhado, enquadrada nas regras novas:
 
@@ -77,11 +74,13 @@ Suponha uma residência com sistema solar no telhado, enquadrada nas regras nova
 
 O cálculo:
 
-1. Os 220 kWh injetados abatem 220 dos 280 kWh. Sobram **60 kWh** pela tarifa cheia: **R$ 60,00** (acima do mínimo de uma ligação bifásica, de 50 kWh).
+1. Os 220 kWh injetados abatem 220 dos 280 kWh. Sobram **60 kWh** pela tarifa cheia: **R$ 60,00**.
 2. Sobre os 220 kWh compensados incide a parte do Fio B não compensada: 220 × R$ 0,30 × 50% = **R$ 33,00**.
-3. Somam-se iluminação pública e tributos.
+3. A soma (R$ 93,00) supera o custo de disponibilidade bifásico (50 kWh, ou R$ 50,00), que por isso não é cobrado. Somam-se iluminação pública e tributos.
 
-Sem geração, os 400 kWh custariam R$ 400,00 nessa tarifa hipotética; com o sistema, a parte de energia e rede fica em R$ 93,00. Num sistema anterior à lei, o item 2 não existiria. Num mês nublado, menos créditos significariam uma conta maior.
+Sem geração, os 400 kWh custariam R$ 400,00 nessa tarifa hipotética, contra R$ 93,00 com o sistema. Num sistema anterior à lei, o item 2 não existiria. Num mês nublado, menos créditos significariam uma conta maior.
+
+*Números hipotéticos, apenas para ilustrar o mecanismo; não representam projeto, produto ou oferta existente.*
 
 ## O que isso significa para você
 
@@ -101,7 +100,7 @@ Sem geração, os 400 kWh custariam R$ 400,00 nessa tarifa hipotética; com o si
 ## Perguntas frequentes
 
 ### A geração distribuída zera a conta de luz?
-Não. Continuam o custo de disponibilidade (ou a demanda contratada no Grupo A), a iluminação pública e parte dos tributos. Em sistemas novos, há ainda a parcela do Fio B não compensada.
+Não. Continuam o custo de disponibilidade (ou a demanda contratada no Grupo A), a iluminação pública e parte dos tributos. Em sistemas novos, há ainda a parcela do Fio B não compensada, sem duplicidade: o custo de disponibilidade só entra se a fatura ficar abaixo dele.
 
 ### Quanto tempo valem os créditos de energia?
 Os créditos valem por 60 meses a partir da data de faturamento em que foram gerados. Depois desse prazo, expiram sem compensação em dinheiro.
@@ -113,11 +112,12 @@ Sim, se os dois imóveis estiverem na área da mesma distribuidora. No autoconsu
 É a parcela da TUSD que remunera a rede da distribuidora. Sistemas com pedido de acesso após 7 de janeiro de 2023 deixam de compensar uma fração crescente dele, o que reduz o desconto por kWh.
 
 ### Quem tem sistema antigo perde o direito às regras anteriores?
-Não: sistemas com pedido protocolado até 7 de janeiro de 2023 mantêm as regras anteriores até o fim de 2045. Ampliações podem mudar o enquadramento da parte acrescida; confirme com a distribuidora.
+Não: sistemas com pedido protocolado até 7 de janeiro de 2023 mantêm as regras anteriores até o fim de 2045. Já a potência acrescentada com pedido posterior segue as regras novas.
 
 ## Fontes
 - Lei 14.300/2022 — Marco Legal da Micro e Minigeração Distribuída (planalto.gov.br)
 - ANEEL — Resolução Normativa 1.059/2023, REN 1.000/2021 e histórico das REN 482/2012 e 687/2015 (gov.br/aneel)
+- ANEEL — Perguntas frequentes sobre micro e minigeração distribuída (gov.br/aneel)
 - ANEEL — Painel de geração distribuída (dados atualizados de capacidade instalada)
 - EPE — Plano Decenal de Expansão de Energia, capítulo de recursos energéticos distribuídos (epe.gov.br)
 

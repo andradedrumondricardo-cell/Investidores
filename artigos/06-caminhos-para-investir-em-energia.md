@@ -6,7 +6,7 @@ Ações, debêntures incentivadas, fundos de infraestrutura, FIIs, financiamento
 - Há seis caminhos regulados principais, de ações em bolsa a participação direta em projetos.
 - Quanto mais perto de um projeto individual, menor a liquidez e maior a dependência da diligência do próprio investidor.
 - Alguns instrumentos têm benefícios fiscais para pessoa física, mas as regras mudam: confirme sempre a legislação vigente.
-- Participação direta oferecida a terceiros com expectativa de retorno costuma ser valor mobiliário e precisa de registro ou dispensa na CVM.
+- Participação direta oferecida publicamente com expectativa de retorno costuma ser valor mobiliário e precisa de registro ou dispensa na CVM.
 - Nenhum caminho elimina riscos de crédito, de juros, regulatórios e de liquidez.
 
 ## Por que o caminho importa tanto quanto o setor
@@ -22,7 +22,7 @@ Três perguntas ajudam a comparar: **sou sócio ou credor?** (sócios dividem o 
 - **Como funciona:** compra, na B3, de ações de geradoras, transmissoras, distribuidoras ou empresas integradas. O investidor vira sócio da companhia inteira, não de um projeto.
 - **Custos típicos:** corretagem (muitas vezes zerada), emolumentos da B3 e eventual custódia.
 - **Liquidez:** em geral alta nas empresas grandes; menor nas pouco negociadas.
-- **Tributação geral:** ganho de capital tributado pelo IR, com regras próprias para *day trade*. Dividendos foram historicamente isentos para pessoa física, mas a Lei 15.270/2025 passou a prever, a partir de 2026, retenção de IR sobre dividendos acima de determinado valor mensal pagos por uma mesma empresa, além de um imposto mínimo para altas rendas; juros sobre capital próprio têm IR retido na fonte. Confirme a legislação vigente.
+- **Tributação geral:** ganho de capital tributado pelo IR, com regras próprias para *day trade*. Dividendos foram historicamente isentos para pessoa física, mas a Lei 15.270/2025 passou a prever, a partir de 2026, retenção de 10% de IR na fonte quando uma mesma empresa paga mais de R$ 50 mil em dividendos no mês à mesma pessoa, além de um imposto mínimo para rendas acima de R$ 600 mil por ano; juros sobre capital próprio têm IR retido na fonte. Confirme a legislação vigente.
 - **Riscos:** volatilidade de bolsa, gestão, endividamento, revisões tarifárias e regulação.
 
 ### Debêntures incentivadas (Lei 12.431)
@@ -46,12 +46,12 @@ Três perguntas ajudam a comparar: **sou sócio ou credor?** (sócios dividem o 
 - **Como funciona:** fundos imobiliários com terrenos ou estruturas associadas a usinas, que recebem aluguel ou pagamentos contratuais. Nicho ainda pequeno.
 - **Custos típicos:** taxa de administração e custos de negociação.
 - **Liquidez:** cotas na B3, com liquidez muito variável.
-- **Tributação geral:** rendimentos podem ser isentos para pessoa física se o fundo e o investidor cumprirem requisitos legais (como número mínimo de cotistas e participação máxima por cotista); ganhos na venda são tributados. Confirme a legislação vigente.
+- **Tributação geral:** rendimentos podem ser isentos para pessoa física se o fundo e o investidor cumprirem requisitos legais, alterados pela Lei 14.754/2023 (como número mínimo de cotistas e participação máxima por cotista); ganhos na venda são tributados. Confirme a legislação vigente.
 - **Riscos:** poucos inquilinos ou contratos, vacância, juros e volatilidade da cota.
 
 ### Financiamento coletivo (Res. CVM 88)
 
-- **Como funciona:** plataformas autorizadas pela CVM intermediam ofertas de empresas de menor porte, inclusive de energia, por meio de participação, dívida ou títulos conversíveis. A Resolução CVM 88/2022 limita quanto cada empresa capta por ano (até R$ 15 milhões) e quanto cada investidor não qualificado aplica por ano nessas ofertas (R$ 20 mil, com limite maior para quem comprova renda ou patrimônio acima dos patamares da norma).
+- **Como funciona:** plataformas autorizadas pela CVM intermediam ofertas de empresas de menor porte, inclusive de energia, por meio de participação, dívida ou títulos conversíveis. A Resolução CVM 88/2022, em revisão pela CVM, admite empresas com receita bruta anual de até R$ 40 milhões e limita quanto cada uma capta por ano (até R$ 15 milhões) e quanto cada investidor não qualificado aplica por ano nessas ofertas (R$ 20 mil; quem tem renda bruta anual ou investimentos financeiros acima de R$ 200 mil pode aplicar até 10% do maior desses valores).
 - **Custos típicos:** pagos principalmente pelo emissor; confira eventuais taxas ao investidor.
 - **Liquidez:** baixa; algumas plataformas têm ambiente de negociação entre investidores, com volume restrito.
 - **Tributação geral:** depende do instrumento e do tipo de rendimento. Confirme a legislação vigente.
@@ -83,7 +83,7 @@ Diante de qualquer oferta fora da bolsa, pergunte:
 | Ações | Sócio da empresa | Alta | IR sobre ganho; proventos conforme lei | CVM / B3 |
 | Debêntures incentivadas | Credor | Média | Isenção de IR nos rendimentos | CVM / ANBIMA |
 | FI-Infra / FIP-IE | Cotista de carteira | Varia | Benefícios com requisitos | CVM |
-| FIIs de energia | Cotista | Alta a média | Isenção condicionada | CVM / B3 |
+| FIIs de energia | Cotista | Varia | Isenção condicionada | CVM / B3 |
 | Financiamento coletivo | Sócio ou credor | Baixa | Depende do instrumento | CVM (plataforma) |
 | Participação direta | Sócio de um projeto | Muito baixa | Depende da estrutura | Registro ou dispensa na CVM |
 
@@ -100,6 +100,8 @@ Os números são **hipotéticos** e servem só para mostrar o mecanismo. Três p
 **Choque 1 — os juros sobem.** A usina segue normal, mas títulos longos perdem valor. Se a debênture cair 8% no mercado, Ana veria R$ 9.200 se vendesse hoje; mantendo até o vencimento e sem inadimplência, recebe o contratado. Bruno sente efeito parecido, diluído. Carla não tem preço diário.
 
 **Choque 2 — o emissor deixa de pagar.** Se a recuperação for de 40%, Ana fica com cerca de R$ 4.000. Bruno perde cerca de R$ 300 (5% de R$ 10 mil × 60% de perda). Carla, como sócia, fica atrás dos credores: só recebe depois que as dívidas forem pagas.
+
+*Números hipotéticos, apenas para ilustrar o mecanismo; não representam projeto, produto ou oferta existente.*
 
 > Diversificação reduz o impacto de um evento isolado, mas não elimina riscos que atingem o setor inteiro, como juros e mudanças regulatórias.
 
@@ -134,7 +136,7 @@ Quando a participação é oferecida publicamente a terceiros com expectativa de
 
 ## Fontes
 - CVM — Resoluções CVM 88/2022, 160/2022 e 175/2022; consulta de plataformas e alertas (gov.br/cvm)
-- Lei 12.431/2011, Lei 14.801/2024 e Lei 11.478/2007
+- Lei 12.431/2011, Lei 14.801/2024, Lei 11.478/2007, Lei 14.754/2023 (FII) e Lei 15.270/2025 (dividendos) — planalto.gov.br
 - Receita Federal — tributação de aplicações financeiras (gov.br/receitafederal)
 - ANBIMA (anbima.com.br) e B3 (b3.com.br)
 - FGC — produtos cobertos (fgc.org.br)

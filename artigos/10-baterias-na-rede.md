@@ -6,7 +6,7 @@ Por mais de um século, a eletricidade precisou ser consumida no instante em que
 - Sistemas de armazenamento em baterias (BESS, na sigla em inglês) carregam quando sobra energia e descarregam quando a rede precisa.
 - Predomina o lítio, sobretudo a química lítio-ferro-fosfato (LFP), e uma mesma bateria pode prestar vários serviços: deslocar energia, oferecer reserva, regular frequência, aliviar a ponta e reduzir cortes.
 - Duas métricas são essenciais: potência (MW) e energia (MWh). A divisão entre elas dá a duração, em geral de 2 a 4 horas em projetos de rede.
-- No Brasil, a Portaria MME 136/2026 marcou os primeiros leilões de baterias para dezembro de 2026, com contratos de 15 anos; outras regras de remuneração seguem em discussão.
+- No Brasil, a Lei 15.269/2025 deu diretrizes para o armazenamento, e a Portaria MME 136/2026 marcou para dezembro de 2026 os primeiros leilões de reserva de capacidade exclusivos para baterias; outras regras de remuneração seguem em discussão.
 
 ## Por que o armazenamento entrou na pauta
 
@@ -31,7 +31,7 @@ A bateria pode ficar sozinha (*standalone*), junto a uma usina solar ou eólica,
 ## As tecnologias, em linhas gerais
 
 - **Lítio-ferro-fosfato (LFP):** hoje predominante em projetos de rede. Tende a ter maior estabilidade térmica e vida em ciclos, sem cobalto nem níquel. Guarda menos energia por quilo, o que pouco importa numa instalação fixa.
-- **Lítio com níquel, manganês e cobalto (NMC):** mais comum em veículos elétricos, por ser mais compacta; perdeu espaço para a LFP na rede.
+- **Lítio com níquel, manganês e cobalto (NMC):** muito usada em veículos elétricos, por ser mais compacta; perdeu espaço para a LFP na rede.
 - **Sódio-íon:** dispensa lítio e está no início da produção comercial.
 - **Baterias de fluxo:** guardam energia em líquidos bombeados entre tanques; permitem longa duração, mas ainda têm pouca escala.
 - **Outras formas:** hidrelétricas reversíveis (que bombeiam água para um reservatório superior) e armazenamento térmico complementam as baterias em durações longas.
@@ -43,7 +43,7 @@ A bateria pode ficar sozinha (*standalone*), junto a uma usina solar ou eólica,
 3. **Regulação de frequência.** A frequência da rede (60 Hz no Brasil) oscila com desequilíbrios. Baterias respondem em frações de segundo, injetando ou absorvendo energia.
 4. **Alívio de ponta e de congestionamento.** Descarregar nos horários críticos evita sobrecarga em linhas e subestações e pode adiar reforços. Para empresas, reduz a demanda na ponta.
 5. **Redução de curtailment.** Perto de usinas renováveis, a bateria absorve a energia que seria cortada e a devolve mais tarde.
-6. **Outros serviços:** controle de tensão, partida de usinas após um apagão (*black start*) e energia de reserva para indústrias e data centers (veja [IA, data centers e energia](/artigos/ia-datacenters-energia/)).
+6. **Outros serviços:** controle de tensão, partida de usinas após um apagão (*black start*) e alimentação de emergência para indústrias e data centers (veja [IA, data centers e energia](/artigos/ia-datacenters-energia/)).
 
 Combinar serviços — o empilhamento de receitas — costuma ser decisivo, mas depende de a regulação permitir.
 
@@ -64,7 +64,7 @@ A degradação depende da química, da temperatura, da profundidade de descarga 
 
 ## Exemplo ilustrativo: deslocando energia do meio-dia para a noite
 
-Os números abaixo são **hipotéticos**, apenas para mostrar como a conta funciona. Suponha uma bateria de **20 MW / 80 MWh** (4 horas) ao lado de uma usina solar. Ao meio-dia, a usina sofreria corte; com a bateria, a energia é guardada.
+Suponha uma bateria de **20 MW / 80 MWh** (4 horas) ao lado de uma usina solar. Ao meio-dia, a usina sofreria corte; com a bateria, a energia é guardada.
 
 Com eficiência de ida e volta de **88%**, a bateria devolve cerca de **70 MWh** no início da noite, vendidos a um preço suposto de **R$ 300 por MWh**.
 
@@ -74,6 +74,8 @@ Com eficiência de ida e volta de **88%**, a bateria devolve cerca de **70 MWh**
 | Energia devolvida (88%) | ~70 MWh |
 | Receita diária (70 × R$ 300) | ~R$ 21 mil |
 | Receita em 300 dias de operação | ~R$ 6,3 milhões |
+
+*Números hipotéticos, apenas para ilustrar o mecanismo; não representam projeto, produto ou oferta existente.*
 
 Os riscos alteram o resultado:
 
@@ -85,14 +87,14 @@ Do outro lado estão o investimento nos equipamentos (em geral importados), a co
 
 ## Em que pé está a regulação no Brasil
 
-O armazenamento ainda não tem marco regulatório consolidado no país. Pontos em discussão:
+A Lei 15.269/2025 deu diretrizes para regular o armazenamento, mas as regras detalhadas da ANEEL ainda estão em construção. Pontos em discussão:
 
 - **Como a bateria é classificada:** se é geração, consumo ou um agente próprio. Isso define os encargos e tarifas que paga — por exemplo, se paga ao carregar e ao descarregar.
 - **Como é remunerada:** por energia (arbitragem), por capacidade (disponibilidade) ou por serviços ancilares (como regulação de frequência), e se pode somar receitas.
-- **Participação em leilões:** a Portaria MME 136/2026 estabeleceu dois Leilões de Reserva de Capacidade na forma de potência exclusivos para baterias, previstos para 2 e 4 de dezembro de 2026, com contratos de 15 anos e início de suprimento em agosto de 2028. Um dos certames tem exigência de conteúdo nacional. Datas e regras podem ser ajustadas; confira as portarias do MME e os editais da ANEEL.
-- **Baterias associadas a usinas:** a regulação de usinas híbridas e associadas da ANEEL permite instalar armazenamento junto a usinas existentes, compartilhando a conexão.
+- **Participação em leilões:** a Portaria MME 136/2026 definiu os dois primeiros Leilões de Reserva de Capacidade na forma de potência exclusivos para baterias, previstos para 2 e 4 de dezembro de 2026 — um deles com exigência de conteúdo nacional —, com contratos de 15 anos e início de suprimento em agosto de 2028. Eles remuneram a disponibilidade do equipamento. Datas e regras podem ser ajustadas; confira as portarias do MME e os editais da ANEEL.
+- **Baterias junto a usinas:** ao lado de usinas solares ou eólicas, dividindo a conexão, podem guardar a energia que seria cortada; as condições dependem da regulação da ANEEL sobre armazenamento e usinas híbridas e associadas.
 
-A ANEEL conduziu consultas públicas sobre o tema, e a EPE publica estudos sobre o papel do armazenamento no planejamento. Enquanto isso, os projetos no país são poucos e concentrados em aplicações específicas.
+A ANEEL conduziu consultas públicas sobre o tema, como a CP 39/2023, e a EPE publica estudos sobre o papel do armazenamento no planejamento. Enquanto isso, os projetos no país são poucos e concentrados em aplicações específicas.
 
 > Sem regra de remuneração clara, uma bateria pode ser tecnicamente útil e, ao mesmo tempo, economicamente inviável.
 
@@ -127,7 +129,8 @@ Como qualquer equipamento que armazena muita energia, exigem cuidados. Projetos 
 Principalmente porque as regras de remuneração e de encargos ainda estão em discussão. Sem saber como será pago, o projeto tem dificuldade de obter financiamento.
 
 ## Fontes
-- ANEEL — consultas públicas sobre armazenamento e regulação de usinas híbridas e associadas (gov.br/aneel)
+- Lei 15.269/2025 — diretrizes para a regulação do armazenamento (planalto.gov.br)
+- ANEEL — Consulta Pública 39/2023 (armazenamento) e Resolução Normativa 954/2021 (usinas híbridas e associadas) (gov.br/aneel)
 - MME — Portaria MME 136/2026, diretrizes dos leilões de reserva de capacidade com baterias (gov.br/mme)
 - EPE — estudos sobre armazenamento e Plano Decenal de Expansão de Energia (epe.gov.br)
 - ONS — dados de operação e curvas de carga (ons.org.br)
