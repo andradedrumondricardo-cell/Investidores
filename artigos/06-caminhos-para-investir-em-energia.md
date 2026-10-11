@@ -30,7 +30,7 @@ São seis caminhos principais. Todos têm custos, de corretagem a taxas de admin
 
 - **Como funciona:** debênture é um título de dívida: você empresta a uma empresa e recebe juros, muitas vezes atrelados à inflação. As incentivadas, criadas por lei em 2011 (Lei 12.431/2011), financiam projetos prioritários, como geração e transmissão.
 - **Impostos:** a lei prevê isenção de IR sobre os rendimentos para pessoa física nos papéis que cumprem os requisitos. Não confunda com as debêntures de infraestrutura de 2024, cujo benefício é voltado a quem emite.
-- **Riscos:** calote do emissor, concentração e liquidez. Quando os juros sobem, títulos longos valem menos, e vender antes do vencimento pode dar perda. Não há cobertura do FGC, o fundo que protege depósitos e alguns títulos bancários.
+- **Riscos:** calote do emissor, concentração e liquidez. Quando os juros sobem, títulos longos valem menos, e vender antes do vencimento pode dar perda. Não há cobertura do FGC, o fundo que protege depósitos e alguns títulos bancários. O passo a passo está em [debêntures incentivadas](/artigos/debentures-incentivadas/).
 
 ### Fundos de infraestrutura: FI-Infra e FIP-IE
 

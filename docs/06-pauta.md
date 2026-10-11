@@ -6,7 +6,7 @@ Regras: seguir `docs/02-guia-editorial.md` e `docs/05-linha-editorial.md` (sem p
 
 ## Temas
 
-- [ ] Debêntures incentivadas de infraestrutura: o que são e como funcionam
+- [x] Debêntures incentivadas de infraestrutura: o que são e como funcionam — publicado em 2026-10-11 (`artigos/15-debentures-incentivadas.md`)
 - [ ] SCP: o modelo da construção civil que chegou aos projetos de energia solar — **já escrito** em `artigos/14-scp-sociedade-em-conta-de-participacao.md`: não reescrever; revisar, registrar em `ARTIGOS` (seção Investidor, "seo": "SCP em energia solar: o que é e quais cuidados exige") e publicar. Tom genérico, sem citar a ZeroInvest no texto (só o rodapé padrão). Se o artigo de debêntures já estiver no ar, incluir um link para ele no texto.
 - [ ] Tarifa branca: para quem compensa mudar o horário de consumo
 - [ ] Leilões de transmissão: como funcionam e por que importam para as renováveis

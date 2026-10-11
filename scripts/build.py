@@ -45,23 +45,24 @@ ARTIGOS = {
     "11": {"seo": "Mercado livre de energia: quem pode migrar e como funciona", "publicado": "2026-10-03", "secao": "Mercado livre", "ilustracao": "mercado"},
     "12": {"seo": "Glossário do setor elétrico: 42 termos para entender energia", "publicado": "2026-10-03", "secao": "Glossário", "ilustracao": "glossario"},
     "13": {"seo": "IA e data centers: o desafio de energia no Brasil", "publicado": "2026-10-03", "secao": "IA e energia", "ilustracao": "datacenter", "foto": "data-center", "alt": "Racks de servidores iluminados em um data center"},
+    "15": {"seo": "Debêntures incentivadas: o que são e como funcionam", "publicado": "2026-10-11", "secao": "Investidor", "ilustracao": "torre"},
 }
 
 # Composição da home. Seções sem artigos não aparecem.
-DESTAQUE = "13"
-ULTIMAS = ["07", "08", "11", "10"]
+DESTAQUE = "15"
+ULTIMAS = ["13", "07", "08", "11"]
 SECOES = [
     {"id": "na-pratica", "titulo": "Na prática", "artigos": ["11", "02", "03", "01"],
      "seo": "Guias práticos de energia: conta de luz, solar e mercado livre",
      "descricao": "Guias práticos para entender a conta de luz, a energia solar no telhado, o mercado livre e os contratos do setor elétrico."},
-    {"id": "investidor", "titulo": "Investidor", "artigos": ["04", "05", "06", "08", "13"],
+    {"id": "investidor", "titulo": "Investidor", "artigos": ["15", "04", "05", "06", "08", "13"],
      "seo": "Energia para investidores: análises do setor elétrico",
      "descricao": "Análises sobre energia como classe de ativo: como os projetos geram caixa, como o retorno se forma e quais riscos pesam."},
     {"id": "variedades", "titulo": "Variedades", "artigos": ["09", "12", "10", "07"],
      "seo": "Curiosidades e tecnologia em energia: solar flutuante, baterias",
      "descricao": "Curiosidades, tecnologia e glossário do setor de energia: usinas solares flutuantes, baterias, bandeiras tarifárias e mais."},
 ]
-EM_PAUTA = [("IA e data centers", "13"), ("Bandeiras tarifárias", "07"), ("Lei 14.300", "02"), ("Curtailment", "08"),
+EM_PAUTA = [("Debêntures incentivadas", "15"), ("IA e data centers", "13"), ("Bandeiras tarifárias", "07"), ("Lei 14.300", "02"), ("Curtailment", "08"),
             ("Mercado livre", "11"), ("Baterias", "10")]
 
 CREDITOS = json.loads((ROOT / "imagens" / "creditos.json").read_text(encoding="utf-8"))
