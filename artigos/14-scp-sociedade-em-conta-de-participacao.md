@@ -26,6 +26,22 @@ Os recursos aportados formam um patrimônio especial, ligado ao negócio e admin
 
 Ou seja, a separação só vale entre os sócios. Se o ostensivo falir, a sociedade é dissolvida, e o saldo do participante vira um crédito comum (o chamado crédito quirografário). Ele só é pago depois dos credores que têm preferência.
 
+## Exemplo ilustrativo: se o sócio da vitrine quebrar
+
+Suponha que dez participantes tenham aportado R$ 50 mil cada numa SCP, somando R$ 500 mil. Anos depois, o sócio ostensivo enfrenta problemas em outros negócios e tem a falência decretada.
+
+| Etapa | O que acontece |
+|---|---|
+| Falência do ostensivo | A SCP é dissolvida e a conta do negócio é liquidada |
+| Saldo dos participantes | Suponha R$ 400 mil, depois de acertadas as contas do projeto |
+| Posição de cada participante | Credor comum (quirografário) na falência do ostensivo |
+| Fila de pagamento | Antes vêm os credores com preferência, como trabalhadores, credores com garantia real e o Fisco |
+| Resultado possível | Se sobrar pouco, cada um pode receber só parte dos R$ 40 mil a que teria direito, e o processo pode levar anos |
+
+*Números hipotéticos, apenas para ilustrar o mecanismo; não representam projeto, produto ou oferta existente.*
+
+É por isso que, numa SCP, conhecer o sócio ostensivo pesa tanto quanto conhecer o projeto.
+
 ## E os impostos?
 
 A SCP não é empresa para o direito civil. Para o imposto de renda, porém, ela é equiparada a pessoa jurídica (Decreto-Lei 2.303/1986, art. 7º): seus resultados são apurados e tributados pelas regras das empresas.
@@ -63,7 +79,13 @@ O registro é como um selo de inspeção: não diz que o negócio vai dar certo,
 
 A CVM já emitiu alertas e ordens de suspensão contra ofertas públicas irregulares de participações em empreendimentos, inclusive em energia solar. Ofertas sem registro nem dispensa podem ser suspensas, e os responsáveis ficam sujeitos a punições.
 
-## Perguntas para fazer antes de entrar numa SCP
+## O que isso significa para você
+
+**Se você quer entender o mercado:** a SCP explica por que muitos projetos de energia solar circulam como "participações" e por que a forma de oferecer importa tanto quanto o projeto.
+
+**Se você empreende no setor:** captar com pessoas que já conhece é diferente de anunciar para o público. A segunda situação traz a CVM para a conversa.
+
+**Se você receber um convite para participar de uma SCP**, faça estas perguntas:
 
 1. **Quem é o sócio ostensivo?** Histórico, saúde financeira e experiência? Todo o negócio depende dele.
 2. **Como é a prestação de contas?** Há relatórios, auditoria independente, direito de fiscalização?
@@ -98,6 +120,7 @@ Depende do contrato. Sem regra escrita, a saída tende a exigir negociação com
 - Código Civil (Lei 10.406/2002), arts. 991 a 996
 - Decreto-Lei 2.303/1986, art. 7º — equiparação da SCP a pessoa jurídica para o imposto de renda (planalto.gov.br)
 - Lei 6.385/1976, art. 2º, IX
+- Lei 11.101/2005 — falência e ordem de pagamento dos credores (planalto.gov.br)
 - CVM — Resoluções CVM 160/2022 (ofertas públicas) e 88/2022 (plataformas de investimento participativo), alertas ao mercado e consulta de ofertas registradas (gov.br/cvm)
 - Receita Federal — Instrução Normativa RFB 2.119/2022 (CNPJ), com alterações (gov.br/receitafederal)
 - Lei 14.300/2022 — Marco Legal da Micro e Minigeração Distribuída (planalto.gov.br)
