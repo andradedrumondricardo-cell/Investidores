@@ -47,13 +47,14 @@ ARTIGOS = {
     "13": {"seo": "IA e data centers: o desafio de energia no Brasil", "publicado": "2026-10-03", "secao": "IA e energia", "ilustracao": "datacenter", "foto": "data-center", "alt": "Racks de servidores iluminados em um data center"},
     "14": {"seo": "SCP em energia solar: o que é e quais cuidados exige", "publicado": "2026-10-13", "secao": "Investidor", "ilustracao": "solar"},
     "15": {"seo": "Debêntures incentivadas: o que são e como funcionam", "publicado": "2026-10-11", "secao": "Investidor", "ilustracao": "torre"},
+    "16": {"seo": "Tarifa branca: quando compensa mudar o horário de consumo", "publicado": "2026-10-16", "secao": "Conta de luz", "ilustracao": "casa"},
 }
 
 # Composição da home. Seções sem artigos não aparecem.
-DESTAQUE = "14"
-ULTIMAS = ["15", "13", "07", "08"]
+DESTAQUE = "16"
+ULTIMAS = ["14", "15", "13", "07"]
 SECOES = [
-    {"id": "na-pratica", "titulo": "Na prática", "artigos": ["11", "02", "03", "01"],
+    {"id": "na-pratica", "titulo": "Na prática", "artigos": ["16", "11", "02", "03", "01"],
      "seo": "Guias práticos de energia: conta de luz, solar e mercado livre",
      "descricao": "Guias práticos para entender a conta de luz, a energia solar no telhado, o mercado livre e os contratos do setor elétrico."},
     {"id": "investidor", "titulo": "Investidor", "artigos": ["14", "15", "04", "05", "06", "08", "13"],
@@ -63,7 +64,7 @@ SECOES = [
      "seo": "Curiosidades e tecnologia em energia: solar flutuante, baterias",
      "descricao": "Curiosidades, tecnologia e glossário do setor de energia: usinas solares flutuantes, baterias, bandeiras tarifárias e mais."},
 ]
-EM_PAUTA = [("SCP", "14"), ("Debêntures incentivadas", "15"), ("IA e data centers", "13"), ("Bandeiras tarifárias", "07"), ("Lei 14.300", "02"), ("Curtailment", "08"),
+EM_PAUTA = [("Tarifa branca", "16"), ("SCP", "14"), ("Debêntures incentivadas", "15"), ("IA e data centers", "13"), ("Bandeiras tarifárias", "07"), ("Lei 14.300", "02"), ("Curtailment", "08"),
             ("Mercado livre", "11"), ("Baterias", "10")]
 
 CREDITOS = json.loads((ROOT / "imagens" / "creditos.json").read_text(encoding="utf-8"))

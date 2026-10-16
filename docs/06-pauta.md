@@ -8,7 +8,7 @@ Regras: seguir `docs/02-guia-editorial.md` e `docs/05-linha-editorial.md` (sem p
 
 - [x] Debêntures incentivadas de infraestrutura: o que são e como funcionam — publicado em 2026-10-11 (`artigos/15-debentures-incentivadas.md`)
 - [x] SCP: o modelo da construção civil que chegou aos projetos de energia solar — publicado em 2026-10-13 (`artigos/14-scp-sociedade-em-conta-de-participacao.md`)
-- [ ] Tarifa branca: para quem compensa mudar o horário de consumo
+- [x] Tarifa branca: para quem compensa mudar o horário de consumo — publicado em 2026-10-16 (`artigos/16-tarifa-branca.md`)
 - [ ] Leilões de transmissão: como funcionam e por que importam para as renováveis
 - [ ] Hidrogênio verde no Brasil: o que é, onde estão os projetos e os desafios
 - [ ] Autoprodução de energia: como empresas geram a própria eletricidade
