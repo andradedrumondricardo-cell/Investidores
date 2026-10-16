@@ -2,6 +2,10 @@
   publish = "site"
   command = "python3 scripts/build.py"
 
+# submission-created.js envia as inscrições da newsletter ao Brevo (ver docs/03-fluxo-pos-lead.md).
+[functions]
+  directory = "netlify/functions"
+
 [[headers]]
   for = "/*"
   [headers.values]

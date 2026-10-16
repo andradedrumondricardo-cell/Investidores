@@ -13,7 +13,7 @@ Nome e e-mail informados no formulário de inscrição, as opções de consentim
 Não vendemos nem cedemos seus dados a terceiros.
 
 ## Onde os dados ficam
-Os dados são armazenados em provedores de hospedagem e envio de e-mail, que podem estar localizados fora do Brasil (transferência internacional nos termos do art. 33 da LGPD), com medidas de segurança adequadas.
+Usamos dois fornecedores, que tratam os dados apenas para prestar o serviço: a **Netlify** (hospedagem do site e recebimento do formulário de inscrição) e a **Brevo** (envio da newsletter e dos e-mails). Eles podem armazenar os dados fora do Brasil, em transferência internacional nos termos do art. 33 da LGPD, com medidas de segurança adequadas.
 
 ## Por quanto tempo
 Enquanto sua inscrição estiver ativa. Após o cancelamento, os dados são excluídos, exceto o registro do consentimento e do cancelamento, mantido para comprovação legal.
@@ -24,4 +24,4 @@ Você pode, a qualquer momento: confirmar o tratamento, acessar, corrigir, solic
 ## Aviso
 A Energia & Capital é uma publicação educacional e informativa. Nenhum conteúdo constitui oferta, recomendação ou solicitação de investimento em valores mobiliários.
 
-*Última atualização: setembro de 2026.*
+*Última atualização: outubro de 2026.*
