@@ -9,4 +9,4 @@ Remetente: Energia & Capital <newsletter@energiaecapital.com.br> · Responder pa
 Regras:
 - Envie só para a lista **Newsletter** (#3). A lista **Aceitou contato** (#4) serve apenas para avisos de oferta regular (CVM 88/160), quando houver.
 - Conteúdo só educacional: nada de oferta, produto, SCP da ZeroInvest ou promessa de retorno.
-- Personalização: `{% if contact.FIRSTNAME %}, {{ contact.FIRSTNAME }}{% endif %}`; descadastro: `{{ unsubscribe }}` (obrigatório).
+- Personalização: `{% if contact.NOME %}, {{ contact.NOME }}{% endif %}`; descadastro: `{{ unsubscribe }}` (obrigatório).
