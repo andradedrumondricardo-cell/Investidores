@@ -1,0 +1,640 @@
+author: ""
+brandUpdateTime: ""
+campaignType: classic
+fields: []
+fieldsHistory: []
+firstLoadSocialIcons: false
+font-fallback:
+  default: Arial
+  headings: Arial
+fonts: []
+hideSwapBanner: false
+id: df203c79-b062-40e8-83e6-47a50095ec91
+name: 'Newsletter Energia & Capital - Edição 1'
+subject: 'Tarifa branca, SCP e o desafio elétrico da IA'
+ui:
+  showDeleteOption: false
+  showMoreOption: false
+user-hash: ffd59cc2650aef2f87fcd6afc49a0917
+version: 3.0.1
+body:
+  id: b2fe53c9-b3ce-474d-9e85-c65b1e698ca6
+  type: body
+  layout:
+    320px:
+      width: 320px
+    default:
+      background-color: '#F4F2EA'
+      direction: ltr
+      wrapper-width: 600px
+  content:
+    -
+      content-type: wrapper
+      customBlockId: null
+      id: b21168a8-c29a-4b1d-baf0-c4705c839d4a
+      isCustomBlock: null
+      moduleName: null
+      sidebarSection: null
+      sync-module-id: null
+      thumbnail: null
+      title: Wrapper
+      type: rows
+      layout:
+        320px:
+          width: 320px
+        default:
+          align: center
+          background-color: '#FFFFFF'
+          valign: top
+      content:
+        -
+          align: top
+          customBlockId: null
+          dist: '12'
+          gutter: 30px
+          id: 42df2d18-89b1-437b-bf36-a4c4d63b77ee
+          isCustomBlock: null
+          moduleName: grid-row12
+          sidebarSection: null
+          sync-module-id: null
+          thumbnail: /assets/img/editor/grid_12.svg
+          title: Header
+          type: grid-row
+          layout:
+            320px:
+              display: rows
+              padding-left: 15px
+              padding-right: 15px
+              width: 100%
+            default:
+              align: center
+              padding-bottom: 8px
+              padding-top: 28px
+              valign: top
+              width: 100%
+          content:
+            -
+              customBlockId: null
+              id: 68f2f1ad-35fb-4165-bdf9-6b66333e241b
+              isCustomBlock: null
+              isEmpty: false
+              moduleName: null
+              sidebarSection: null
+              sync-module-id: null
+              thumbnail: null
+              title: 'column 1'
+              type: grid-column
+              layout:
+                320px: []
+                default:
+                  padding-left: 0px
+                  padding-right: 0px
+                  valign: top
+              content:
+                -
+                  customBlockId: null
+                  id: 23227b3f-0dca-4137-88dd-b56ea4c6e4ee
+                  isCustomBlock: null
+                  moduleName: brand-logo
+                  sidebarSection: null
+                  sync-module-id: null
+                  thumbnail: /assets/img/editor/element-logo.png
+                  title: Logo
+                  type: image
+                  layout:
+                    320px:
+                      max-width: 320px
+                      width: 64px
+                    default:
+                      align: center
+                      dynamic: false
+                      embed: false
+                      img-border-radius: 0px
+                      valign: top
+                      width: 64px
+                  content:
+                    src: 'https://energiaecapital.com.br/img/logo.png'
+        -
+          align: top
+          customBlockId: null
+          dist: '12'
+          gutter: 30px
+          id: 8d7f8339-2a31-4a3e-bce5-d9a1a2a617a6
+          isCustomBlock: null
+          moduleName: grid-row12
+          sidebarSection: null
+          sync-module-id: null
+          thumbnail: /assets/img/editor/grid_12.svg
+          title: Title
+          type: grid-row
+          layout:
+            320px:
+              display: rows
+              padding-left: 15px
+              padding-right: 15px
+              width: 100%
+            default:
+              align: center
+              padding-bottom: 20px
+              padding-top: 8px
+              valign: top
+              width: 100%
+          content:
+            -
+              customBlockId: null
+              id: e621024a-c0dd-4f10-9b78-e37996638cda
+              isCustomBlock: null
+              isEmpty: false
+              moduleName: null
+              sidebarSection: null
+              sync-module-id: null
+              thumbnail: null
+              title: 'column 1'
+              type: grid-column
+              layout:
+                320px: []
+                default:
+                  padding-left: 0px
+                  padding-right: 0px
+                  valign: top
+              content:
+                -
+                  customBlockId: null
+                  id: 6ed2ff55-0559-4dc5-b6ac-20c581e1485c
+                  isCustomBlock: null
+                  moduleName: null
+                  sidebarSection: null
+                  sync-module-id: null
+                  thumbnail: /assets/img/editor/element_text.svg
+                  title: Text
+                  type: text
+                  layout:
+                    320px:
+                      width: 100%
+                    default:
+                      align: left
+                      padding-bottom: 0px
+                      padding-left: 0px
+                      padding-right: 0px
+                      padding-top: 0px
+                      removePadding: false
+                      text-align: center
+                      text-valign: top
+                      valign: top
+                      width: 100%
+                  content: '<h2 class="default-heading2">Olá{% if contact.NOME %}, {{ contact.NOME }}{% endif %}!</h2><p style="font-size:20px;"><strong>Newsletter Energia &amp; Capital · Edição nº 1</strong></p>'
+        -
+          align: top
+          customBlockId: null
+          dist: '12'
+          gutter: 30px
+          id: 18770819-c887-40db-86f7-bc1d6b3b2fbd
+          isCustomBlock: null
+          moduleName: grid-row12
+          sidebarSection: null
+          sync-module-id: null
+          thumbnail: /assets/img/editor/grid_12.svg
+          title: Intro
+          type: grid-row
+          layout:
+            320px:
+              display: rows
+              padding-left: 15px
+              padding-right: 15px
+              width: 100%
+            default:
+              align: center
+              padding-bottom: 20px
+              padding-top: 20px
+              valign: top
+              width: 100%
+          content:
+            -
+              customBlockId: null
+              id: 54294b4e-314a-4ca5-84e1-6e6638d65e1b
+              isCustomBlock: null
+              isEmpty: false
+              moduleName: null
+              sidebarSection: null
+              sync-module-id: null
+              thumbnail: null
+              title: 'column 1'
+              type: grid-column
+              layout:
+                320px: []
+                default:
+                  padding-left: 0px
+                  padding-right: 0px
+                  valign: top
+              content:
+                -
+                  customBlockId: null
+                  id: bbed4bd0-327b-45d2-8230-c5ba0d6333d3
+                  isCustomBlock: null
+                  moduleName: null
+                  sidebarSection: null
+                  sync-module-id: null
+                  thumbnail: /assets/img/editor/element_text.svg
+                  title: Text
+                  type: text
+                  layout:
+                    320px:
+                      width: 100%
+                    default:
+                      align: left
+                      padding-bottom: 0px
+                      padding-left: 0px
+                      padding-right: 0px
+                      padding-top: 0px
+                      removePadding: false
+                      text-align: left
+                      text-valign: top
+                      valign: top
+                      width: 100%
+                  content: '<p>Esta é a primeira edição da newsletter da Energia &amp; Capital. A cada 15 dias, o essencial do setor de energia, explicado sem complicação: como a energia é gerada, contratada e regulada, e o que isso muda para consumidores, empresas e investidores.</p><p>Nesta quinzena:</p>'
+        -
+          align: top
+          customBlockId: null
+          dist: '12'
+          gutter: 30px
+          id: fb8c6d37-b2ac-4ebf-b332-54959998eb92
+          isCustomBlock: null
+          moduleName: grid-row12
+          sidebarSection: null
+          sync-module-id: null
+          thumbnail: /assets/img/editor/grid_12.svg
+          title: Leituras
+          type: grid-row
+          layout:
+            320px:
+              display: rows
+              padding-left: 15px
+              padding-right: 15px
+              width: 100%
+            default:
+              align: center
+              padding-bottom: 20px
+              padding-top: 20px
+              valign: top
+              width: 100%
+          content:
+            -
+              customBlockId: null
+              id: 44dbfd07-4888-430e-a367-3c93a85c4fa9
+              isCustomBlock: null
+              isEmpty: false
+              moduleName: null
+              sidebarSection: null
+              sync-module-id: null
+              thumbnail: null
+              title: 'column 1'
+              type: grid-column
+              layout:
+                320px: []
+                default:
+                  padding-left: 0px
+                  padding-right: 0px
+                  valign: top
+              content:
+                -
+                  customBlockId: null
+                  id: b0a5fc07-cc55-49a4-9624-b7d635875ef8
+                  isCustomBlock: null
+                  moduleName: null
+                  sidebarSection: null
+                  sync-module-id: null
+                  thumbnail: /assets/img/editor/element_text.svg
+                  title: Text
+                  type: text
+                  layout:
+                    320px:
+                      width: 100%
+                    default:
+                      align: left
+                      padding-bottom: 0px
+                      padding-left: 0px
+                      padding-right: 0px
+                      padding-top: 0px
+                      removePadding: false
+                      text-align: left
+                      text-valign: top
+                      valign: top
+                      width: 100%
+                  content: '<p><span style="font-size:12px;color:#8A6D00;"><strong>CONTA DE LUZ</strong></span><br><strong><a href="https://energiaecapital.com.br/artigos/tarifa-branca/" style="color:#0E1B17;font-size:18px;">Tarifa branca: quando compensa mudar o horário de consumo</a></strong><br><span style="color:#555555;">Mesma energia, contas diferentes: na tarifa branca, o preço muda conforme a hora do dia. Duas casas, o mesmo consumo e um teste rápido para saber se vale a pena para você.</span></p><p><span style="font-size:12px;color:#8A6D00;"><strong>INVESTIDOR</strong></span><br><strong><a href="https://energiaecapital.com.br/artigos/scp-sociedade-em-conta-de-participacao/" style="color:#0E1B17;font-size:18px;">SCP: o sócio da vitrine e os sócios dos bastidores</a></strong><br><span style="color:#555555;">O modelo da construção civil chegou à energia solar. Como funciona, o que acontece se o sócio ostensivo quebrar e quando a oferta vira assunto da CVM.</span></p><p><span style="font-size:12px;color:#8A6D00;"><strong>INVESTIDOR</strong></span><br><strong><a href="https://energiaecapital.com.br/artigos/debentures-incentivadas/" style="color:#0E1B17;font-size:18px;">Debêntures incentivadas: emprestar para a infraestrutura</a></strong><br><span style="color:#555555;">A isenção de imposto, a gangorra dos juros e os riscos que pouca gente comenta.</span></p><p><span style="font-size:12px;color:#8A6D00;"><strong>IA E ENERGIA</strong></span><br><strong><a href="https://energiaecapital.com.br/artigos/ia-datacenters-energia/" style="color:#0E1B17;font-size:18px;">O atalho elétrico da inteligência artificial</a></strong><br><span style="color:#555555;">A corrida da IA virou corrida por megawatts conectados. No Brasil, falta rede onde está a demanda e sobra energia onde está a geração.</span></p><p><strong>Sigla estranha na conta de luz?</strong> Nosso <a href="https://energiaecapital.com.br/artigos/glossario-da-energia/" style="color:#0E1B17;"><strong>glossário com 42 termos</strong></a> explica cada uma.</p>'
+        -
+          align: top
+          customBlockId: null
+          dist: '12'
+          gutter: 30px
+          id: 13db091d-4293-440c-bcdd-f3fa7fd62a5d
+          isCustomBlock: null
+          moduleName: grid-row12
+          sidebarSection: null
+          sync-module-id: null
+          thumbnail: /assets/img/editor/grid_12.svg
+          title: Botao
+          type: grid-row
+          layout:
+            320px:
+              display: rows
+              padding-left: 15px
+              padding-right: 15px
+              width: 100%
+            default:
+              align: center
+              padding-bottom: 20px
+              padding-top: 20px
+              valign: top
+              width: 100%
+          content:
+            -
+              customBlockId: null
+              id: bd76bfeb-9328-4539-adac-8c4612ebf0a5
+              isCustomBlock: null
+              isEmpty: false
+              moduleName: null
+              sidebarSection: null
+              sync-module-id: null
+              thumbnail: null
+              title: 'column 1'
+              type: grid-column
+              layout:
+                320px: []
+                default:
+                  padding-left: 0px
+                  padding-right: 0px
+                  valign: top
+              content:
+                -
+                  customBlockId: null
+                  id: 35c1f58a-4898-47fa-9cf2-49b451ac84ea
+                  isCustomBlock: null
+                  moduleName: null
+                  sidebarSection: null
+                  sync-module-id: null
+                  text: '<p><span style="font-family:Arial, helvetica, sans-serif;"><strong>Ver todos os artigos</strong></span></p>'
+                  thumbnail: /assets/img/editor/element_button.svg
+                  title: Bouton
+                  type: text-button
+                  layout:
+                    320px:
+                      width: 100%
+                    default:
+                      align: center
+                      background-color: '#F5C400'
+                      border-radius: 6px
+                      item-height: 46px
+                      margin-bottom: 0px
+                      margin-top: 0px
+                      padding-bottom: 12px
+                      padding-top: 12px
+                      removeMargin: false
+                      text-align: center
+                      text-valign: top
+                      type: absoluteLink
+                      valign: top
+                      width: 50%
+                  content:
+                    href: 'https://energiaecapital.com.br/'
+                    text: '<p><span style="font-family:Arial, helvetica, sans-serif;"><strong>Ver todos os artigos</strong></span></p>'
+                    title: 'Ver todos os artigos'
+        -
+          align: top
+          customBlockId: null
+          dist: '12'
+          gutter: 30px
+          id: 1d7ae8e7-2fc8-49aa-ab35-fe4830a3fd30
+          isCustomBlock: null
+          moduleName: grid-row12
+          sidebarSection: null
+          sync-module-id: null
+          thumbnail: /assets/img/editor/grid_12.svg
+          title: Resposta
+          type: grid-row
+          layout:
+            320px:
+              display: rows
+              padding-left: 15px
+              padding-right: 15px
+              width: 100%
+            default:
+              align: center
+              padding-bottom: 20px
+              padding-top: 20px
+              valign: top
+              width: 100%
+          content:
+            -
+              customBlockId: null
+              id: 90fb0b8c-f929-41fa-966b-89da57b29169
+              isCustomBlock: null
+              isEmpty: false
+              moduleName: null
+              sidebarSection: null
+              sync-module-id: null
+              thumbnail: null
+              title: 'column 1'
+              type: grid-column
+              layout:
+                320px: []
+                default:
+                  padding-left: 0px
+                  padding-right: 0px
+                  valign: top
+              content:
+                -
+                  customBlockId: null
+                  id: 3549ed0c-8293-4886-8a92-c0784bbd059e
+                  isCustomBlock: null
+                  moduleName: null
+                  sidebarSection: null
+                  sync-module-id: null
+                  thumbnail: /assets/img/editor/element_text.svg
+                  title: Text
+                  type: text
+                  layout:
+                    320px:
+                      width: 100%
+                    default:
+                      align: left
+                      padding-bottom: 0px
+                      padding-left: 0px
+                      padding-right: 0px
+                      padding-top: 0px
+                      removePadding: false
+                      text-align: left
+                      text-valign: top
+                      valign: top
+                      width: 100%
+                  content: '<p>Tem uma dúvida ou um tema que gostaria de ver explicado? É só responder a este e-mail. Até a próxima quinzena!</p><p>Um abraço,<br><strong>Equipe Energia &amp; Capital</strong></p>'
+        -
+          align: top
+          customBlockId: null
+          dist: '12'
+          gutter: 30px
+          id: d790b32e-8012-4a0a-afc1-1d3e682ecf66
+          isCustomBlock: null
+          moduleName: grid-row12
+          sidebarSection: null
+          sync-module-id: null
+          thumbnail: /assets/img/editor/grid_12.svg
+          title: Footer
+          type: grid-row
+          layout:
+            320px:
+              display: rows
+              padding-left: 15px
+              padding-right: 15px
+              width: 100%
+            default:
+              align: center
+              padding-bottom: 20px
+              padding-top: 40px
+              valign: top
+              width: 100%
+          content:
+            -
+              customBlockId: null
+              id: 9b556bcb-6b25-489b-8481-963eb9c90976
+              isCustomBlock: null
+              isEmpty: false
+              moduleName: null
+              sidebarSection: null
+              sync-module-id: null
+              thumbnail: null
+              title: 'column 1'
+              type: grid-column
+              layout:
+                320px: []
+                default:
+                  padding-left: 0px
+                  padding-right: 0px
+                  valign: top
+              content:
+                -
+                  customBlockId: null
+                  id: fecf0d33-5fae-488c-b979-5868f0daf998
+                  isCustomBlock: null
+                  moduleName: null
+                  sidebarSection: null
+                  sync-module-id: null
+                  thumbnail: /assets/img/editor/element_text.svg
+                  title: Text
+                  type: text
+                  layout:
+                    320px:
+                      width: 100%
+                    default:
+                      align: left
+                      padding-bottom: 0px
+                      padding-left: 0px
+                      padding-right: 0px
+                      padding-top: 0px
+                      removePadding: false
+                      text-align: left
+                      text-valign: top
+                      valign: top
+                      width: 100%
+                  content: '<p style="font-size:13px;color:#666666;"><strong style="color:#0E1B17;">Energia &amp; Capital</strong> · publicação mantida pela ZeroInvest, empresa que desenvolve projetos de energia. O conteúdo é educacional e informativo e não constitui oferta, recomendação ou solicitação de investimento em valores mobiliários.</p>'
+                -
+                  customBlockId: null
+                  id: 1d00854d-abc0-4995-9656-5bd9b34e9997
+                  isCustomBlock: null
+                  moduleName: null
+                  sidebarSection: null
+                  sync-module-id: null
+                  thumbnail: /assets/img/editor/element_text.svg
+                  title: Text
+                  type: text
+                  layout:
+                    320px:
+                      width: 100%
+                    default:
+                      align: left
+                      padding-bottom: 0px
+                      padding-left: 0px
+                      padding-right: 0px
+                      padding-top: 0px
+                      removePadding: false
+                      text-align: left
+                      text-valign: top
+                      valign: top
+                      width: 100%
+                  content: '<p style="font-size:13px;color:#666666;">Este e-mail foi enviado para {{ contact.EMAIL }} porque você assinou a newsletter em <a href="https://energiaecapital.com.br/" style="color:#666666;">energiaecapital.com.br</a>.</p>'
+                -
+                  customBlockId: null
+                  id: 45a8339f-df47-48be-a248-47b35895e467
+                  isCustomBlock: null
+                  moduleName: null
+                  sidebarSection: null
+                  sync-module-id: null
+                  thumbnail: /assets/img/editor/element_text.svg
+                  title: Text
+                  type: text
+                  layout:
+                    320px:
+                      width: 100%
+                    default:
+                      align: left
+                      padding-bottom: 0px
+                      padding-left: 0px
+                      padding-right: 0px
+                      padding-top: 0px
+                      removePadding: false
+                      text-align: left
+                      text-valign: top
+                      valign: top
+                      width: 100%
+                  content: '<p style="font-size:13px;"><a href="{{ unsubscribe }}" target="_blank" style="color:#666666;"><u>Cancelar inscrição</u></a> · <a href="https://energiaecapital.com.br/privacidade/" style="color:#666666;"><u>Política de Privacidade</u></a></p>'
+media:
+  320px:
+    max-width: 600
+    min-width: 0
+styles:
+  default:
+    properties:
+      color: '#222222'
+      font-family: Arial
+      font-size: 16px
+      line-height: '1.55'
+    title: Paragraph
+  default-button:
+    properties:
+      background-color: '#F5C400'
+      border-radius: 6px
+      border-width: 0px
+      color: '#0E1B17'
+      font-family: Arial
+      font-size: 16px
+      remove-vml-button: optional
+      width: 180px
+    title: Button
+  default-heading1:
+    properties:
+      color: '#0E1B17'
+      font-family: Arial
+      font-size: 36px
+    title: 'Heading 1'
+  default-heading2:
+    properties:
+      color: '#0E1B17'
+      font-family: Arial
+      font-size: 30px
+    title: 'Heading 2'
+  default-heading3:
+    properties:
+      color: '#0E1B17'
+      font-family: Arial
+      font-size: 24px
+    title: 'Heading 3'
+  default-heading4:
+    properties:
+      color: '#0E1B17'
+      font-family: Arial
+      font-size: 18px
+    title: 'Heading 4'
+  default-link:
+    properties:
+      color: '#0E1B17'
+      text-decoration: underline
+    title: Link
