@@ -48,23 +48,24 @@ ARTIGOS = {
     "14": {"seo": "SCP em energia solar: o que é e quais cuidados exige", "publicado": "2026-10-13", "secao": "Investidor", "ilustracao": "solar"},
     "15": {"seo": "Debêntures incentivadas: o que são e como funcionam", "publicado": "2026-10-11", "secao": "Investidor", "ilustracao": "torre"},
     "16": {"seo": "Tarifa branca: quando compensa mudar o horário de consumo", "publicado": "2026-10-16", "secao": "Conta de luz", "ilustracao": "casa"},
+    "17": {"seo": "Leilões de transmissão: como funcionam e por que importam", "publicado": "2026-10-20", "secao": "Rede", "ilustracao": "torre", "foto": "linhas-transmissao", "alt": "Torres e linhas de transmissão de energia"},
 }
 
 # Composição da home. Seções sem artigos não aparecem.
-DESTAQUE = "16"
-ULTIMAS = ["14", "15", "13", "07"]
+DESTAQUE = "17"
+ULTIMAS = ["16", "14", "15", "13"]
 SECOES = [
     {"id": "na-pratica", "titulo": "Na prática", "artigos": ["16", "11", "02", "03", "01"],
      "seo": "Guias práticos de energia: conta de luz, solar e mercado livre",
      "descricao": "Guias práticos para entender a conta de luz, a energia solar no telhado, o mercado livre e os contratos do setor elétrico."},
-    {"id": "investidor", "titulo": "Investidor", "artigos": ["14", "15", "04", "05", "06", "08", "13"],
+    {"id": "investidor", "titulo": "Investidor", "artigos": ["17", "14", "15", "04", "05", "06", "08", "13"],
      "seo": "Energia para investidores: análises do setor elétrico",
      "descricao": "Análises sobre energia como classe de ativo: como os projetos geram caixa, como o retorno se forma e quais riscos pesam."},
     {"id": "variedades", "titulo": "Variedades", "artigos": ["09", "12", "10", "07"],
      "seo": "Curiosidades e tecnologia em energia: solar flutuante, baterias",
      "descricao": "Curiosidades, tecnologia e glossário do setor de energia: usinas solares flutuantes, baterias, bandeiras tarifárias e mais."},
 ]
-EM_PAUTA = [("Tarifa branca", "16"), ("SCP", "14"), ("Debêntures incentivadas", "15"), ("IA e data centers", "13"), ("Bandeiras tarifárias", "07"), ("Lei 14.300", "02"), ("Curtailment", "08"),
+EM_PAUTA = [("Leilões de transmissão", "17"), ("Tarifa branca", "16"), ("SCP", "14"), ("Debêntures incentivadas", "15"), ("IA e data centers", "13"), ("Bandeiras tarifárias", "07"), ("Lei 14.300", "02"), ("Curtailment", "08"),
             ("Mercado livre", "11"), ("Baterias", "10")]
 
 CREDITOS = json.loads((ROOT / "imagens" / "creditos.json").read_text(encoding="utf-8"))
