@@ -23,7 +23,7 @@ Foi essa regra que abriu espaço para novos modelos de negócio. Eles atendem qu
 
 - **Para quem:** residências, pequenos comércios e empresas que não podem ou não querem instalar painéis.
 - **Como funciona na prática:** você continua cliente da distribuidora. A conta dela vem menor por causa dos créditos, e chega uma segunda cobrança, a da empresa da assinatura.
-- **Quem pratica:** a **Sun Mobi** oferece assinatura de energia solar em centenas de municípios paulistas, a partir de usinas no interior do estado. A **Sou Vagalume**, criada em 2021 por Comerc Energia e Perfin, atende pequenos e médios consumidores de Minas Gerais.
+- **Quem pratica:** a **Sun Mobi** oferece assinatura de energia solar em centenas de municípios paulistas, a partir de usinas no interior do estado. A **Sou Vagalume**, criada em 2021 por Comerc Energia e Perfin, atende pequenos e médios consumidores de Minas Gerais. A **ZeroInvest**, empresa que mantém esta publicação, também atua nesse modelo: aluga usinas de geração distribuída a condomínios em São Paulo, Belo Horizonte e Rio de Janeiro ([zeroinvest.com.br](https://www.zeroinvest.com.br)).
 
 Um cuidado importante: pelas regras da ANEEL, os créditos de energia não podem ser vendidos, e o aluguel da usina não pode ser cobrado em reais por kWh. Por isso, esses contratos costumam ser estruturados como aluguel de equipamentos ou de parte da usina, com as condições definidas em contrato.
 
@@ -100,7 +100,7 @@ Na assinatura, uma empresa é dona da usina e aluga partes dela aos clientes. Na
 Quando a oferta é feita por plataforma de investimento participativo autorizada pela CVM, sim, dentro dos limites da norma. Fora desses canais, uma oferta pública precisa de registro ou dispensa na CVM. Desconfie de convites sem essa informação.
 
 ### As empresas citadas no artigo são recomendadas?
-Não. Elas foram citadas como exemplos públicos de cada modelo. Antes de contratar ou aplicar, avalie o contrato, a regularidade e os riscos de cada caso.
+Não. Elas foram citadas como exemplos de cada modelo. A ZeroInvest, que mantém esta publicação, aparece apenas como locadora de usinas para condomínios. Antes de contratar ou aplicar, avalie o contrato, a regularidade e os riscos de cada caso.
 
 ## Fontes
 - Lei 14.300/2022 — Marco Legal da Micro e Minigeração Distribuída (planalto.gov.br)
