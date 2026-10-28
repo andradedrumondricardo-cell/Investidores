@@ -1,15 +1,16 @@
 # Roteiro de narração — vídeo Zero Invest + Trustt (SCP)
 
-Vídeo: `ZeroInvest_Trustt_SCP_video_vertical.mp4` (retrato 1080×1920, 40 s, 6 telas — só os pontos principais).
+Vídeo: `ZeroInvest_Trustt_SCP_video_vertical.mp4` (retrato 1080×1920, 40 s, 6 telas).
+Tempos alinhados ao vídeo atual (sem tela preta no início). Cada fala cabe na tela, em ritmo de conversa.
 
 | Tempo | Tela | Narração |
 |---|---|---|
-| 0:00–0:05 | Capa | Uma oportunidade de investimento em energia solar, via SCP, com a Zero Invest e a Trustt. |
-| 0:04–0:13 | O modelo já saiu do papel | Já são R$ 695 mil captados, 8 usinas, zero de inadimplência e R$ 100 mil em dividendos pagos em 12 meses. |
-| 0:12–0:19 | Retorno | A remuneração atual é 20% ao ano, com capacidade de R$ 1 milhão por mês. |
-| 0:18–0:25 | Como funciona | Você adere à SCP pela Trustt e o aporte financia usinas solares em condomínios. |
-| 0:24–0:32 | Pipeline | Temos R$ 10,7 milhões em projetos no pipeline e acesso a 4.500 prédios via Lello. |
-| 0:31–0:40 | Encerramento | Quer receber os documentos? Fale com a gente. |
+| 0:00–0:04 | Capa | Investimento em energia solar, via SCP, com a Zero Invest e a Trustt. |
+| 0:04–0:12 | O modelo já saiu do papel | O modelo já está rodando: R$ 695 mil captados, 8 usinas, zero de inadimplência e R$ 100 mil em dividendos pagos em 12 meses. |
+| 0:13–0:19 | Retorno | Hoje a remuneração é de 20% ao ano, com capacidade de investir R$ 1 milhão por mês. |
+| 0:19–0:25 | Como funciona | Você entra na SCP pela Trustt, e o seu aporte financia usinas solares em condomínios. |
+| 0:26–0:32 | Pipeline | São R$ 10,7 milhões em projetos no pipeline e acesso a 4.500 prédios pela Lello. |
+| 0:33–0:40 | Encerramento | Quer receber os documentos da SCP? Fale com a gente. Rentabilidade passada não garante retorno futuro. |
 
 ## Como gravar por cima
 
