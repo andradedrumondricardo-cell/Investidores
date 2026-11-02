@@ -11,7 +11,7 @@ Regras: seguir `docs/02-guia-editorial.md` e `docs/05-linha-editorial.md` (sem p
 - [x] Tarifa branca: para quem compensa mudar o horário de consumo — publicado em 2026-10-16 (`artigos/16-tarifa-branca.md`)
 - [x] Leilões de transmissão: como funcionam e por que importam para as renováveis — publicado em 2026-10-20 (`artigos/17-leiloes-de-transmissao.md`)
 - [x] Energia solar sem telhado: assinatura, cooperativas e investimento coletivo — publicado em 2026-10-23; **já escrito** em `artigos/18-novos-modelos-energia-solar.md`: não reescrever; revisar, registrar em `ARTIGOS` (seção "Solar", hub Na prática, "seo": "Energia solar por assinatura, cooperativa e investimento coletivo") e publicar. **Exceção aprovada pelo dono em 22/10/2026:** este artigo cita a ZeroInvest no Modelo 1 (locação de usinas para condomínios) e na pergunta sobre empresas citadas, sempre com declaração de vínculo. Não remover essas menções; o grep de "ZeroInvest" deve aceitar só essas duas, além do rodapé.
-- [ ] Hidrogênio verde no Brasil: o que é, onde estão os projetos e os desafios
+- [x] Hidrogênio verde no Brasil: o que é, onde estão os projetos e os desafios — publicado em 2026-11-02 (`artigos/19-hidrogenio-verde.md`)
 - [ ] Autoprodução de energia: como empresas geram a própria eletricidade
 - [ ] Energia solar em condomínios: geração compartilhada passo a passo
 - [ ] O que é PLD e por que o preço da energia de curto prazo oscila tanto
