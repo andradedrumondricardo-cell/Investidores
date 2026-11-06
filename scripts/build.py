@@ -52,13 +52,14 @@ ARTIGOS = {
     "18": {"seo": "Energia solar por assinatura, cooperativa e investimento coletivo", "publicado": "2026-10-23", "secao": "Solar", "ilustracao": "solar", "foto": "campo-solar", "alt": "Usina solar instalada em antigo aeródromo em Neuhardenberg, Alemanha"},
     "19": {"seo": "Hidrogênio verde no Brasil: o que é, projetos e desafios", "publicado": "2026-11-02", "secao": "Tecnologia", "ilustracao": "eolica"},
     "20": {"seo": "Autoprodução de energia: como empresas geram a própria luz", "publicado": "2026-11-03", "secao": "Mercado livre", "ilustracao": "mercado"},
+    "21": {"seo": "Energia solar em condomínios: como funciona, passo a passo", "publicado": "2026-11-06", "secao": "Solar", "ilustracao": "casa", "foto": "telhado-solar", "alt": "Casa com painéis solares no telhado"},
 }
 
 # Composição da home. Seções sem artigos não aparecem.
-DESTAQUE = "20"
-ULTIMAS = ["19", "18", "17", "16"]
+DESTAQUE = "21"
+ULTIMAS = ["20", "19", "18", "17"]
 SECOES = [
-    {"id": "na-pratica", "titulo": "Na prática", "artigos": ["20", "18", "16", "11", "02", "03", "01"],
+    {"id": "na-pratica", "titulo": "Na prática", "artigos": ["21", "20", "18", "16", "11", "02", "03", "01"],
      "seo": "Guias práticos de energia: conta de luz, solar e mercado livre",
      "descricao": "Guias práticos para entender a conta de luz, a energia solar no telhado, o mercado livre e os contratos do setor elétrico."},
     {"id": "investidor", "titulo": "Investidor", "artigos": ["17", "14", "15", "04", "05", "06", "08", "13"],
@@ -68,7 +69,7 @@ SECOES = [
      "seo": "Curiosidades e tecnologia em energia: solar flutuante, baterias",
      "descricao": "Curiosidades, tecnologia e glossário do setor de energia: usinas solares flutuantes, baterias, bandeiras tarifárias e mais."},
 ]
-EM_PAUTA = [("Autoprodução", "20"), ("Hidrogênio verde", "19"), ("Solar sem telhado", "18"), ("Leilões de transmissão", "17"), ("Tarifa branca", "16"), ("SCP", "14"), ("Debêntures incentivadas", "15"), ("IA e data centers", "13"), ("Bandeiras tarifárias", "07"), ("Lei 14.300", "02"), ("Curtailment", "08"),
+EM_PAUTA = [("Solar em condomínios", "21"), ("Autoprodução", "20"), ("Hidrogênio verde", "19"), ("Solar sem telhado", "18"), ("Leilões de transmissão", "17"), ("Tarifa branca", "16"), ("SCP", "14"), ("Debêntures incentivadas", "15"), ("IA e data centers", "13"), ("Bandeiras tarifárias", "07"), ("Lei 14.300", "02"), ("Curtailment", "08"),
             ("Mercado livre", "11"), ("Baterias", "10")]
 
 CREDITOS = json.loads((ROOT / "imagens" / "creditos.json").read_text(encoding="utf-8"))

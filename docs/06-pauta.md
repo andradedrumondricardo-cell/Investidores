@@ -13,7 +13,7 @@ Regras: seguir `docs/02-guia-editorial.md` e `docs/05-linha-editorial.md` (sem p
 - [x] Energia solar sem telhado: assinatura, cooperativas e investimento coletivo — publicado em 2026-10-23; **já escrito** em `artigos/18-novos-modelos-energia-solar.md`: não reescrever; revisar, registrar em `ARTIGOS` (seção "Solar", hub Na prática, "seo": "Energia solar por assinatura, cooperativa e investimento coletivo") e publicar. **Exceção aprovada pelo dono em 22/10/2026:** este artigo cita a ZeroInvest no Modelo 1 (locação de usinas para condomínios) e na pergunta sobre empresas citadas, sempre com declaração de vínculo. Não remover essas menções; o grep de "ZeroInvest" deve aceitar só essas duas, além do rodapé.
 - [x] Hidrogênio verde no Brasil: o que é, onde estão os projetos e os desafios — publicado em 2026-11-02 (`artigos/19-hidrogenio-verde.md`)
 - [x] Autoprodução de energia: como empresas geram a própria eletricidade — publicado em 2026-11-03 (`artigos/20-autoproducao-de-energia.md`)
-- [ ] Energia solar em condomínios: geração compartilhada passo a passo
+- [x] Energia solar em condomínios: geração compartilhada passo a passo — publicado em 2026-11-06 (`artigos/21-energia-solar-em-condominios.md`)
 - [ ] O que é PLD e por que o preço da energia de curto prazo oscila tanto
 - [ ] Térmicas na matriz: por que ainda dependemos delas em anos secos
 - [ ] Carro elétrico e a rede: o impacto da recarga no sistema elétrico
