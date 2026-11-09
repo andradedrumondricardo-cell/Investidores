@@ -44,9 +44,10 @@ O Código Civil classifica obras em condomínio. Uma instalação que reduz desp
 
 Por isso, vale ouvir a administradora ou um advogado antes de marcar a assembleia. Os pontos que não podem ficar de fora:
 
-- **Quem paga:** caixa do condomínio, fundo de reserva, rateio extra ou financiamento.
+- **Comprar ou alugar:** o condomínio pode comprar o sistema ou alugar uma usina pronta, pagando uma mensalidade. No aluguel, não há desembolso inicial, e a manutenção costuma ficar com a locadora. Em troca, parte da economia vai para o aluguel, e o contrato tem prazo, multa e regras de reajuste que precisam ser lidos com atenção.
+- **Quem paga:** na compra, caixa do condomínio, fundo de reserva, rateio extra ou financiamento; no aluguel, a mensalidade entra no orçamento do condomínio.
 - **Para onde vão os créditos:** só para as áreas comuns ou divididos entre as unidades, e com qual critério.
-- **Manutenção:** quem limpa, quem fiscaliza e quanto custa.
+- **Manutenção:** quem limpa, quem fiscaliza e quanto custa, ou o que o contrato de aluguel cobre.
 - **Estrutura e apólice:** se a cobertura aguenta o peso e se a apólice do condomínio cobre os equipamentos.
 
 ## Exemplo ilustrativo: a conta das áreas comuns
