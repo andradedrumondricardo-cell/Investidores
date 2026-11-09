@@ -50,7 +50,7 @@ Por isso, vale ouvir a administradora ou um advogado antes de marcar a assemblei
 - **Manutenção:** quem limpa, quem fiscaliza e quanto custa, ou o que o contrato de aluguel cobre.
 - **Estrutura e apólice:** se a cobertura aguenta o peso e se a apólice do condomínio cobre os equipamentos.
 
-O aluguel de usinas para condomínios já é oferecido por empresas do setor. Uma delas é a **ZeroInvest**, empresa que mantém esta publicação, que aluga usinas de geração distribuída a condomínios. A citação serve como exemplo do modelo, não como indicação de fornecedor.
+O aluguel de usinas para condomínios já é oferecido por empresas do setor. Uma delas é a **ZeroInvest**, empresa que mantém esta publicação, que aluga usinas de geração distribuída a condomínios.
 
 > "Muitos condomínios querem energia solar, mas não têm caixa para comprar o sistema nem espaço no telhado. O aluguel resolve a parte do investimento inicial, mas o síndico precisa ler o contrato com calma: prazo, reajuste, multa e quem cuida da manutenção." — Ricardo Drumond, sócio da ZeroInvest
 
