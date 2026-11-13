@@ -54,23 +54,24 @@ ARTIGOS = {
     "20": {"seo": "Autoprodução de energia: como empresas geram a própria luz", "publicado": "2026-11-03", "secao": "Mercado livre", "ilustracao": "mercado"},
     "21": {"seo": "Energia solar em condomínios: como funciona, passo a passo", "publicado": "2026-11-06", "secao": "Solar", "ilustracao": "casa", "foto": "telhado-solar", "alt": "Casa com painéis solares no telhado"},
     "22": {"seo": "PLD: o preço de curto prazo da energia e por que oscila", "publicado": "2026-11-10", "secao": "Mercado livre", "ilustracao": "grafico"},
+    "23": {"seo": "Térmicas: por que o Brasil ainda depende delas em anos secos", "publicado": "2026-11-13", "secao": "Rede", "ilustracao": "lampada"},
 }
 
 # Composição da home. Seções sem artigos não aparecem.
-DESTAQUE = "22"
-ULTIMAS = ["21", "20", "19", "18"]
+DESTAQUE = "23"
+ULTIMAS = ["22", "21", "20", "19"]
 SECOES = [
     {"id": "na-pratica", "titulo": "Na prática", "artigos": ["21", "20", "18", "16", "11", "02", "03", "01"],
      "seo": "Guias práticos de energia: conta de luz, solar e mercado livre",
      "descricao": "Guias práticos para entender a conta de luz, a energia solar no telhado, o mercado livre e os contratos do setor elétrico."},
-    {"id": "investidor", "titulo": "Investidor", "artigos": ["22", "17", "14", "15", "04", "05", "06", "08", "13"],
+    {"id": "investidor", "titulo": "Investidor", "artigos": ["23", "22", "17", "14", "15", "04", "05", "06", "08", "13"],
      "seo": "Energia para investidores: análises do setor elétrico",
      "descricao": "Análises sobre energia como classe de ativo: como os projetos geram caixa, como o retorno se forma e quais riscos pesam."},
     {"id": "variedades", "titulo": "Variedades", "artigos": ["19", "09", "12", "10", "07"],
      "seo": "Curiosidades e tecnologia em energia: solar flutuante, baterias",
      "descricao": "Curiosidades, tecnologia e glossário do setor de energia: usinas solares flutuantes, baterias, bandeiras tarifárias e mais."},
 ]
-EM_PAUTA = [("PLD", "22"), ("Solar em condomínios", "21"), ("Autoprodução", "20"), ("Hidrogênio verde", "19"), ("Solar sem telhado", "18"), ("Leilões de transmissão", "17"), ("Tarifa branca", "16"), ("SCP", "14"), ("Debêntures incentivadas", "15"), ("IA e data centers", "13"), ("Bandeiras tarifárias", "07"), ("Lei 14.300", "02"), ("Curtailment", "08"),
+EM_PAUTA = [("Térmicas", "23"), ("PLD", "22"), ("Solar em condomínios", "21"), ("Autoprodução", "20"), ("Hidrogênio verde", "19"), ("Solar sem telhado", "18"), ("Leilões de transmissão", "17"), ("Tarifa branca", "16"), ("SCP", "14"), ("Debêntures incentivadas", "15"), ("IA e data centers", "13"), ("Bandeiras tarifárias", "07"), ("Lei 14.300", "02"), ("Curtailment", "08"),
             ("Mercado livre", "11"), ("Baterias", "10")]
 
 CREDITOS = json.loads((ROOT / "imagens" / "creditos.json").read_text(encoding="utf-8"))
