@@ -4,7 +4,7 @@
 //   BREVO_API_KEY           chave de API do Brevo (nunca no código)
 //   BREVO_LISTA_NEWSLETTER  ID numérico da lista "Newsletter" (segmento A)
 //   BREVO_LISTA_CONTATO     ID numérico da lista "Aceitou contato" (segmento B)
-//   BREVO_ATRIBUTO_NOME     atributo do nome no Brevo (nesta conta: NOME; padrão: FIRSTNAME)
+//   BREVO_ATRIBUTO_NOME     opcional; atributo do nome no Brevo (padrão: NOME, como nesta conta)
 // O registro do consentimento (texto, versão, data) continua no Netlify Forms.
 
 const ok = (msg) => ({ statusCode: 200, body: msg });
@@ -42,7 +42,7 @@ exports.handler = async (event) => {
   const listaContato = Number(process.env.BREVO_LISTA_CONTATO);
   if (d.consentimento_contato === 'sim' && listaContato) listIds.push(listaContato);
 
-  const atributo = process.env.BREVO_ATRIBUTO_NOME || 'FIRSTNAME';
+  const atributo = process.env.BREVO_ATRIBUTO_NOME || 'NOME';
   const nome = String(d.nome || '').trim().slice(0, 100);
   const contato = { email, listIds, updateEnabled: true };
   if (nome) contato.attributes = { [atributo]: nome };
