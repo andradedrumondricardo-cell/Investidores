@@ -17,7 +17,7 @@ Regras: seguir `docs/02-guia-editorial.md` e `docs/05-linha-editorial.md` (sem p
 - [x] O que é PLD e por que o preço da energia de curto prazo oscila tanto — publicado em 2026-11-10 (`artigos/22-pld-preco-de-curto-prazo.md`)
 - [x] Térmicas na matriz: por que ainda dependemos delas em anos secos — publicado em 2026-11-13 (`artigos/23-termicas-na-matriz.md`)
 - [x] Carro elétrico e a rede: o impacto da recarga no sistema elétrico — publicado em 2026-11-17 (`artigos/24-carro-eletrico-e-a-rede.md`)
-- [ ] Eólicas offshore: o que falta para o Brasil sair do papel
+- [x] Eólicas offshore: o que falta para o Brasil sair do papel — publicado em 2026-11-20 (`artigos/25-eolicas-offshore.md`)
 - [ ] Como ler a sua conta de luz: TE, TUSD, impostos e encargos
 - [ ] Biogás e biometano: energia a partir de resíduos do agro
 - [ ] Furto de energia e perdas: quanto custa para quem paga a conta
