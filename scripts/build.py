@@ -57,13 +57,14 @@ ARTIGOS = {
     "23": {"seo": "Térmicas: por que o Brasil ainda depende delas em anos secos", "publicado": "2026-11-13", "secao": "Rede", "ilustracao": "lampada"},
     "24": {"seo": "Carro elétrico e a rede: o impacto da recarga na energia", "publicado": "2026-11-17", "secao": "Tecnologia", "ilustracao": "torre"},
     "25": {"seo": "Eólicas offshore no Brasil: o que falta para sair do papel", "publicado": "2026-11-20", "secao": "Eólica", "ilustracao": "eolica"},
+    "26": {"seo": "Como ler a conta de luz: TE, TUSD, impostos e encargos", "publicado": "2026-11-24", "secao": "Conta de luz", "ilustracao": "casa"},
 }
 
 # Composição da home. Seções sem artigos não aparecem.
-DESTAQUE = "25"
-ULTIMAS = ["24", "23", "22", "21"]
+DESTAQUE = "26"
+ULTIMAS = ["25", "24", "23", "22"]
 SECOES = [
-    {"id": "na-pratica", "titulo": "Na prática", "artigos": ["21", "20", "18", "16", "11", "02", "03", "01"],
+    {"id": "na-pratica", "titulo": "Na prática", "artigos": ["26", "21", "20", "18", "16", "11", "02", "03", "01"],
      "seo": "Guias práticos de energia: conta de luz, solar e mercado livre",
      "descricao": "Guias práticos para entender a conta de luz, a energia solar no telhado, o mercado livre e os contratos do setor elétrico."},
     {"id": "investidor", "titulo": "Investidor", "artigos": ["23", "22", "17", "14", "15", "04", "05", "06", "08", "13"],
@@ -73,7 +74,7 @@ SECOES = [
      "seo": "Curiosidades e tecnologia em energia: solar flutuante, baterias",
      "descricao": "Curiosidades, tecnologia e glossário do setor de energia: usinas solares flutuantes, baterias, bandeiras tarifárias e mais."},
 ]
-EM_PAUTA = [("Eólicas offshore", "25"), ("Carro elétrico", "24"), ("Térmicas", "23"), ("PLD", "22"), ("Solar em condomínios", "21"), ("Autoprodução", "20"), ("Hidrogênio verde", "19"), ("Solar sem telhado", "18"), ("Leilões de transmissão", "17"), ("Tarifa branca", "16"), ("SCP", "14"), ("Debêntures incentivadas", "15"), ("IA e data centers", "13"), ("Bandeiras tarifárias", "07"), ("Lei 14.300", "02"), ("Curtailment", "08"),
+EM_PAUTA = [("Conta de luz", "26"), ("Eólicas offshore", "25"), ("Carro elétrico", "24"), ("Térmicas", "23"), ("PLD", "22"), ("Solar em condomínios", "21"), ("Autoprodução", "20"), ("Hidrogênio verde", "19"), ("Solar sem telhado", "18"), ("Leilões de transmissão", "17"), ("Tarifa branca", "16"), ("SCP", "14"), ("Debêntures incentivadas", "15"), ("IA e data centers", "13"), ("Bandeiras tarifárias", "07"), ("Lei 14.300", "02"), ("Curtailment", "08"),
             ("Mercado livre", "11"), ("Baterias", "10")]
 
 CREDITOS = json.loads((ROOT / "imagens" / "creditos.json").read_text(encoding="utf-8"))
