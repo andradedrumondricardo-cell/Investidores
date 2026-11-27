@@ -19,7 +19,7 @@ Regras: seguir `docs/02-guia-editorial.md` e `docs/05-linha-editorial.md` (sem p
 - [x] Carro elétrico e a rede: o impacto da recarga no sistema elétrico — publicado em 2026-11-17 (`artigos/24-carro-eletrico-e-a-rede.md`)
 - [x] Eólicas offshore: o que falta para o Brasil sair do papel — publicado em 2026-11-20 (`artigos/25-eolicas-offshore.md`)
 - [x] Como ler a sua conta de luz: TE, TUSD, impostos e encargos — publicado em 2026-11-24 (`artigos/26-como-ler-a-conta-de-luz.md`)
-- [ ] Biogás e biometano: energia a partir de resíduos do agro
+- [x] Biogás e biometano: energia a partir de resíduos do agro — publicado em 2026-11-27 (`artigos/27-biogas-e-biometano.md`)
 - [ ] Furto de energia e perdas: quanto custa para quem paga a conta
 - [ ] PPA corporativo: por que grandes empresas compram energia renovável direto do gerador
 - [ ] Armazenamento por usinas reversíveis: a "bateria" hidráulica
